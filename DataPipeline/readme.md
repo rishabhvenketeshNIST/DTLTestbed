@@ -6,11 +6,10 @@ DTL Data Pipeline is comprised of three major components:
 2. Data storage implementation
 3. Archived Datasets
 
-This repository contains all technology developed, configurations utilized, and data gathered by the DTL Testbed.
 
-## Repository Description
+## Directory Description
 
-Below is an overview of the organization of this repository.
+Below is an overview of the organization of this directory.
 
 ```
 +---DataArchive (archived datasets generated daily for stakeholders to utilize)
