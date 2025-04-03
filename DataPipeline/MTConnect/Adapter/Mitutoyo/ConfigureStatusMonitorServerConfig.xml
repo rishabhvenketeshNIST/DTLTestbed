@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <DataItems>
+	<DataItem category="EVENT" id="MachineControllerProgram" name="Part program name" type="PROGRAM"/>
+	<DataItem category="EVENT" id="MachinePart" name="Part name" type="PART_ID"/>
+	<DataItem category="EVENT" id="PlannedRepetition" subType="ALL" type="PART_COUNT"/>
+	<DataItem category="EVENT" id="RemainingRepetition" subType="REMAINING" type="PART_COUNT"/>
+	<DataItem category="EVENT" id="CharacteristicsAll" subType="ALL" type="PART_COUNT"/>
+	<DataItem category="EVENT" id="CharacteristicsOutOfTolerance" subType="BAD" type="PART_COUNT"/>
+	<DataItem category="EVENT" id="CharacteristicsInTolerance" subType="GOOD" type="PART_COUNT"/>
+	<DataItem category="EVENT" id="MachinePartSerialNumber" type="SERIAL_NUMBER"/>
+	<DataItem category="EVENT" id="MachinePartId" type="PART_ID"/>
+	<DataItem category="EVENT" id="MachinePartNumber" type="PART_NUMBER"/>
+	<DataItem category="EVENT" id="MachineState" name="Status" type="EXECUTION"/>
+	<DataItem category="EVENT" id="FunctionalMode" type="FUNCTIONAL_MODE"/>
+	<DataItem category="EVENT" id="ControllerMode" type="CONTROLLER_MODE"/>
+	<DataItem category="CONDITION" id="StatusCondMotionProgram" type="MOTION_PROGRAM"/>
+	<DataItem category="CONDITION" id="StatusCond" type="PROGRAM"/>
+	<DataItem category="SAMPLE" id="WORKOFFSET_XYZ_AXIS" type="PATH_POSITION"/>
+  </DataItems>
+</Configuration>
