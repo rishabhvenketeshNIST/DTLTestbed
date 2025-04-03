@@ -1,0 +1,3 @@
+[submodule "DataPipeline/MTConnect/Agent/Installation/cppagent"]
+	path = DataPipeline/MTConnect/Agent/Installation/cppagent
+	url = https://github.com/mtconnect/cppagent
