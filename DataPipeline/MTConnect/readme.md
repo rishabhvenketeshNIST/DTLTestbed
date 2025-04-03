@@ -4,7 +4,7 @@ The MTConnect standard (ANSI/MTC1.4-2018) is a domain specific semantic vocabula
 
 For more information on the MTConnect standard refer to the documentation provided at https://www.mtconnect.org/.
 
-## Repository Description
+## Directory Description
 
 Below is an overview of the organization of this directory.
 
