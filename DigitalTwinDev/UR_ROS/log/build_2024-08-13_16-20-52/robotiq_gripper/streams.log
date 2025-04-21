@@ -1,0 +1,179 @@
+[0.007s] Invoking command in '/home/rnv3/ros2_ws/build/robotiq_gripper': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/rnv3/ros2_ws/build/robotiq_gripper -- -j24 -l24
+[0.020s] [  2%] Built target robotiq_gripper__rosidl_generator_type_description
+[0.022s] [  2%] Built target ament_cmake_python_copy_robotiq_gripper
+[0.025s] [  4%] Built target robotiq_gripper__cpp
+[0.027s] [ 20%] Built target robotiq_gripper__rosidl_generator_c
+[0.034s] [ 29%] Built target robotiq_gripper__rosidl_typesupport_introspection_c
+[0.034s] [ 39%] Built target robotiq_gripper__rosidl_typesupport_c
+[0.034s] [ 45%] Built target robotiq_gripper__rosidl_typesupport_cpp
+[0.034s] [ 54%] Built target robotiq_gripper__rosidl_typesupport_fastrtps_c
+[0.035s] [ 62%] Built target robotiq_gripper__rosidl_typesupport_introspection_cpp
+[0.035s] [ 70%] Built target robotiq_gripper__rosidl_typesupport_fastrtps_cpp
+[0.040s] [ 70%] Built target robotiq_gripper
+[0.043s] [ 75%] Built target gripper_twin
+[0.045s] [ 77%] Built target robotiq_gripper__py
+[0.045s] [ 81%] Built target rtde_control
+[0.052s] [ 87%] Built target robotiq_gripper__rosidl_generator_py
+[0.058s] [ 91%] Built target robotiq_gripper__rosidl_typesupport_fastrtps_c__pyext
+[0.058s] [ 95%] Built target robotiq_gripper__rosidl_typesupport_introspection_c__pyext
+[0.058s] [100%] Built target robotiq_gripper__rosidl_typesupport_c__pyext
+[0.133s] running egg_info
+[0.133s] writing robotiq_gripper.egg-info/PKG-INFO
+[0.133s] writing dependency_links to robotiq_gripper.egg-info/dependency_links.txt
+[0.133s] writing top-level names to robotiq_gripper.egg-info/top_level.txt
+[0.134s] reading manifest file 'robotiq_gripper.egg-info/SOURCES.txt'
+[0.134s] writing manifest file 'robotiq_gripper.egg-info/SOURCES.txt'
+[0.144s] [100%] Built target ament_cmake_python_build_robotiq_gripper_egg
+[0.147s] Invoked command in '/home/rnv3/ros2_ws/build/robotiq_gripper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/rnv3/ros2_ws/build/robotiq_gripper -- -j24 -l24
+[0.190s] Invoking command in '/home/rnv3/ros2_ws/build/robotiq_gripper': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/rnv3/ros2_ws/build/robotiq_gripper
+[0.192s] -- Install configuration: ""
+[0.192s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/ament_index/resource_index/rosidl_interfaces/robotiq_gripper
+[0.192s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/msg/GripperStatus.json
+[0.192s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/msg/GripperCommand.json
+[0.192s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper
+[0.192s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg
+[0.192s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/gripper_status.h
+[0.192s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/gripper_command.h
+[0.192s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/rosidl_generator_c__visibility_control.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__type_support.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__functions.c
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__struct.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__type_support.c
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__type_support.c
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__description.c
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__type_support.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__struct.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__functions.c
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__functions.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__description.c
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__functions.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/library_path.sh
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/library_path.dsv
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_generator_c.so
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__rosidl_typesupport_fastrtps_c.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__rosidl_typesupport_fastrtps_c.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_fastrtps_c.so
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__type_support.c
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__type_support.c
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__rosidl_typesupport_introspection_c.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__rosidl_typesupport_introspection_c.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_introspection_c.so
+[0.193s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_c.so
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__traits.hpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__builder.hpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__builder.hpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__traits.hpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__struct.hpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__struct.hpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/gripper_status.hpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/gripper_command.hpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__rosidl_typesupport_fastrtps_cpp.hpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/dds_fastrtps
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__rosidl_typesupport_fastrtps_cpp.hpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_fastrtps_cpp.so
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__type_support.cpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__type_support.cpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__rosidl_typesupport_introspection_cpp.hpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__rosidl_typesupport_introspection_cpp.hpp
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_introspection_cpp.so
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_cpp.so
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/pythonpath.sh
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/pythonpath.dsv
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper-0.0.0-py3.10.egg-info
+[0.194s] -- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper-0.0.0-py3.10.egg-info/PKG-INFO
+[0.194s] -- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.194s] -- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.194s] -- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper-0.0.0-py3.10.egg-info/top_level.txt
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/_robotiq_gripper_s.ep.rosidl_typesupport_c.c
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/_robotiq_gripper_s.ep.rosidl_typesupport_introspection_c.c
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/librobotiq_gripper__rosidl_generator_py.so
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/_robotiq_gripper_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.194s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg
+[0.195s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/_gripper_status.py
+[0.195s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/_gripper_command_s.c
+[0.195s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/_gripper_status_s.c
+[0.195s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/_gripper_command.py
+[0.195s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/__init__.py
+[0.195s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/__init__.py
+[0.208s] Listing '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper'...
+[0.208s] Listing '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg'...
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_generator_py.so
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/msg/GripperStatus.idl
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/msg/GripperCommand.idl
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/msg/GripperStatus.msg
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/msg/GripperCommand.msg
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/robotiq_gripper/gripper_twin
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/robotiq_gripper/rtde_control
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper
+[0.210s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_utils.hpp
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper//launch
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper//launch/view_gripper.launch.py
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper//rviz
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper//rviz/view_urdf.rviz
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/ament_index/resource_index/package_run_dependencies/robotiq_gripper
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/ament_index/resource_index/parent_prefix_path/robotiq_gripper
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/ament_prefix_path.sh
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/ament_prefix_path.dsv
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/path.sh
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/path.dsv
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/local_setup.bash
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/local_setup.sh
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/local_setup.zsh
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/local_setup.dsv
+[0.211s] -- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/package.dsv
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/ament_index/resource_index/packages/robotiq_gripper
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_generator_cExport.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_generator_cExport-noconfig.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_typesupport_fastrtps_cExport.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_introspection_cExport.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_cExport.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_cExport-noconfig.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_generator_cppExport.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_introspection_cppExport.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_cppExport.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_cppExport-noconfig.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_generator_pyExport.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_generator_pyExport-noconfig.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/rosidl_cmake-extras.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.211s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/ament_cmake_export_libraries-extras.cmake
+[0.212s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/ament_cmake_export_targets-extras.cmake
+[0.212s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.212s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.212s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.212s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripperConfig.cmake
+[0.212s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripperConfig-version.cmake
+[0.212s] -- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/package.xml
+[0.212s] Invoked command in '/home/rnv3/ros2_ws/build/robotiq_gripper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/rnv3/ros2_ws/build/robotiq_gripper

@@ -1,0 +1,109 @@
+[0.005s] Invoking command in '/home/rnv3/ros2_ws/build/integrated_ur_robotiq': CMAKE_PREFIX_PATH=/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/opt/ros/iron /usr/bin/cmake /home/rnv3/ros2_ws/src/integrated_ur_robotiq -DCMAKE_INSTALL_PREFIX=/home/rnv3/ros2_ws/install/integrated_ur_robotiq
+[0.030s] -- The C compiler identification is GNU 11.4.0
+[0.058s] -- The CXX compiler identification is GNU 11.4.0
+[0.066s] -- Detecting C compiler ABI info
+[0.100s] -- Detecting C compiler ABI info - done
+[0.104s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.104s] -- Detecting C compile features
+[0.104s] -- Detecting C compile features - done
+[0.109s] -- Detecting CXX compiler ABI info
+[0.148s] -- Detecting CXX compiler ABI info - done
+[0.153s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.153s] -- Detecting CXX compile features
+[0.153s] -- Detecting CXX compile features - done
+[0.155s] -- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.527s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.581s] -- Found rclcpp: 21.0.7 (/opt/ros/iron/share/rclcpp/cmake)
+[0.609s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.616s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.626s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.638s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.731s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[0.733s] -- Found rmw_fastrtps_cpp: 7.1.4 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[0.789s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.806s] -- Found FastRTPS: /opt/ros/iron/include  
+[0.832s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.925s] -- Found sensor_msgs: 5.0.1 (/opt/ros/iron/share/sensor_msgs/cmake)
+[1.040s] -- Found trajectory_msgs: 5.0.1 (/opt/ros/iron/share/trajectory_msgs/cmake)
+[1.084s] -- Found std_srvs: 5.0.1 (/opt/ros/iron/share/std_srvs/cmake)
+[1.110s] -- Found robotiq_gripper: 0.0.0 (/home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake)
+[1.118s] -- Found moveit_msgs: 2.3.0 (/opt/ros/iron/share/moveit_msgs/cmake)
+[1.636s] -- Found moveit_ros_planning: 2.8.0 (/opt/ros/iron/share/moveit_ros_planning/cmake)
+[1.690s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.718s] -- Found parameter_traits: 0.3.8 (/opt/ros/iron/share/parameter_traits/cmake)
+[1.733s] -- Found rclcpp_lifecycle: 21.0.7 (/opt/ros/iron/share/rclcpp_lifecycle/cmake)
+[2.038s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.059s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.105s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[2.216s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.216s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.566s] -- Found moveit_ros_planning_interface: 2.8.0 (/opt/ros/iron/share/moveit_ros_planning_interface/cmake)
+[2.569s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[2.677s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[2.806s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[3.128s] -- Configuring done (3.1s)
+[3.156s] -- Generating done (0.0s)
+[3.158s] -- Build files have been written to: /home/rnv3/ros2_ws/build/integrated_ur_robotiq
+[3.165s] Invoked command in '/home/rnv3/ros2_ws/build/integrated_ur_robotiq' returned '0': CMAKE_PREFIX_PATH=/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/opt/ros/iron /usr/bin/cmake /home/rnv3/ros2_ws/src/integrated_ur_robotiq -DCMAKE_INSTALL_PREFIX=/home/rnv3/ros2_ws/install/integrated_ur_robotiq
+[3.165s] Invoking command in '/home/rnv3/ros2_ws/build/integrated_ur_robotiq': CMAKE_PREFIX_PATH=/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/opt/ros/iron /usr/bin/cmake --build /home/rnv3/ros2_ws/build/integrated_ur_robotiq -- -j24 -l24
+[3.182s] [ 10%] [32mBuilding CXX object CMakeFiles/synchronizer.dir/src/synchronizer.cpp.o[0m
+[3.182s] [ 20%] [32mBuilding CXX object CMakeFiles/ur_pose_monitor.dir/src/ur_pose_monitor.cpp.o[0m
+[3.182s] [ 30%] [32mBuilding CXX object CMakeFiles/ur_trajectory_comparator.dir/src/ur_trajectory_comparator.cpp.o[0m
+[3.182s] [ 40%] [32mBuilding CXX object CMakeFiles/integrated_ui.dir/src/integrated_ui.cpp.o[0m
+[3.182s] [ 50%] [32mBuilding CXX object CMakeFiles/integrated_control_test.dir/src/integrated_control_test.cpp.o[0m
+[7.062s] [ 60%] [32m[1mLinking CXX executable ur_trajectory_comparator[0m
+[7.172s] [ 70%] [32m[1mLinking CXX executable synchronizer[0m
+[7.260s] [ 70%] Built target ur_trajectory_comparator
+[7.383s] [ 70%] Built target synchronizer
+[8.479s] [ 80%] [32m[1mLinking CXX executable integrated_ui[0m
+[8.797s] [ 80%] Built target integrated_ui
+[9.650s] [ 90%] [32m[1mLinking CXX executable ur_pose_monitor[0m
+[9.876s] [100%] [32m[1mLinking CXX executable integrated_control_test[0m
+[10.058s] [100%] Built target ur_pose_monitor
+[10.225s] [100%] Built target integrated_control_test
+[10.235s] Invoked command in '/home/rnv3/ros2_ws/build/integrated_ur_robotiq' returned '0': CMAKE_PREFIX_PATH=/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/opt/ros/iron /usr/bin/cmake --build /home/rnv3/ros2_ws/build/integrated_ur_robotiq -- -j24 -l24
+[10.255s] Invoking command in '/home/rnv3/ros2_ws/build/integrated_ur_robotiq': CMAKE_PREFIX_PATH=/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/opt/ros/iron /usr/bin/cmake --install /home/rnv3/ros2_ws/build/integrated_ur_robotiq
+[10.257s] -- Install configuration: ""
+[10.257s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/include
+[10.257s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/include/integrated_ur_robotiq
+[10.257s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/include/integrated_ur_robotiq/integrated_control.hpp
+[10.257s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ursim_init.py
+[10.257s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_dashboard_terminal.py
+[10.257s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ursim_play.py
+[10.257s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ursim_stop.py
+[10.258s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/synchronizer
+[10.260s] -- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/synchronizer" to ""
+[10.260s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_pose_monitor
+[10.263s] -- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_pose_monitor" to ""
+[10.263s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_trajectory_comparator
+[10.265s] -- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_trajectory_comparator" to ""
+[10.265s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/integrated_ui
+[10.269s] -- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/integrated_ui" to ""
+[10.269s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/integrated_control_test
+[10.272s] -- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/integrated_control_test" to ""
+[10.272s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch
+[10.272s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/physical.launch.py
+[10.272s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/ur_control.launch.py
+[10.272s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/digital.launch.py
+[10.272s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/ur_sim.launch.py
+[10.272s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/everything.launch.py
+[10.272s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/integrated.launch.py
+[10.272s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//config
+[10.272s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//config/digital_controllers.yaml
+[10.272s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//config/physical_controllers.yaml
+[10.272s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/ament_index/resource_index/package_run_dependencies/integrated_ur_robotiq
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/ament_index/resource_index/parent_prefix_path/integrated_ur_robotiq
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/environment/ament_prefix_path.sh
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/environment/ament_prefix_path.dsv
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/environment/path.sh
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/environment/path.dsv
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/local_setup.bash
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/local_setup.sh
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/local_setup.zsh
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/local_setup.dsv
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/package.dsv
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/ament_index/resource_index/packages/integrated_ur_robotiq
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/cmake/integrated_ur_robotiqConfig.cmake
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/cmake/integrated_ur_robotiqConfig-version.cmake
+[10.273s] -- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/package.xml
+[10.274s] Invoked command in '/home/rnv3/ros2_ws/build/integrated_ur_robotiq' returned '0': CMAKE_PREFIX_PATH=/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/opt/ros/iron /usr/bin/cmake --install /home/rnv3/ros2_ws/build/integrated_ur_robotiq

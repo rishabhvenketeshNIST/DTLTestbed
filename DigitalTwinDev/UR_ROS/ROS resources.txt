@@ -1,0 +1,27 @@
+ROS name remapping:
+https://design.ros2.org/articles/static_remapping.html
+
+Gripper Communication
+Original discussion:
+https://dof.robotiq.com/discussion/1962/programming-options-ur16e-2f-85
+
+ROS node source:
+https://gist.github.com/felixvd/d538cad3150e9cac28dae0a3132701cf
+
+ROS dependency of above node:
+https://github.com/cambel/robotiq
+
+RobotIQ: 
+UR_RTDE: https://sdurobotics.gitlab.io/ur_rtde/api/api.html
+
+Multi-robot setup in ROS 2:
+https://forum.universal-robots.com/t/multiple-robot-workcell-with-moveit-in-ros-2/34129/6
+https://moveit.picknik.ai/main/doc/examples/dual_arms/dual_arms_tutorial.html
+https://github.com/catmulti7/dual_ur_ros_2
+https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/pull/70
+
+UR Resources
+UR robot driver usage: https://docs.ros.org/en/ros2_packages/rolling/api/ur_robot_driver/usage.html
+UR robot driver setup: https://docs.ros.org/en/ros2_packages/rolling/api/ur_robot_driver/user_docs/installation/robot_setup.html#calibration-extraction
+UR robot driver multi-bot config issue: https://github.com/UniversalRobots/Universal_Robots_ROS_Driver/issues/81
+

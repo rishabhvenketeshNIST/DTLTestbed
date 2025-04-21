@@ -1,0 +1,58 @@
+[0.005s] Invoking command in '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/rnv3/ros2_ws/src/ur_robotiq_moveit_config -DCMAKE_INSTALL_PREFIX=/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config
+[0.050s] -- The C compiler identification is GNU 11.4.0
+[0.079s] -- The CXX compiler identification is GNU 11.4.0
+[0.088s] -- Detecting C compiler ABI info
+[0.122s] -- Detecting C compiler ABI info - done
+[0.127s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.127s] -- Detecting C compile features
+[0.127s] -- Detecting C compile features - done
+[0.132s] -- Detecting CXX compiler ABI info
+[0.171s] -- Detecting CXX compiler ABI info - done
+[0.176s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.176s] -- Detecting CXX compile features
+[0.176s] -- Detecting CXX compile features - done
+[0.178s] -- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.545s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.595s] -- Found ur_moveit_config: 2.3.9 (/opt/ros/iron/share/ur_moveit_config/cmake)
+[0.626s] -- Configuring done (0.6s)
+[0.627s] -- Generating done (0.0s)
+[0.628s] -- Build files have been written to: /home/rnv3/ros2_ws/build/ur_robotiq_moveit_config
+[0.630s] Invoked command in '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake /home/rnv3/ros2_ws/src/ur_robotiq_moveit_config -DCMAKE_INSTALL_PREFIX=/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config
+[0.631s] Invoking command in '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/rnv3/ros2_ws/build/ur_robotiq_moveit_config -- -j24 -l24
+[0.641s] Invoked command in '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/rnv3/ros2_ws/build/ur_robotiq_moveit_config -- -j24 -l24
+[0.652s] Invoking command in '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/rnv3/ros2_ws/build/ur_robotiq_moveit_config
+[0.654s] -- Install configuration: ""
+[0.654s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//launch
+[0.654s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//launch/digital_ur_robotiq_moveit.launch.py
+[0.654s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//launch/ur_moveit.launch.py
+[0.654s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//launch/run.launch.py
+[0.655s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//launch/ur_robotiq_moveit.launch.py
+[0.655s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config
+[0.655s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/kinematics.yaml
+[0.655s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/joint_limits.yaml
+[0.655s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/controllers.yaml
+[0.655s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/ompl_planning.yaml
+[0.655s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/digital_controllers.yaml
+[0.655s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/ur_servo.yaml
+[0.655s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/digital_kinematics.yaml
+[0.655s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//srdf
+[0.655s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//srdf/ur_robotiq.srdf.xacro
+[0.656s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//srdf/ur_robotiq_macro.srdf.xacro
+[0.656s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//rviz
+[0.656s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//rviz/view_robot.rviz
+[0.656s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ament_index/resource_index/package_run_dependencies/ur_robotiq_moveit_config
+[0.656s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ament_index/resource_index/parent_prefix_path/ur_robotiq_moveit_config
+[0.656s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/environment/ament_prefix_path.sh
+[0.656s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/environment/ament_prefix_path.dsv
+[0.656s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/environment/path.sh
+[0.656s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/environment/path.dsv
+[0.656s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/local_setup.bash
+[0.657s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/local_setup.sh
+[0.657s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/local_setup.zsh
+[0.657s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/local_setup.dsv
+[0.657s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/package.dsv
+[0.657s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ament_index/resource_index/packages/ur_robotiq_moveit_config
+[0.657s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/cmake/ur_robotiq_moveit_configConfig.cmake
+[0.657s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/cmake/ur_robotiq_moveit_configConfig-version.cmake
+[0.657s] -- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/package.xml
+[0.658s] Invoked command in '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/rnv3/ros2_ws/build/ur_robotiq_moveit_config

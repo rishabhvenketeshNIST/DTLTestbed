@@ -1,0 +1,785 @@
+[0.000000] (-) TimerEvent: {}
+[0.000108] (robotiq_gripper) JobQueued: {'identifier': 'robotiq_gripper', 'dependencies': OrderedDict()}
+[0.000185] (ur_robotiq_description) JobQueued: {'identifier': 'ur_robotiq_description', 'dependencies': OrderedDict()}
+[0.000195] (ur_robotiq_moveit_config) JobQueued: {'identifier': 'ur_robotiq_moveit_config', 'dependencies': OrderedDict()}
+[0.000203] (integrated_ur_robotiq) JobQueued: {'identifier': 'integrated_ur_robotiq', 'dependencies': OrderedDict([('robotiq_gripper', '/home/rnv3/ros2_ws/install/robotiq_gripper'), ('ur_robotiq_description', '/home/rnv3/ros2_ws/install/ur_robotiq_description')])}
+[0.000345] (robotiq_gripper) JobStarted: {'identifier': 'robotiq_gripper'}
+[0.003089] (ur_robotiq_description) JobStarted: {'identifier': 'ur_robotiq_description'}
+[0.004581] (ur_robotiq_moveit_config) JobStarted: {'identifier': 'ur_robotiq_moveit_config'}
+[0.006593] (robotiq_gripper) JobProgress: {'identifier': 'robotiq_gripper', 'progress': 'cmake'}
+[0.006668] (robotiq_gripper) Command: {'cmd': ['/usr/bin/cmake', '/home/rnv3/ros2_ws/src/robotiq_gripper', '-DCMAKE_INSTALL_PREFIX=/home/rnv3/ros2_ws/install/robotiq_gripper'], 'cwd': '/home/rnv3/ros2_ws/build/robotiq_gripper', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rnv3'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/rnv3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rnv3/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rnv3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rnv3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/rnv3/.local/bin:/home/rnv3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Banner:@/tmp/.ICE-unix/3479,unix/Banner:/tmp/.ICE-unix/3479'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5ffd6539_13cf_4551_9cde_0b70af71347b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.487'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '11'), ('AMENT_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rnv3/ros2_ws/build/robotiq_gripper'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'vi'), ('CMAKE_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron')]), 'shell': False}
+[0.007778] (ur_robotiq_description) JobProgress: {'identifier': 'ur_robotiq_description', 'progress': 'cmake'}
+[0.007916] (ur_robotiq_description) Command: {'cmd': ['/usr/bin/cmake', '/home/rnv3/ros2_ws/src/ur_robotiq_description', '-DCMAKE_INSTALL_PREFIX=/home/rnv3/ros2_ws/install/ur_robotiq_description'], 'cwd': '/home/rnv3/ros2_ws/build/ur_robotiq_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rnv3'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/rnv3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rnv3/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rnv3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rnv3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/rnv3/.local/bin:/home/rnv3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Banner:@/tmp/.ICE-unix/3479,unix/Banner:/tmp/.ICE-unix/3479'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5ffd6539_13cf_4551_9cde_0b70af71347b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.487'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '11'), ('AMENT_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rnv3/ros2_ws/build/ur_robotiq_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'vi'), ('CMAKE_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron')]), 'shell': False}
+[0.009178] (ur_robotiq_moveit_config) JobProgress: {'identifier': 'ur_robotiq_moveit_config', 'progress': 'cmake'}
+[0.009310] (ur_robotiq_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '/home/rnv3/ros2_ws/src/ur_robotiq_moveit_config', '-DCMAKE_INSTALL_PREFIX=/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config'], 'cwd': '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rnv3'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/rnv3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rnv3/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rnv3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rnv3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/rnv3/.local/bin:/home/rnv3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Banner:@/tmp/.ICE-unix/3479,unix/Banner:/tmp/.ICE-unix/3479'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5ffd6539_13cf_4551_9cde_0b70af71347b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.487'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '11'), ('AMENT_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'vi'), ('CMAKE_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron')]), 'shell': False}
+[0.054713] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.054858] (robotiq_gripper) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.054895] (ur_robotiq_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.083804] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.083910] (ur_robotiq_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.084441] (robotiq_gripper) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.092312] (ur_robotiq_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.092411] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.092790] (robotiq_gripper) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099902] (-) TimerEvent: {}
+[0.126399] (robotiq_gripper) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.126561] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.126595] (ur_robotiq_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.130767] (robotiq_gripper) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.131096] (robotiq_gripper) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.131400] (robotiq_gripper) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.131874] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.132027] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.132232] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.133258] (ur_robotiq_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.133438] (ur_robotiq_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.133639] (ur_robotiq_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.137088] (robotiq_gripper) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.137205] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.138331] (ur_robotiq_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.175703] (ur_robotiq_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.176026] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.176703] (robotiq_gripper) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.180219] (ur_robotiq_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.180392] (ur_robotiq_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.180581] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.180628] (ur_robotiq_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.180753] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.180988] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.181207] (robotiq_gripper) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.181375] (robotiq_gripper) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.181621] (robotiq_gripper) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.182040] (ur_robotiq_description) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[0.182318] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[0.182856] (robotiq_gripper) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[0.199980] (-) TimerEvent: {}
+[0.300167] (-) TimerEvent: {}
+[0.400347] (-) TimerEvent: {}
+[0.500581] (-) TimerEvent: {}
+[0.549327] (robotiq_gripper) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.549606] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.551930] (ur_robotiq_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.599639] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Found ur_moveit_config: 2.3.9 (/opt/ros/iron/share/ur_moveit_config/cmake)\n'}
+[0.600648] (-) TimerEvent: {}
+[0.603727] (robotiq_gripper) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)\n'}
+[0.606848] (robotiq_gripper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.630303] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Configuring done (0.6s)\n'}
+[0.631883] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.632377] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Build files have been written to: /home/rnv3/ros2_ws/build/ur_robotiq_moveit_config\n'}
+[0.632823] (robotiq_gripper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.634685] (ur_robotiq_moveit_config) CommandEnded: {'returncode': 0}
+[0.634899] (ur_robotiq_description) StdoutLine: {'line': b'-- Configuring done (0.6s)\n'}
+[0.635068] (ur_robotiq_moveit_config) JobProgress: {'identifier': 'ur_robotiq_moveit_config', 'progress': 'build'}
+[0.635590] (ur_robotiq_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config', '--', '-j24', '-l24'], 'cwd': '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rnv3'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/rnv3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rnv3/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rnv3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rnv3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/rnv3/.local/bin:/home/rnv3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Banner:@/tmp/.ICE-unix/3479,unix/Banner:/tmp/.ICE-unix/3479'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5ffd6539_13cf_4551_9cde_0b70af71347b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.487'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '11'), ('AMENT_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'vi'), ('CMAKE_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron')]), 'shell': False}
+[0.636529] (ur_robotiq_description) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.636899] (ur_robotiq_description) StdoutLine: {'line': b'-- Build files have been written to: /home/rnv3/ros2_ws/build/ur_robotiq_description\n'}
+[0.638872] (ur_robotiq_description) CommandEnded: {'returncode': 0}
+[0.639205] (ur_robotiq_description) JobProgress: {'identifier': 'ur_robotiq_description', 'progress': 'build'}
+[0.639461] (ur_robotiq_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rnv3/ros2_ws/build/ur_robotiq_description', '--', '-j24', '-l24'], 'cwd': '/home/rnv3/ros2_ws/build/ur_robotiq_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rnv3'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/rnv3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rnv3/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rnv3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rnv3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/rnv3/.local/bin:/home/rnv3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Banner:@/tmp/.ICE-unix/3479,unix/Banner:/tmp/.ICE-unix/3479'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5ffd6539_13cf_4551_9cde_0b70af71347b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.487'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '11'), ('AMENT_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rnv3/ros2_ws/build/ur_robotiq_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'vi'), ('CMAKE_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron')]), 'shell': False}
+[0.645418] (ur_robotiq_moveit_config) CommandEnded: {'returncode': 0}
+[0.648906] (ur_robotiq_description) CommandEnded: {'returncode': 0}
+[0.654608] (ur_robotiq_moveit_config) JobProgress: {'identifier': 'ur_robotiq_moveit_config', 'progress': 'install'}
+[0.655953] (robotiq_gripper) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)\n'}
+[0.656743] (ur_robotiq_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config'], 'cwd': '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rnv3'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/rnv3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rnv3/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rnv3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rnv3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/rnv3/.local/bin:/home/rnv3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Banner:@/tmp/.ICE-unix/3479,unix/Banner:/tmp/.ICE-unix/3479'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5ffd6539_13cf_4551_9cde_0b70af71347b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.487'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '11'), ('AMENT_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rnv3/ros2_ws/build/ur_robotiq_moveit_config'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'vi'), ('CMAKE_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron')]), 'shell': False}
+[0.657820] (ur_robotiq_description) JobProgress: {'identifier': 'ur_robotiq_description', 'progress': 'install'}
+[0.658025] (ur_robotiq_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rnv3/ros2_ws/build/ur_robotiq_description'], 'cwd': '/home/rnv3/ros2_ws/build/ur_robotiq_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rnv3'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/rnv3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rnv3/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rnv3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rnv3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/rnv3/.local/bin:/home/rnv3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Banner:@/tmp/.ICE-unix/3479,unix/Banner:/tmp/.ICE-unix/3479'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5ffd6539_13cf_4551_9cde_0b70af71347b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.487'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '11'), ('AMENT_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rnv3/ros2_ws/build/ur_robotiq_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'vi'), ('CMAKE_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron')]), 'shell': False}
+[0.658719] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.658810] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//launch\n'}
+[0.658875] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//launch/digital_ur_robotiq_moveit.launch.py\n'}
+[0.659094] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//launch/ur_moveit.launch.py\n'}
+[0.659238] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//launch/run.launch.py\n'}
+[0.659319] (robotiq_gripper) StdoutLine: {'line': b'-- Found rclcpp: 21.0.7 (/opt/ros/iron/share/rclcpp/cmake)\n'}
+[0.659372] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//launch/ur_robotiq_moveit.launch.py\n'}
+[0.659409] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config\n'}
+[0.659458] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/kinematics.yaml\n'}
+[0.659508] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/joint_limits.yaml\n'}
+[0.659618] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/controllers.yaml\n'}
+[0.659726] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/ompl_planning.yaml\n'}
+[0.659841] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/digital_controllers.yaml\n'}
+[0.659952] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/ur_servo.yaml\n'}
+[0.660023] (ur_robotiq_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.660093] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//launch\n'}
+[0.660119] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//config/digital_kinematics.yaml\n'}
+[0.660177] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//launch/view_robot.launch.py\n'}
+[0.660208] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//srdf\n'}
+[0.660249] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//srdf/ur_robotiq.srdf.xacro\n'}
+[0.660341] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//srdf/ur_robotiq_macro.srdf.xacro\n'}
+[0.660398] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//rviz\n'}
+[0.660433] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config//rviz/view_robot.rviz\n'}
+[0.660481] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//urdf\n'}
+[0.660513] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//urdf/ur_robotiq.urdf.xacro\n'}
+[0.660551] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config\n'}
+[0.660586] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur10\n'}
+[0.660608] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur10/visual_parameters.yaml\n'}
+[0.660650] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ament_index/resource_index/package_run_dependencies/ur_robotiq_moveit_config\n'}
+[0.660690] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur10/joint_limits.yaml\n'}
+[0.660725] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ament_index/resource_index/parent_prefix_path/ur_robotiq_moveit_config\n'}
+[0.660787] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur10/default_kinematics.yaml\n'}
+[0.660813] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/environment/ament_prefix_path.sh\n'}
+[0.660849] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/environment/ament_prefix_path.dsv\n'}
+[0.660901] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur10/physical_parameters.yaml\n'}
+[0.660933] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/environment/path.sh\n'}
+[0.660990] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/environment/path.dsv\n'}
+[0.661024] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur3e\n'}
+[0.661068] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/local_setup.bash\n'}
+[0.661091] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur3e/visual_parameters.yaml\n'}
+[0.661159] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur3e/joint_limits.yaml\n'}
+[0.661274] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur3e/default_kinematics.yaml\n'}
+[0.661313] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/local_setup.sh\n'}
+[0.661362] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/local_setup.zsh\n'}
+[0.661396] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur3e/physical_parameters.yaml\n'}
+[0.661428] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/local_setup.dsv\n'}
+[0.661487] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/package.dsv\n'}
+[0.661520] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur10e\n'}
+[0.661559] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur10e/visual_parameters.yaml\n'}
+[0.661598] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ament_index/resource_index/packages/ur_robotiq_moveit_config\n'}
+[0.661637] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/cmake/ur_robotiq_moveit_configConfig.cmake\n'}
+[0.661675] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur10e/joint_limits.yaml\n'}
+[0.661713] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/cmake/ur_robotiq_moveit_configConfig-version.cmake\n'}
+[0.661763] (ur_robotiq_moveit_config) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_moveit_config/share/ur_robotiq_moveit_config/package.xml\n'}
+[0.661786] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur10e/default_kinematics.yaml\n'}
+[0.661879] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur10e/physical_parameters.yaml\n'}
+[0.661997] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur3\n'}
+[0.662026] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur3/visual_parameters.yaml\n'}
+[0.662135] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur3/joint_limits.yaml\n'}
+[0.662250] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur3/default_kinematics.yaml\n'}
+[0.662377] (ur_robotiq_moveit_config) CommandEnded: {'returncode': 0}
+[0.662580] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur3/physical_parameters.yaml\n'}
+[0.662648] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/initial_positions.yaml\n'}
+[0.662831] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur16e\n'}
+[0.662914] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur16e/visual_parameters.yaml\n'}
+[0.663087] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur16e/joint_limits.yaml\n'}
+[0.663279] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur16e/default_kinematics.yaml\n'}
+[0.663452] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur16e/physical_parameters.yaml\n'}
+[0.663589] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur30\n'}
+[0.663631] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur30/visual_parameters.yaml\n'}
+[0.663918] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur30/joint_limits.yaml\n'}
+[0.664057] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur30/default_kinematics.yaml\n'}
+[0.664269] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur30/physical_parameters.yaml\n'}
+[0.664427] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur5\n'}
+[0.664623] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur5/visual_parameters.yaml\n'}
+[0.664672] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur5/joint_limits.yaml\n'}
+[0.664865] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur5/default_kinematics.yaml\n'}
+[0.664996] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur5/physical_parameters.yaml\n'}
+[0.665132] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur5e\n'}
+[0.665163] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur5e/visual_parameters.yaml\n'}
+[0.665266] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur5e/joint_limits.yaml\n'}
+[0.665478] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur5e/default_kinematics.yaml\n'}
+[0.665538] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur5e/physical_parameters.yaml\n'}
+[0.665735] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur20\n'}
+[0.665768] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur20/visual_parameters.yaml\n'}
+[0.665792] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur20/joint_limits.yaml\n'}
+[0.665863] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur20/default_kinematics.yaml\n'}
+[0.666306] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//config/ur20/physical_parameters.yaml\n'}
+[0.666334] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//rviz\n'}
+[0.666358] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description//rviz/view_robot.rviz\n'}
+[0.666390] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ament_index/resource_index/package_run_dependencies/ur_robotiq_description\n'}
+[0.666673] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ament_index/resource_index/parent_prefix_path/ur_robotiq_description\n'}
+[0.666760] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description/environment/ament_prefix_path.sh\n'}
+[0.666957] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description/environment/ament_prefix_path.dsv\n'}
+[0.666993] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description/environment/path.sh\n'}
+[0.667102] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description/environment/path.dsv\n'}
+[0.667340] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description/local_setup.bash\n'}
+[0.667378] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description/local_setup.sh\n'}
+[0.667474] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description/local_setup.zsh\n'}
+[0.667704] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description/local_setup.dsv\n'}
+[0.667760] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description/package.dsv\n'}
+[0.667856] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ament_index/resource_index/packages/ur_robotiq_description\n'}
+[0.668135] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description/cmake/ur_robotiq_descriptionConfig.cmake\n'}
+[0.668166] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description/cmake/ur_robotiq_descriptionConfig-version.cmake\n'}
+[0.668266] (ur_robotiq_description) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/ur_robotiq_description/share/ur_robotiq_description/package.xml\n'}
+[0.669333] (ur_robotiq_description) CommandEnded: {'returncode': 0}
+[0.680769] (ur_robotiq_moveit_config) JobEnded: {'identifier': 'ur_robotiq_moveit_config', 'rc': 0}
+[0.684663] (ur_robotiq_description) JobEnded: {'identifier': 'ur_robotiq_description', 'rc': 0}
+[0.700724] (-) TimerEvent: {}
+[0.759687] (robotiq_gripper) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)\n'}
+[0.761295] (robotiq_gripper) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 7.1.4 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800810] (-) TimerEvent: {}
+[0.825649] (robotiq_gripper) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.842137] (robotiq_gripper) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/iron/include  \n'}
+[0.867639] (robotiq_gripper) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.900893] (-) TimerEvent: {}
+[1.001087] (-) TimerEvent: {}
+[1.028021] (robotiq_gripper) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system thread \n'}
+[1.029641] (robotiq_gripper) StdoutLine: {'line': b'-- Found sensor_msgs: 5.0.1 (/opt/ros/iron/share/sensor_msgs/cmake)\n'}
+[1.101170] (-) TimerEvent: {}
+[1.201390] (-) TimerEvent: {}
+[1.301574] (-) TimerEvent: {}
+[1.401776] (-) TimerEvent: {}
+[1.410993] (robotiq_gripper) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)\n'}
+[1.501856] (-) TimerEvent: {}
+[1.602061] (-) TimerEvent: {}
+[1.614144] (robotiq_gripper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.702142] (-) TimerEvent: {}
+[1.802318] (-) TimerEvent: {}
+[1.893418] (robotiq_gripper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.894522] (robotiq_gripper) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/iron/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):\n'}
+[1.894572] (robotiq_gripper) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[1.894604] (robotiq_gripper) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[1.894627] (robotiq_gripper) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[1.894648] (robotiq_gripper) StderrLine: {'line': b'\n'}
+[1.894669] (robotiq_gripper) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.894690] (robotiq_gripper) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[1.894710] (robotiq_gripper) StderrLine: {'line': b'  /opt/ros/iron/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:316 (ament_execute_extensions)\n'}
+[1.894730] (robotiq_gripper) StderrLine: {'line': b'  CMakeLists.txt:19 (rosidl_generate_interfaces)\n'}
+[1.894750] (robotiq_gripper) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.894771] (robotiq_gripper) StderrLine: {'line': b'\x1b[0m\n'}
+[1.902380] (-) TimerEvent: {}
+[1.904867] (robotiq_gripper) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.905983] (robotiq_gripper) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)\n'}
+[1.906227] (robotiq_gripper) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/iron/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):\n'}
+[1.906257] (robotiq_gripper) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[1.906281] (robotiq_gripper) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[1.906302] (robotiq_gripper) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[1.906323] (robotiq_gripper) StderrLine: {'line': b'\n'}
+[1.906343] (robotiq_gripper) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.906365] (robotiq_gripper) StderrLine: {'line': b'  /opt/ros/iron/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[1.906386] (robotiq_gripper) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[1.906412] (robotiq_gripper) StderrLine: {'line': b'  /opt/ros/iron/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:316 (ament_execute_extensions)\n'}
+[1.906432] (robotiq_gripper) StderrLine: {'line': b'  CMakeLists.txt:19 (rosidl_generate_interfaces)\n'}
+[1.906453] (robotiq_gripper) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.906473] (robotiq_gripper) StderrLine: {'line': b'\x1b[0m\n'}
+[1.916183] (robotiq_gripper) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/iron/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):\n'}
+[1.916254] (robotiq_gripper) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[1.916280] (robotiq_gripper) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[1.916302] (robotiq_gripper) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[1.916330] (robotiq_gripper) StderrLine: {'line': b'\n'}
+[1.916350] (robotiq_gripper) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.916374] (robotiq_gripper) StderrLine: {'line': b'  /opt/ros/iron/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[1.916398] (robotiq_gripper) StderrLine: {'line': b'  /opt/ros/iron/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[1.916432] (robotiq_gripper) StderrLine: {'line': b'  /opt/ros/iron/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:316 (ament_execute_extensions)\n'}
+[1.916463] (robotiq_gripper) StderrLine: {'line': b'  CMakeLists.txt:19 (rosidl_generate_interfaces)\n'}
+[1.916484] (robotiq_gripper) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.916503] (robotiq_gripper) StderrLine: {'line': b'\x1b[0m\n'}
+[1.920685] (robotiq_gripper) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.920754] (robotiq_gripper) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.920780] (robotiq_gripper) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.920801] (robotiq_gripper) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.931529] (robotiq_gripper) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.954202] (robotiq_gripper) StdoutLine: {'line': b'-- Configuring done (1.9s)\n'}
+[1.975835] (robotiq_gripper) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.977832] (robotiq_gripper) StdoutLine: {'line': b'-- Build files have been written to: /home/rnv3/ros2_ws/build/robotiq_gripper\n'}
+[1.983929] (robotiq_gripper) CommandEnded: {'returncode': 0}
+[1.984234] (robotiq_gripper) JobProgress: {'identifier': 'robotiq_gripper', 'progress': 'build'}
+[1.984358] (robotiq_gripper) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rnv3/ros2_ws/build/robotiq_gripper', '--', '-j24', '-l24'], 'cwd': '/home/rnv3/ros2_ws/build/robotiq_gripper', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rnv3'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/rnv3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rnv3/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rnv3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rnv3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/rnv3/.local/bin:/home/rnv3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Banner:@/tmp/.ICE-unix/3479,unix/Banner:/tmp/.ICE-unix/3479'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5ffd6539_13cf_4551_9cde_0b70af71347b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.487'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '11'), ('AMENT_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rnv3/ros2_ws/build/robotiq_gripper'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'vi'), ('CMAKE_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron')]), 'shell': False}
+[1.999928] (robotiq_gripper) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[2.001582] (robotiq_gripper) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_robotiq_gripper\n'}
+[2.002460] (-) TimerEvent: {}
+[2.102651] (-) TimerEvent: {}
+[2.116427] (robotiq_gripper) StdoutLine: {'line': b'running egg_info\n'}
+[2.116669] (robotiq_gripper) StdoutLine: {'line': b'creating robotiq_gripper.egg-info\n'}
+[2.116752] (robotiq_gripper) StdoutLine: {'line': b'writing robotiq_gripper.egg-info/PKG-INFO\n'}
+[2.116833] (robotiq_gripper) StdoutLine: {'line': b'writing dependency_links to robotiq_gripper.egg-info/dependency_links.txt\n'}
+[2.116893] (robotiq_gripper) StdoutLine: {'line': b'writing top-level names to robotiq_gripper.egg-info/top_level.txt\n'}
+[2.116968] (robotiq_gripper) StdoutLine: {'line': b"writing manifest file 'robotiq_gripper.egg-info/SOURCES.txt'\n"}
+[2.117785] (robotiq_gripper) StdoutLine: {'line': b"reading manifest file 'robotiq_gripper.egg-info/SOURCES.txt'\n"}
+[2.118079] (robotiq_gripper) StdoutLine: {'line': b"writing manifest file 'robotiq_gripper.egg-info/SOURCES.txt'\n"}
+[2.129117] (robotiq_gripper) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_robotiq_gripper_egg\n'}
+[2.151584] (robotiq_gripper) StdoutLine: {'line': b'[  2%] Built target robotiq_gripper__rosidl_generator_type_description\n'}
+[2.154785] (robotiq_gripper) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.157296] (robotiq_gripper) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.202730] (-) TimerEvent: {}
+[2.302934] (-) TimerEvent: {}
+[2.338506] (robotiq_gripper) StdoutLine: {'line': b'[  6%] Built target robotiq_gripper__cpp\n'}
+[2.361856] (robotiq_gripper) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_generator_c.dir/rosidl_generator_c/robotiq_gripper/msg/detail/gripper_status__description.c.o\x1b[0m\n'}
+[2.361974] (robotiq_gripper) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_generator_c.dir/rosidl_generator_c/robotiq_gripper/msg/detail/gripper_status__functions.c.o\x1b[0m\n'}
+[2.362035] (robotiq_gripper) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_generator_c.dir/rosidl_generator_c/robotiq_gripper/msg/detail/gripper_status__type_support.c.o\x1b[0m\n'}
+[2.362081] (robotiq_gripper) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_generator_c.dir/rosidl_generator_c/robotiq_gripper/msg/detail/gripper_command__description.c.o\x1b[0m\n'}
+[2.362160] (robotiq_gripper) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_generator_c.dir/rosidl_generator_c/robotiq_gripper/msg/detail/gripper_command__functions.c.o\x1b[0m\n'}
+[2.362393] (robotiq_gripper) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_generator_c.dir/rosidl_generator_c/robotiq_gripper/msg/detail/gripper_command__type_support.c.o\x1b[0m\n'}
+[2.383661] (robotiq_gripper) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library librobotiq_gripper__rosidl_generator_c.so\x1b[0m\n'}
+[2.397678] (robotiq_gripper) StdoutLine: {'line': b'[ 20%] Built target robotiq_gripper__rosidl_generator_c\n'}
+[2.400673] (robotiq_gripper) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.400798] (robotiq_gripper) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.400859] (robotiq_gripper) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.400909] (robotiq_gripper) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.400981] (robotiq_gripper) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.401019] (robotiq_gripper) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.402996] (-) TimerEvent: {}
+[2.503164] (-) TimerEvent: {}
+[2.573117] (robotiq_gripper) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/robotiq_gripper__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotiq_gripper/msg/gripper_status__type_support.cpp.o\x1b[0m\n'}
+[2.573286] (robotiq_gripper) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotiq_gripper/msg/detail/gripper_status__type_support.c.o\x1b[0m\n'}
+[2.573351] (robotiq_gripper) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/robotiq_gripper__rosidl_typesupport_c.dir/rosidl_typesupport_c/robotiq_gripper/msg/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[2.573394] (robotiq_gripper) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robotiq_gripper/msg/detail/gripper_command__type_support.c.o\x1b[0m\n'}
+[2.576456] (robotiq_gripper) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/robotiq_gripper__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotiq_gripper/msg/gripper_status__type_support.cpp.o\x1b[0m\n'}
+[2.576609] (robotiq_gripper) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/robotiq_gripper__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robotiq_gripper/msg/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[2.581726] (robotiq_gripper) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/robotiq_gripper__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotiq_gripper/msg/detail/gripper_status__type_support.cpp.o\x1b[0m\n'}
+[2.582012] (robotiq_gripper) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/robotiq_gripper__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robotiq_gripper/msg/detail/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[2.588006] (robotiq_gripper) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/robotiq_gripper__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotiq_gripper/msg/detail/dds_fastrtps/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[2.588218] (robotiq_gripper) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/robotiq_gripper__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robotiq_gripper/msg/detail/dds_fastrtps/gripper_status__type_support.cpp.o\x1b[0m\n'}
+[2.593302] (robotiq_gripper) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/robotiq_gripper__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotiq_gripper/msg/detail/gripper_status__type_support_c.cpp.o\x1b[0m\n'}
+[2.594211] (robotiq_gripper) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/robotiq_gripper__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robotiq_gripper/msg/detail/gripper_command__type_support_c.cpp.o\x1b[0m\n'}
+[2.598010] (robotiq_gripper) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library librobotiq_gripper__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.598333] (robotiq_gripper) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking C shared library librobotiq_gripper__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.603258] (-) TimerEvent: {}
+[2.613710] (robotiq_gripper) StdoutLine: {'line': b'[ 62%] Built target robotiq_gripper__rosidl_typesupport_introspection_c\n'}
+[2.614589] (robotiq_gripper) StdoutLine: {'line': b'[ 62%] Built target robotiq_gripper__rosidl_typesupport_c\n'}
+[2.703356] (-) TimerEvent: {}
+[2.753716] (robotiq_gripper) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library librobotiq_gripper__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.762100] (robotiq_gripper) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library librobotiq_gripper__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.769784] (robotiq_gripper) StdoutLine: {'line': b'[ 66%] Built target robotiq_gripper__rosidl_typesupport_cpp\n'}
+[2.769913] (robotiq_gripper) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library librobotiq_gripper__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.775896] (robotiq_gripper) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/rtde_control.dir/src/rtde_control.cpp.o\x1b[0m\n'}
+[2.776057] (robotiq_gripper) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/gripper_twin.dir/src/gripper_twin.cpp.o\x1b[0m\n'}
+[2.778075] (robotiq_gripper) StdoutLine: {'line': b'[ 72%] Built target robotiq_gripper__rosidl_typesupport_introspection_cpp\n'}
+[2.803453] (-) TimerEvent: {}
+[2.803633] (robotiq_gripper) StdoutLine: {'line': b'[ 72%] Built target robotiq_gripper__rosidl_typesupport_fastrtps_c\n'}
+[2.840996] (robotiq_gripper) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library librobotiq_gripper__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.872612] (robotiq_gripper) StdoutLine: {'line': b'[ 75%] Built target robotiq_gripper__rosidl_typesupport_fastrtps_cpp\n'}
+[2.878199] (robotiq_gripper) StdoutLine: {'line': b'[ 75%] Built target robotiq_gripper\n'}
+[2.884011] (robotiq_gripper) StdoutLine: {'line': b'[ 77%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.903525] (-) TimerEvent: {}
+[3.003746] (-) TimerEvent: {}
+[3.103990] (-) TimerEvent: {}
+[3.169208] (robotiq_gripper) StdoutLine: {'line': b'[ 77%] Built target robotiq_gripper__py\n'}
+[3.175668] (robotiq_gripper) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_generator_py.dir/rosidl_generator_py/robotiq_gripper/msg/_gripper_status_s.c.o\x1b[0m\n'}
+[3.176063] (robotiq_gripper) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_generator_py.dir/rosidl_generator_py/robotiq_gripper/msg/_gripper_command_s.c.o\x1b[0m\n'}
+[3.204111] (-) TimerEvent: {}
+[3.239899] (robotiq_gripper) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robotiq_gripper/librobotiq_gripper__rosidl_generator_py.so\x1b[0m\n'}
+[3.255279] (robotiq_gripper) StdoutLine: {'line': b'[ 83%] Built target robotiq_gripper__rosidl_generator_py\n'}
+[3.261328] (robotiq_gripper) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robotiq_gripper/_robotiq_gripper_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.261453] (robotiq_gripper) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robotiq_gripper/_robotiq_gripper_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.261483] (robotiq_gripper) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/robotiq_gripper__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robotiq_gripper/_robotiq_gripper_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.304226] (-) TimerEvent: {}
+[3.311585] (robotiq_gripper) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.313222] (robotiq_gripper) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.315480] (robotiq_gripper) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.325827] (robotiq_gripper) StdoutLine: {'line': b'[ 95%] Built target robotiq_gripper__rosidl_typesupport_introspection_c__pyext\n'}
+[3.325935] (robotiq_gripper) StdoutLine: {'line': b'[ 95%] Built target robotiq_gripper__rosidl_typesupport_c__pyext\n'}
+[3.327911] (robotiq_gripper) StdoutLine: {'line': b'[ 95%] Built target robotiq_gripper__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.404306] (-) TimerEvent: {}
+[3.504514] (-) TimerEvent: {}
+[3.604718] (-) TimerEvent: {}
+[3.704919] (-) TimerEvent: {}
+[3.805125] (-) TimerEvent: {}
+[3.905332] (-) TimerEvent: {}
+[4.005536] (-) TimerEvent: {}
+[4.105738] (-) TimerEvent: {}
+[4.205939] (-) TimerEvent: {}
+[4.306139] (-) TimerEvent: {}
+[4.406344] (-) TimerEvent: {}
+[4.506551] (-) TimerEvent: {}
+[4.606798] (-) TimerEvent: {}
+[4.707000] (-) TimerEvent: {}
+[4.807242] (-) TimerEvent: {}
+[4.907397] (-) TimerEvent: {}
+[5.007599] (-) TimerEvent: {}
+[5.107806] (-) TimerEvent: {}
+[5.208011] (-) TimerEvent: {}
+[5.308225] (-) TimerEvent: {}
+[5.408418] (-) TimerEvent: {}
+[5.508611] (-) TimerEvent: {}
+[5.608808] (-) TimerEvent: {}
+[5.708998] (-) TimerEvent: {}
+[5.809217] (-) TimerEvent: {}
+[5.909446] (-) TimerEvent: {}
+[6.009597] (-) TimerEvent: {}
+[6.109757] (-) TimerEvent: {}
+[6.209944] (-) TimerEvent: {}
+[6.310138] (-) TimerEvent: {}
+[6.410305] (-) TimerEvent: {}
+[6.487215] (robotiq_gripper) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable gripper_twin\x1b[0m\n'}
+[6.510397] (-) TimerEvent: {}
+[6.610637] (-) TimerEvent: {}
+[6.674541] (robotiq_gripper) StdoutLine: {'line': b'[ 97%] Built target gripper_twin\n'}
+[6.710733] (-) TimerEvent: {}
+[6.810998] (-) TimerEvent: {}
+[6.911265] (-) TimerEvent: {}
+[7.011523] (-) TimerEvent: {}
+[7.111745] (-) TimerEvent: {}
+[7.182845] (robotiq_gripper) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable rtde_control\x1b[0m\n'}
+[7.211836] (-) TimerEvent: {}
+[7.312087] (-) TimerEvent: {}
+[7.404610] (robotiq_gripper) StdoutLine: {'line': b'[100%] Built target rtde_control\n'}
+[7.412130] (-) TimerEvent: {}
+[7.414642] (robotiq_gripper) CommandEnded: {'returncode': 0}
+[7.465957] (robotiq_gripper) JobProgress: {'identifier': 'robotiq_gripper', 'progress': 'install'}
+[7.466105] (robotiq_gripper) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rnv3/ros2_ws/build/robotiq_gripper'], 'cwd': '/home/rnv3/ros2_ws/build/robotiq_gripper', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rnv3'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/rnv3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rnv3/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rnv3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rnv3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/rnv3/.local/bin:/home/rnv3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Banner:@/tmp/.ICE-unix/3479,unix/Banner:/tmp/.ICE-unix/3479'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5ffd6539_13cf_4551_9cde_0b70af71347b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.487'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '11'), ('AMENT_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rnv3/ros2_ws/build/robotiq_gripper'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'vi'), ('CMAKE_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron')]), 'shell': False}
+[7.468566] (robotiq_gripper) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.468683] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/ament_index/resource_index/rosidl_interfaces/robotiq_gripper\n'}
+[7.468788] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/msg/GripperStatus.json\n'}
+[7.468856] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/msg/GripperCommand.json\n'}
+[7.468924] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper\n'}
+[7.468984] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg\n'}
+[7.469043] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/gripper_status.h\n'}
+[7.469104] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/gripper_command.h\n'}
+[7.469162] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.469228] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail\n'}
+[7.469294] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__type_support.h\n'}
+[7.469352] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__functions.c\n'}
+[7.469408] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__struct.h\n'}
+[7.469464] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__type_support.c\n'}
+[7.469519] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__type_support.c\n'}
+[7.469575] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__description.c\n'}
+[7.469628] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__type_support.h\n'}
+[7.469683] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__struct.h\n'}
+[7.469743] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__functions.c\n'}
+[7.469799] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__functions.h\n'}
+[7.469854] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__description.c\n'}
+[7.469900] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__functions.h\n'}
+[7.469955] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/library_path.sh\n'}
+[7.470010] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/library_path.dsv\n'}
+[7.470069] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_generator_c.so\n'}
+[7.470364] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_generator_c.so" to ""\n'}
+[7.470433] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper\n'}
+[7.470481] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg\n'}
+[7.470544] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.470604] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail\n'}
+[7.470660] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__rosidl_typesupport_fastrtps_c.h\n'}
+[7.470706] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__rosidl_typesupport_fastrtps_c.h\n'}
+[7.470753] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_fastrtps_c.so\n'}
+[7.470813] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.470887] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper\n'}
+[7.470941] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg\n'}
+[7.470996] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail\n'}
+[7.471043] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__type_support.c\n'}
+[7.471098] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__type_support.c\n'}
+[7.471148] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__rosidl_typesupport_introspection_c.h\n'}
+[7.471206] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__rosidl_typesupport_introspection_c.h\n'}
+[7.471262] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.471308] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_introspection_c.so\n'}
+[7.471374] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.471436] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_c.so\n'}
+[7.471491] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_c.so" to ""\n'}
+[7.471546] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper\n'}
+[7.471599] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg\n'}
+[7.471654] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail\n'}
+[7.471709] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__traits.hpp\n'}
+[7.471762] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__builder.hpp\n'}
+[7.471817] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__builder.hpp\n'}
+[7.471863] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__traits.hpp\n'}
+[7.471933] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__struct.hpp\n'}
+[7.471986] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__struct.hpp\n'}
+[7.472042] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/gripper_status.hpp\n'}
+[7.472122] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/gripper_command.hpp\n'}
+[7.472180] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper\n'}
+[7.472214] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg\n'}
+[7.472237] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail\n'}
+[7.472258] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.472287] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/dds_fastrtps\n'}
+[7.472308] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.472343] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.472367] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.472390] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.472411] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper\n'}
+[7.472433] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg\n'}
+[7.472475] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail\n'}
+[7.472510] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__type_support.cpp\n'}
+[7.472534] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__type_support.cpp\n'}
+[7.472560] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.472642] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_gripper/msg/detail/gripper_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.472750] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_introspection_cpp.so\n'}
+[7.472836] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.472891] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_cpp.so\n'}
+[7.472966] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_typesupport_cpp.so" to ""\n'}
+[7.473028] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/pythonpath.sh\n'}
+[7.473089] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/pythonpath.dsv\n'}
+[7.473148] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper-0.0.0-py3.10.egg-info\n'}
+[7.473206] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[7.473263] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[7.473320] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[7.473383] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[7.473443] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper\n'}
+[7.473501] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.473554] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/_robotiq_gripper_s.ep.rosidl_typesupport_c.c\n'}
+[7.473601] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.473647] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/_robotiq_gripper_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[7.473670] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/librobotiq_gripper__rosidl_generator_py.so\n'}
+[7.473707] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.473753] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/_robotiq_gripper_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[7.473811] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg\n'}
+[7.473849] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/_gripper_status.py\n'}
+[7.473899] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/_gripper_command_s.c\n'}
+[7.473955] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/_gripper_status_s.c\n'}
+[7.474012] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/_gripper_command.py\n'}
+[7.474074] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/__init__.py\n'}
+[7.474131] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/__init__.py\n'}
+[7.491547] (robotiq_gripper) StdoutLine: {'line': b"Listing '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper'...\n"}
+[7.491630] (robotiq_gripper) StdoutLine: {'line': b"Compiling '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/__init__.py'...\n"}
+[7.491656] (robotiq_gripper) StdoutLine: {'line': b"Listing '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg'...\n"}
+[7.491678] (robotiq_gripper) StdoutLine: {'line': b"Compiling '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/__init__.py'...\n"}
+[7.491699] (robotiq_gripper) StdoutLine: {'line': b"Compiling '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/_gripper_command.py'...\n"}
+[7.491723] (robotiq_gripper) StdoutLine: {'line': b"Compiling '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/msg/_gripper_status.py'...\n"}
+[7.493754] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.493884] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[7.493981] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.494120] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[7.494203] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[7.494339] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages/robotiq_gripper/robotiq_gripper_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[7.494390] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_generator_py.so\n'}
+[7.494522] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/librobotiq_gripper__rosidl_generator_py.so" to ""\n'}
+[7.494595] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/msg/GripperStatus.idl\n'}
+[7.494666] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/msg/GripperCommand.idl\n'}
+[7.494736] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/msg/GripperStatus.msg\n'}
+[7.494788] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/msg/GripperCommand.msg\n'}
+[7.494848] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/robotiq_gripper/gripper_twin\n'}
+[7.497228] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/robotiq_gripper/gripper_twin" to ""\n'}
+[7.497315] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/lib/robotiq_gripper/rtde_control\n'}
+[7.499547] (robotiq_gripper) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/robotiq_gripper/lib/robotiq_gripper/rtde_control" to ""\n'}
+[7.499639] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include\n'}
+[7.499687] (robotiq_gripper) StdoutLine: {'line': b'-- Up-to-date: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper\n'}
+[7.499733] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/include/robotiq_gripper/robotiq_utils.hpp\n'}
+[7.500566] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper//launch\n'}
+[7.500626] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper//launch/view_gripper.launch.py\n'}
+[7.500696] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper//rviz\n'}
+[7.500744] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper//rviz/view_urdf.rviz\n'}
+[7.500924] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/ament_index/resource_index/package_run_dependencies/robotiq_gripper\n'}
+[7.500998] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/ament_index/resource_index/parent_prefix_path/robotiq_gripper\n'}
+[7.501063] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/ament_prefix_path.sh\n'}
+[7.501127] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/ament_prefix_path.dsv\n'}
+[7.501192] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/path.sh\n'}
+[7.501249] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/environment/path.dsv\n'}
+[7.501311] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/local_setup.bash\n'}
+[7.501371] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/local_setup.sh\n'}
+[7.501434] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/local_setup.zsh\n'}
+[7.501500] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/local_setup.dsv\n'}
+[7.501562] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/package.dsv\n'}
+[7.501631] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/ament_index/resource_index/packages/robotiq_gripper\n'}
+[7.501715] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_generator_cExport.cmake\n'}
+[7.501789] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.501860] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[7.501929] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[7.502001] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.502067] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.502136] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_cExport.cmake\n'}
+[7.502202] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.502275] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_generator_cppExport.cmake\n'}
+[7.502345] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[7.502468] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[7.502544] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.502591] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.502629] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_cppExport.cmake\n'}
+[7.502709] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripper__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.502778] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_generator_pyExport.cmake\n'}
+[7.502844] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/export_robotiq_gripper__rosidl_generator_pyExport-noconfig.cmake\n'}
+[7.502903] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/rosidl_cmake-extras.cmake\n'}
+[7.502963] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.503025] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.503090] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.503153] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.503215] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.503280] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.503345] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripperConfig.cmake\n'}
+[7.503400] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake/robotiq_gripperConfig-version.cmake\n'}
+[7.503462] (robotiq_gripper) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/package.xml\n'}
+[7.504287] (robotiq_gripper) CommandEnded: {'returncode': 0}
+[7.512195] (-) TimerEvent: {}
+[7.566700] (robotiq_gripper) JobEnded: {'identifier': 'robotiq_gripper', 'rc': 0}
+[7.567189] (integrated_ur_robotiq) JobStarted: {'identifier': 'integrated_ur_robotiq'}
+[7.571208] (integrated_ur_robotiq) JobProgress: {'identifier': 'integrated_ur_robotiq', 'progress': 'cmake'}
+[7.571284] (integrated_ur_robotiq) Command: {'cmd': ['/usr/bin/cmake', '/home/rnv3/ros2_ws/src/integrated_ur_robotiq', '-DCMAKE_INSTALL_PREFIX=/home/rnv3/ros2_ws/install/integrated_ur_robotiq'], 'cwd': '/home/rnv3/ros2_ws/build/integrated_ur_robotiq', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rnv3'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/rnv3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rnv3/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rnv3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rnv3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/rnv3/.local/bin:/home/rnv3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Banner:@/tmp/.ICE-unix/3479,unix/Banner:/tmp/.ICE-unix/3479'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5ffd6539_13cf_4551_9cde_0b70af71347b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.487'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '11'), ('AMENT_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rnv3/ros2_ws/build/integrated_ur_robotiq'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'vi'), ('CMAKE_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/opt/ros/iron')]), 'shell': False}
+[7.597339] (integrated_ur_robotiq) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[7.612294] (-) TimerEvent: {}
+[7.624729] (integrated_ur_robotiq) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[7.632670] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[7.666730] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.671105] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.671223] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.671422] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.676300] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.712371] (-) TimerEvent: {}
+[7.715322] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.719951] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[7.720089] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.720338] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.722128] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[7.812444] (-) TimerEvent: {}
+[7.912624] (-) TimerEvent: {}
+[8.012802] (-) TimerEvent: {}
+[8.093634] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[8.112878] (-) TimerEvent: {}
+[8.147634] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found rclcpp: 21.0.7 (/opt/ros/iron/share/rclcpp/cmake)\n'}
+[8.175851] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)\n'}
+[8.183418] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)\n'}
+[8.193620] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.205400] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.212935] (-) TimerEvent: {}
+[8.297886] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)\n'}
+[8.299670] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 7.1.4 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)\n'}
+[8.313010] (-) TimerEvent: {}
+[8.356518] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.372888] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/iron/include  \n'}
+[8.398707] (integrated_ur_robotiq) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[8.413086] (-) TimerEvent: {}
+[8.492384] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found sensor_msgs: 5.0.1 (/opt/ros/iron/share/sensor_msgs/cmake)\n'}
+[8.513170] (-) TimerEvent: {}
+[8.607387] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found trajectory_msgs: 5.0.1 (/opt/ros/iron/share/trajectory_msgs/cmake)\n'}
+[8.613234] (-) TimerEvent: {}
+[8.651473] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found std_srvs: 5.0.1 (/opt/ros/iron/share/std_srvs/cmake)\n'}
+[8.676999] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found robotiq_gripper: 0.0.0 (/home/rnv3/ros2_ws/install/robotiq_gripper/share/robotiq_gripper/cmake)\n'}
+[8.685553] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found moveit_msgs: 2.3.0 (/opt/ros/iron/share/moveit_msgs/cmake)\n'}
+[8.713321] (-) TimerEvent: {}
+[8.813521] (-) TimerEvent: {}
+[8.913748] (-) TimerEvent: {}
+[9.013969] (-) TimerEvent: {}
+[9.114168] (-) TimerEvent: {}
+[9.203408] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found moveit_ros_planning: 2.8.0 (/opt/ros/iron/share/moveit_ros_planning/cmake)\n'}
+[9.214245] (-) TimerEvent: {}
+[9.256757] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[9.285199] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found parameter_traits: 0.3.8 (/opt/ros/iron/share/parameter_traits/cmake)\n'}
+[9.299693] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 21.0.7 (/opt/ros/iron/share/rclcpp_lifecycle/cmake)\n'}
+[9.314349] (-) TimerEvent: {}
+[9.414530] (-) TimerEvent: {}
+[9.514730] (-) TimerEvent: {}
+[9.605373] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[9.614802] (-) TimerEvent: {}
+[9.626100] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[9.672359] (integrated_ur_robotiq) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[9.714893] (-) TimerEvent: {}
+[9.783078] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[9.783182] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[9.814974] (-) TimerEvent: {}
+[9.915191] (-) TimerEvent: {}
+[10.015386] (-) TimerEvent: {}
+[10.115582] (-) TimerEvent: {}
+[10.133002] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.8.0 (/opt/ros/iron/share/moveit_ros_planning_interface/cmake)\n'}
+[10.135869] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[10.215665] (-) TimerEvent: {}
+[10.244508] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[10.315748] (-) TimerEvent: {}
+[10.372660] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[10.415833] (-) TimerEvent: {}
+[10.516054] (-) TimerEvent: {}
+[10.616263] (-) TimerEvent: {}
+[10.695538] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Configuring done (3.1s)\n'}
+[10.716370] (-) TimerEvent: {}
+[10.723252] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[10.724788] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Build files have been written to: /home/rnv3/ros2_ws/build/integrated_ur_robotiq\n'}
+[10.731710] (integrated_ur_robotiq) CommandEnded: {'returncode': 0}
+[10.731986] (integrated_ur_robotiq) JobProgress: {'identifier': 'integrated_ur_robotiq', 'progress': 'build'}
+[10.732119] (integrated_ur_robotiq) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rnv3/ros2_ws/build/integrated_ur_robotiq', '--', '-j24', '-l24'], 'cwd': '/home/rnv3/ros2_ws/build/integrated_ur_robotiq', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rnv3'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/rnv3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rnv3/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rnv3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rnv3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/rnv3/.local/bin:/home/rnv3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Banner:@/tmp/.ICE-unix/3479,unix/Banner:/tmp/.ICE-unix/3479'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5ffd6539_13cf_4551_9cde_0b70af71347b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.487'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '11'), ('AMENT_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rnv3/ros2_ws/build/integrated_ur_robotiq'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'vi'), ('CMAKE_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/opt/ros/iron')]), 'shell': False}
+[10.748901] (integrated_ur_robotiq) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/synchronizer.dir/src/synchronizer.cpp.o\x1b[0m\n'}
+[10.749191] (integrated_ur_robotiq) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/ur_pose_monitor.dir/src/ur_pose_monitor.cpp.o\x1b[0m\n'}
+[10.749392] (integrated_ur_robotiq) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/ur_trajectory_comparator.dir/src/ur_trajectory_comparator.cpp.o\x1b[0m\n'}
+[10.749468] (integrated_ur_robotiq) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/integrated_ui.dir/src/integrated_ui.cpp.o\x1b[0m\n'}
+[10.749593] (integrated_ur_robotiq) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/integrated_control_test.dir/src/integrated_control_test.cpp.o\x1b[0m\n'}
+[10.816480] (-) TimerEvent: {}
+[10.916743] (-) TimerEvent: {}
+[11.017007] (-) TimerEvent: {}
+[11.117255] (-) TimerEvent: {}
+[11.217477] (-) TimerEvent: {}
+[11.317735] (-) TimerEvent: {}
+[11.417995] (-) TimerEvent: {}
+[11.518267] (-) TimerEvent: {}
+[11.618556] (-) TimerEvent: {}
+[11.718861] (-) TimerEvent: {}
+[11.819173] (-) TimerEvent: {}
+[11.919468] (-) TimerEvent: {}
+[12.019762] (-) TimerEvent: {}
+[12.120035] (-) TimerEvent: {}
+[12.220316] (-) TimerEvent: {}
+[12.320535] (-) TimerEvent: {}
+[12.420767] (-) TimerEvent: {}
+[12.521024] (-) TimerEvent: {}
+[12.621243] (-) TimerEvent: {}
+[12.721447] (-) TimerEvent: {}
+[12.821679] (-) TimerEvent: {}
+[12.921894] (-) TimerEvent: {}
+[13.022128] (-) TimerEvent: {}
+[13.122356] (-) TimerEvent: {}
+[13.222627] (-) TimerEvent: {}
+[13.322921] (-) TimerEvent: {}
+[13.423187] (-) TimerEvent: {}
+[13.523446] (-) TimerEvent: {}
+[13.623706] (-) TimerEvent: {}
+[13.723965] (-) TimerEvent: {}
+[13.824227] (-) TimerEvent: {}
+[13.924491] (-) TimerEvent: {}
+[14.024775] (-) TimerEvent: {}
+[14.125047] (-) TimerEvent: {}
+[14.225305] (-) TimerEvent: {}
+[14.325545] (-) TimerEvent: {}
+[14.425749] (-) TimerEvent: {}
+[14.525967] (-) TimerEvent: {}
+[14.626226] (-) TimerEvent: {}
+[14.629014] (integrated_ur_robotiq) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable ur_trajectory_comparator\x1b[0m\n'}
+[14.726325] (-) TimerEvent: {}
+[14.739421] (integrated_ur_robotiq) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable synchronizer\x1b[0m\n'}
+[14.826421] (-) TimerEvent: {}
+[14.827466] (integrated_ur_robotiq) StdoutLine: {'line': b'[ 70%] Built target ur_trajectory_comparator\n'}
+[14.926515] (-) TimerEvent: {}
+[14.950501] (integrated_ur_robotiq) StdoutLine: {'line': b'[ 70%] Built target synchronizer\n'}
+[15.026609] (-) TimerEvent: {}
+[15.126864] (-) TimerEvent: {}
+[15.227117] (-) TimerEvent: {}
+[15.327373] (-) TimerEvent: {}
+[15.427623] (-) TimerEvent: {}
+[15.527863] (-) TimerEvent: {}
+[15.628103] (-) TimerEvent: {}
+[15.728348] (-) TimerEvent: {}
+[15.828607] (-) TimerEvent: {}
+[15.928873] (-) TimerEvent: {}
+[16.029138] (-) TimerEvent: {}
+[16.045739] (integrated_ur_robotiq) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable integrated_ui\x1b[0m\n'}
+[16.129231] (-) TimerEvent: {}
+[16.229478] (-) TimerEvent: {}
+[16.329725] (-) TimerEvent: {}
+[16.364008] (integrated_ur_robotiq) StdoutLine: {'line': b'[ 80%] Built target integrated_ui\n'}
+[16.429773] (-) TimerEvent: {}
+[16.529969] (-) TimerEvent: {}
+[16.630192] (-) TimerEvent: {}
+[16.730433] (-) TimerEvent: {}
+[16.830661] (-) TimerEvent: {}
+[16.930864] (-) TimerEvent: {}
+[17.031086] (-) TimerEvent: {}
+[17.131284] (-) TimerEvent: {}
+[17.217092] (integrated_ur_robotiq) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable ur_pose_monitor\x1b[0m\n'}
+[17.231363] (-) TimerEvent: {}
+[17.331556] (-) TimerEvent: {}
+[17.431786] (-) TimerEvent: {}
+[17.443007] (integrated_ur_robotiq) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable integrated_control_test\x1b[0m\n'}
+[17.531907] (-) TimerEvent: {}
+[17.624810] (integrated_ur_robotiq) StdoutLine: {'line': b'[100%] Built target ur_pose_monitor\n'}
+[17.631973] (-) TimerEvent: {}
+[17.732112] (-) TimerEvent: {}
+[17.792332] (integrated_ur_robotiq) StdoutLine: {'line': b'[100%] Built target integrated_control_test\n'}
+[17.802165] (integrated_ur_robotiq) CommandEnded: {'returncode': 0}
+[17.821871] (integrated_ur_robotiq) JobProgress: {'identifier': 'integrated_ur_robotiq', 'progress': 'install'}
+[17.822046] (integrated_ur_robotiq) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rnv3/ros2_ws/build/integrated_ur_robotiq'], 'cwd': '/home/rnv3/ros2_ws/build/integrated_ur_robotiq', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rnv3'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/rnv3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708872'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rnv3/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rnv3'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rnv3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/rnv3/.local/bin:/home/rnv3/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Banner:@/tmp/.ICE-unix/3479,unix/Banner:/tmp/.ICE-unix/3479'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5ffd6539_13cf_4551_9cde_0b70af71347b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.487'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '11'), ('AMENT_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rnv3/ros2_ws/build/integrated_ur_robotiq'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rnv3/ros2_ws/install/robotiq_gripper/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('EDITOR', 'vi'), ('CMAKE_PREFIX_PATH', '/home/rnv3/ros2_ws/install/ur_robotiq_description:/home/rnv3/ros2_ws/install/robotiq_gripper:/home/rnv3/ros2_ws/install/ur_robotiq_moveit_config:/home/rnv3/ros2_ws/install/integrated_ur_robotiq:/opt/ros/iron')]), 'shell': False}
+[17.824241] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.824305] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/include\n'}
+[17.824356] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/include/integrated_ur_robotiq\n'}
+[17.824380] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/include/integrated_ur_robotiq/integrated_control.hpp\n'}
+[17.824479] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ursim_init.py\n'}
+[17.824538] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_dashboard_terminal.py\n'}
+[17.824608] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ursim_play.py\n'}
+[17.824653] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ursim_stop.py\n'}
+[17.824729] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/synchronizer\n'}
+[17.827356] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/synchronizer" to ""\n'}
+[17.827426] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_pose_monitor\n'}
+[17.829755] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_pose_monitor" to ""\n'}
+[17.829820] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_trajectory_comparator\n'}
+[17.831963] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_trajectory_comparator" to ""\n'}
+[17.832023] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/integrated_ui\n'}
+[17.832160] (-) TimerEvent: {}
+[17.836222] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/integrated_ui" to ""\n'}
+[17.836328] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/integrated_control_test\n'}
+[17.838828] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/integrated_control_test" to ""\n'}
+[17.838908] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch\n'}
+[17.838971] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/physical.launch.py\n'}
+[17.839032] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/ur_control.launch.py\n'}
+[17.839090] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/digital.launch.py\n'}
+[17.839149] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/ur_sim.launch.py\n'}
+[17.839207] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/everything.launch.py\n'}
+[17.839271] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/integrated.launch.py\n'}
+[17.839318] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//config\n'}
+[17.839365] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//config/digital_controllers.yaml\n'}
+[17.839472] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//config/physical_controllers.yaml\n'}
+[17.839627] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/ament_index/resource_index/package_run_dependencies/integrated_ur_robotiq\n'}
+[17.839713] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/ament_index/resource_index/parent_prefix_path/integrated_ur_robotiq\n'}
+[17.839791] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/environment/ament_prefix_path.sh\n'}
+[17.839856] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/environment/ament_prefix_path.dsv\n'}
+[17.839922] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/environment/path.sh\n'}
+[17.839981] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/environment/path.dsv\n'}
+[17.840044] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/local_setup.bash\n'}
+[17.840123] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/local_setup.sh\n'}
+[17.840185] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/local_setup.zsh\n'}
+[17.840246] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/local_setup.dsv\n'}
+[17.840307] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/package.dsv\n'}
+[17.840379] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/ament_index/resource_index/packages/integrated_ur_robotiq\n'}
+[17.840453] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/cmake/integrated_ur_robotiqConfig.cmake\n'}
+[17.840525] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/cmake/integrated_ur_robotiqConfig-version.cmake\n'}
+[17.840590] (integrated_ur_robotiq) StdoutLine: {'line': b'-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/package.xml\n'}
+[17.841277] (integrated_ur_robotiq) CommandEnded: {'returncode': 0}
+[17.866185] (integrated_ur_robotiq) JobEnded: {'identifier': 'integrated_ur_robotiq', 'rc': 0}
+[17.866530] (-) EventReactorShutdown: {}

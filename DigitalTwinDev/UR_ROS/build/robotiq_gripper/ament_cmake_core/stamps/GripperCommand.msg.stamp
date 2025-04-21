@@ -1,0 +1,7 @@
+uint8 act # Activate (0 or 1)
+uint8 gto # Go to (0 or 1)
+uint8 atr # Automatic release (0 or 1)
+uint8 ard # Auto release direction (0 = closing, 1 = opening)
+uint8 pr # Position request (0-255) (0=open, 255=close)
+uint8 sp # Speed request (0-255) (0=slowest, 255=fastest)
+uint8 fr # Force request (0-255) (0=fragile mode, 1=weakest, 255=strongest)

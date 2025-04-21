@@ -1,0 +1,8 @@
+{
+  "package_name": "robotiq_gripper",
+  "output_dir": "/home/rnv3/ros2_ws/build/robotiq_gripper/rosidl_generator_type_description/robotiq_gripper",
+  "idl_tuples": [
+    "/home/rnv3/ros2_ws/build/robotiq_gripper/rosidl_adapter/robotiq_gripper:msg/GripperStatus.idl",
+    "/home/rnv3/ros2_ws/build/robotiq_gripper/rosidl_adapter/robotiq_gripper:msg/GripperCommand.idl"
+  ]
+}

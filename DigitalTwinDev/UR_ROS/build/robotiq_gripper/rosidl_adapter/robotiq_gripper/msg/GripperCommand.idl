@@ -1,0 +1,38 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robotiq_gripper/msg/GripperCommand.msg
+// generated code does not contain a copyright notice
+
+
+module robotiq_gripper {
+  module msg {
+    struct GripperCommand {
+      @verbatim (language="comment", text=
+        "Activate (0 or 1)")
+      uint8 act;
+
+      @verbatim (language="comment", text=
+        "Go to (0 or 1)")
+      uint8 gto;
+
+      @verbatim (language="comment", text=
+        "Automatic release (0 or 1)")
+      uint8 atr;
+
+      @verbatim (language="comment", text=
+        "Auto release direction (0 = closing, 1 = opening)")
+      uint8 ard;
+
+      @verbatim (language="comment", text=
+        "Position request (0-255) (0=open, 255=close)")
+      uint8 pr;
+
+      @verbatim (language="comment", text=
+        "Speed request (0-255) (0=slowest, 255=fastest)")
+      uint8 sp;
+
+      @verbatim (language="comment", text=
+        "Force request (0-255) (0=fragile mode, 1=weakest, 255=strongest)")
+      uint8 fr;
+    };
+  };
+};

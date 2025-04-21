@@ -1,0 +1,4 @@
+source;share/robotiq_gripper/environment/ament_prefix_path.sh
+source;share/robotiq_gripper/environment/library_path.sh
+source;share/robotiq_gripper/environment/path.sh
+source;share/robotiq_gripper/environment/pythonpath.sh

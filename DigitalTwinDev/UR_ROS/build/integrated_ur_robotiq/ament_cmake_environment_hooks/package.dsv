@@ -1,0 +1,4 @@
+source;share/integrated_ur_robotiq/local_setup.bash
+source;share/integrated_ur_robotiq/local_setup.dsv
+source;share/integrated_ur_robotiq/local_setup.sh
+source;share/integrated_ur_robotiq/local_setup.zsh

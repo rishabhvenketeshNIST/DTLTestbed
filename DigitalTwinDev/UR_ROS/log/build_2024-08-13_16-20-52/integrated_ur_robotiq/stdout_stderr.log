@@ -1,0 +1,42 @@
+[ 30%] Built target ur_trajectory_comparator
+[ 40%] Built target synchronizer
+[ 60%] Built target integrated_ui
+[ 80%] Built target ur_pose_monitor
+[100%] Built target integrated_control_test
+-- Install configuration: ""
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/include
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/include/integrated_ur_robotiq
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/include/integrated_ur_robotiq/integrated_control.hpp
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ursim_init.py
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_dashboard_terminal.py
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ursim_play.py
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ursim_stop.py
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/synchronizer
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_pose_monitor
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/ur_trajectory_comparator
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/integrated_ui
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/lib/integrated_ur_robotiq/integrated_control_test
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/physical.launch.py
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/ur_control.launch.py
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/digital.launch.py
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/ur_sim.launch.py
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//launch/integrated.launch.py
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//config
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//config/digital_controllers.yaml
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq//config/physical_controllers.yaml
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/ament_index/resource_index/package_run_dependencies/integrated_ur_robotiq
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/ament_index/resource_index/parent_prefix_path/integrated_ur_robotiq
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/environment/ament_prefix_path.sh
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/environment/path.sh
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/environment/path.dsv
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/local_setup.bash
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/local_setup.sh
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/local_setup.zsh
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/local_setup.dsv
+-- Installing: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/package.dsv
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/ament_index/resource_index/packages/integrated_ur_robotiq
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/cmake/integrated_ur_robotiqConfig.cmake
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/cmake/integrated_ur_robotiqConfig-version.cmake
+-- Up-to-date: /home/rnv3/ros2_ws/install/integrated_ur_robotiq/share/integrated_ur_robotiq/package.xml
