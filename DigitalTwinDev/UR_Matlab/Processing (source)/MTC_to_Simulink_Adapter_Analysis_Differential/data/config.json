@@ -1,0 +1,28 @@
+{
+"MTC_ip": "192.168.50.212",
+"MTC_port": 5000,
+"server_port": 16385,
+"send_hz": 50,
+"query_interval": 1,
+"timescale": 1,
+"autoplay": false,
+"ur5e_name": "UR5e",
+"ur5e_uuid": "ur5e",
+"save_replay": false,
+"save_replay_interval": 600,
+
+"time_data_duration": 10.0,
+"tcp_pos_error_threshold": 0.01,
+"tcp_pos_error_duration": 5,
+"tcp_rot_error_threshold": 0.1,
+"tcp_rot_error_duration": 5,
+"joint_error_threshold": 0.01,
+"joint_error_duration": 5,
+
+"dummy": true,
+"dummy_files": [
+	"MTC_2023-7-20_10-36-45.xml",
+	"MTC_2023-7-20_10-37-15.xml",
+	],
+"MTC_dump": false,
+}

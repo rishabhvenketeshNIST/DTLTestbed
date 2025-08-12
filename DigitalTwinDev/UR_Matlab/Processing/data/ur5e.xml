@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices xmlns="urn:mtconnect.org:MTConnectDevices:2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:2.0 http://schemas.mtconnect.org/schemas/MTConnectDevices_2.0.xsd">
+	<Header version="2.0" creationTime="2020-02-20T00:00:00Z" instanceId="1" sender="ur5e" bufferSize="131072" assetBufferSize="1024" assetCount="0"/>
+	<Devices>
+		<Device id="r1" uuid="ur5e" name="UR5e">
+			<Description manufacturer="Universal RobotsFactory" model="ur5e"/>
+			<DataItems>
+				<DataItem id="avail" name="avail" type="AVAILABILITY" category="EVENT"/>
+				<DataItem id="estop" name="estop" type="EMERGENCY_STOP" category="EVENT"/>
+			</DataItems>
+			<Components>
+			 	<Controller id="ur_controller">
+					<DataItems>
+						<DataItem type="ACCUMULATED_TIME" category="SAMPLE" id="start_time" name="start_time" units="SECOND"/>
+						<DataItem type="ACCUMULATED_TIME" category="SAMPLE" id="exec_time" name="exec_time" units="SECOND"/>
+					</DataItems>
+				</Controller>
+				<Axes id="a">
+					<Components>
+						<Rotary id="a01" name="J1" nativeName="base_joint">
+							<DataItems>
+								<DataItem name="angle_j1" category="SAMPLE" id="angle_j1" type="ANGLE" subType="ACTUAL"  units="DEGREE"/>
+								<DataItem name="vel_j1" category="SAMPLE" id="vel_j1" type="ANGULAR_VELOCITY" subType="ACTUAL" units="DEGREE/SECOND"/>
+								<DataItem name="acc_j1" category="SAMPLE" id="acc_j1" type="ANGULAR_ACCELERATION" subType="ACTUAL" units="DEGREE/SECOND^2"/>
+								<DataItem name="tor_j1" category="SAMPLE" id="tor_j1" type="TORQUE" units="NEWTON_METER"/>
+							</DataItems>
+						</Rotary>
+						<Rotary id="a02" name="J2" nativeName="shoulder_joint">
+							<DataItems>
+								<DataItem name="angle_j2" category="SAMPLE" id="angle_j2" type="ANGLE" subType="ACTUAL"  units="DEGREE"/>
+								<DataItem name="vel_j2" category="SAMPLE" id="vel_j2" type="ANGULAR_VELOCITY" subType="ACTUAL" units="DEGREE/SECOND"/>
+								<DataItem name="acc_j2" category="SAMPLE" id="acc_j2" type="ANGULAR_ACCELERATION" subType="ACTUAL" units="DEGREE/SECOND^2"/>
+								<DataItem name="tor_j2" category="SAMPLE" id="tor_j2" type="TORQUE" units="NEWTON_METER"/>
+							</DataItems>
+						</Rotary>
+						<Rotary id="a03" name="J3" nativeName="elbow_joint">
+							<DataItems>
+								<DataItem name="angle_j3" category="SAMPLE" id="angle_j3" type="ANGLE" subType="ACTUAL"  units="DEGREE"/>
+								<DataItem name="vel_j3" category="SAMPLE" id="vel_j3" type="ANGULAR_VELOCITY" subType="ACTUAL" units="DEGREE/SECOND"/>
+								<DataItem name="acc_j3" category="SAMPLE" id="acc_j3" type="ANGULAR_ACCELERATION" subType="ACTUAL" units="DEGREE/SECOND^2"/>
+								<DataItem name="tor_j3" category="SAMPLE" id="tor_j3" type="TORQUE" units="NEWTON_METER"/>
+							</DataItems>
+						</Rotary>
+						<Rotary id="a04" name="J4" nativeName="wrist_joint_1">
+							<DataItems>
+								<DataItem name="angle_j4" category="SAMPLE" id="angle_j4" type="ANGLE" subType="ACTUAL"  units="DEGREE"/>
+								<DataItem name="vel_j4" category="SAMPLE" id="vel_j4" type="ANGULAR_VELOCITY" subType="ACTUAL" units="DEGREE/SECOND"/>
+								<DataItem name="acc_j4" category="SAMPLE" id="acc_j4" type="ANGULAR_ACCELERATION" subType="ACTUAL" units="DEGREE/SECOND^2"/>
+								<DataItem name="tor_j4" category="SAMPLE" id="tor_j4" type="TORQUE" units="NEWTON_METER"/>
+							</DataItems>
+						</Rotary>
+						<Rotary id="a05" name="J5" nativeName="wrist_joint_2">
+							<DataItems>
+								<DataItem name="angle_j5" category="SAMPLE" id="angle_j5" type="ANGLE" subType="ACTUAL"  units="DEGREE"/>
+								<DataItem name="vel_j5" category="SAMPLE" id="vel_j5" type="ANGULAR_VELOCITY" subType="ACTUAL" units="DEGREE/SECOND"/>
+								<DataItem name="acc_j5" category="SAMPLE" id="acc_j5" type="ANGULAR_ACCELERATION" subType="ACTUAL" units="DEGREE/SECOND^2"/>
+								<DataItem name="tor_j5" category="SAMPLE" id="tor_j5" type="TORQUE" units="NEWTON_METER"/>
+							</DataItems>
+						</Rotary>
+						<Rotary id="a06" name="J6" nativeName="wrist_joint_3">
+							<DataItems>
+								<DataItem name="angle_j6" category="SAMPLE" id="angle_j6" type="ANGLE" subType="ACTUAL"  units="DEGREE"/>
+								<DataItem name="vel_j6" category="SAMPLE" id="vel_j6" type="ANGULAR_VELOCITY" subType="ACTUAL" units="DEGREE/SECOND"/>
+								<DataItem name="acc_j6" category="SAMPLE" id="acc_j6" type="ANGULAR_ACCELERATION" subType="ACTUAL" units="DEGREE/SECOND^2"/>
+								<DataItem name="tor_j6" category="SAMPLE" id="tor_j6" type="TORQUE" units="NEWTON_METER"/>
+							</DataItems>
+						</Rotary>
+					</Components>
+				</Axes>
+				<Auxiliaries id="aux1">
+					<Components>
+						<Gripper id="g_1" name="gripper">
+							<DataItems>						
+								<DataItem type="POSITION_CARTESIAN" category="SAMPLE" id="posit_tcp" name="posit_tcp" units="MILLIMETER_3D"/>
+								<DataItem type="ORIENTATION" category="SAMPLE" id="orient_tcp" name="orient_tcp" units="DEGREE_3D"/>
+								<DataItem type="ANGULAR_VELOCITY" name="ang_vel_rx" category="SAMPLE" id="ang_vel_rx" subType="ACTUAL" units="DEGREE/SECOND"/>
+								<DataItem type="ANGULAR_VELOCITY" name="ang_vel_ry" category="SAMPLE" id="ang_vel_ry" subType="ACTUAL" units="DEGREE/SECOND"/>
+								<DataItem type="ANGULAR_VELOCITY" name="ang_vel_rz" category="SAMPLE" id="ang_vel_rz" subType="ACTUAL" units="DEGREE/SECOND"/>
+								<DataItem type="VELOCITY" name="vel_x" category="SAMPLE" id="vel_x" subType="ACTUAL"  units="MILLIMETER/SECOND"/>
+								<DataItem type="VELOCITY" name="vel_y" category="SAMPLE" id="vel_y" subType="ACTUAL"  units="MILLIMETER/SECOND"/>
+								<DataItem type="VELOCITY" name="vel_z" category="SAMPLE" id="vel_z" subType="ACTUAL"  units="MILLIMETER/SECOND"/>
+							</DataItems>
+						</Gripper>
+					</Components>
+				</Auxiliaries>
+			</Components>
+		</Device>
+	</Devices>
+</MTConnectDevices>
