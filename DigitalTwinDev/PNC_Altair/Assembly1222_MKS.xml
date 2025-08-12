@@ -1,0 +1,3279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"
+ href="http://www.altairhyperworks.com/motionsolve-xml/motionsolve_v1.xsl"?>
+<MultiBodySystem
+ xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+ xs:noNamespaceSchemaLocation="http://www.altairhyperworks.com/motionsolve-xml/motionsolve_v1.xsd"
+     hw_version          = "2022.0"
+     build_number        = ".0.33">
+ <Messaging
+     log_option          = "Overwrite"
+ />
+<!--
+Model Hierarchy
+    Assembly1222
+        Misc
+        Assembly1222
+            Motor apsom
+            Motor bposm
+            Actuator xpm
+            Actuator ypm
+            Actuator zpm
+-->
+ <Model>
+  <Param_Simulation
+     constr_tol          = "1.0000E-10"
+     implicit_diff_tol   = "1.0000E-06"
+     nr_converg_ratio    = "0.09"
+     collision_engine    = "PCM"
+     linsolver           = "HARWELL"
+     contact_iteration   = "ACTIVE"
+  />
+  <Param_Transient
+     integrator_type     = "DSTIFF"
+     integr_tol          = "0.001"
+     h_max               = "0.001"
+     h0_max              = "1.0000E-08"
+     h_min               = "1.0000E-06"
+     max_order           = "5"
+     vel_tol_factor      = "1000."
+     dae_constr_tol      = "1.0000E-07"
+     dae_corrector_maxit = "4"
+     dae_corrector_minit = "0"
+     dae_index           = "3"
+     dae_vel_ctrl        = "FALSE"
+     dae_jacob_init      = "1"
+  />
+  <Param_Static
+     method              = "FIM_D"
+     max_error           = "0.0001"
+     max_imbalance       = "0.0001"
+     stability           = "1.0000E-10"
+     max_ke_tol          = "1.0000E-05"
+     max_dq_tol          = "0.001"
+     max_num_iter        = "75"
+  />
+  <Param_Linear
+     anim_scale          = "1."
+     write_simulinkmdl   = "FALSE"
+     write_matlabfiles   = "FALSE"
+     write_oml           = "FALSE"
+     write_eig_info      = "TRUE"
+  />
+  <H3DOutput
+     switch_on           = "TRUE"
+  />
+  <ResOutput
+     abf_file            = "TRUE"
+     plt_file            = "TRUE"
+     angle_type          = "YPR"
+     capture_max_pd      = "TRUE"
+     contact_gra_output  = "TRUE"
+     abf_unique_time     = "LAST"
+     azero               = "1.0000E-10"
+     dzero               = "1.0000E-10"
+     fzero               = "1.0000E-10"
+     vzero               = "1.0000E-10"
+  />
+  <Param_Unit
+     force_unit          = "NEWTON"
+     mass_unit           = "KILOGRAM"
+     length_unit         = "METER"
+     time_unit           = "SECOND"
+  />
+<!-- MODEL.Global_Frame -->
+  <Reference_Marker
+     id                  = "30101010"
+     label               = "Global Frame"
+     full_label          = "Assembly1222-Global Frame"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1.lprf -->
+  <Reference_Marker
+     id                  = "30301001"
+     label               = "V2 10 DISC 1-Marker LPRF"
+     full_label          = "Assembly1222-Assembly1222-V2 10 DISC 1-Marker LPRF"
+     body_id             = "30301"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1_DISPLACEMENT.i -->
+  <Reference_Marker
+     id                  = "30301013"
+     label               = "V2 10 DISC 1 - DISPLACEMENT-Marker I"
+     full_label          = "Assembly1222-Assembly1222-V2 10 DISC 1 - DISPLACEMENT-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1_DISPLACEMENT.j -->
+  <Reference_Marker
+     id                  = "30301014"
+     label               = "V2 10 DISC 1 - DISPLACEMENT-Marker J"
+     full_label          = "Assembly1222-Assembly1222-V2 10 DISC 1 - DISPLACEMENT-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1_VELOCITY.i -->
+  <Reference_Marker
+     id                  = "30301015"
+     label               = "V2 10 DISC 1 - VELOCITY-Marker I"
+     full_label          = "Assembly1222-Assembly1222-V2 10 DISC 1 - VELOCITY-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1_VELOCITY.j -->
+  <Reference_Marker
+     id                  = "30301016"
+     label               = "V2 10 DISC 1 - VELOCITY-Marker J"
+     full_label          = "Assembly1222-Assembly1222-V2 10 DISC 1 - VELOCITY-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1_ACCELERATION.i -->
+  <Reference_Marker
+     id                  = "30301017"
+     label               = "V2 10 DISC 1 - ACCELERATION-Marker I"
+     full_label          = "Assembly1222-Assembly1222-V2 10 DISC 1 - ACCELERATION-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1_ACCELERATION.j -->
+  <Reference_Marker
+     id                  = "30301018"
+     label               = "V2 10 DISC 1 - ACCELERATION-Marker J"
+     full_label          = "Assembly1222-Assembly1222-V2 10 DISC 1 - ACCELERATION-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1.cm -->
+  <Reference_Marker
+     id                  = "30301020"
+     label               = "V2 10 DISC 1-Marker CM"
+     full_label          = "Assembly1222-Assembly1222-V2 10 DISC 1-Marker CM"
+     body_id             = "30301"
+     body_type           = "RigidBody"
+     pos_x               = "-0.03701643"
+     pos_y               = "0.018583849"
+     pos_z               = "-0.10488433"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1.bush.j -->
+  <Reference_Marker
+     id                  = "30301110"
+     label               = "Joint 1 - TRANSLATIONAL-Compliant-Joint-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 1 - TRANSLATIONAL-Compliant-Joint-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+     pos_x               = "0.012507063"
+     pos_y               = "-0.01931209"
+     pos_z               = "0.07726505"
+     a00                 = "0."
+     a10                 = "0."
+     a20                 = "-1."
+     a02                 = "1."
+     a12                 = "0."
+     a22                 = "0."
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3.bush.j -->
+  <Reference_Marker
+     id                  = "30301130"
+     label               = "Joint 3 - TRANSLATIONAL-Compliant-Joint-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 3 - TRANSLATIONAL-Compliant-Joint-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+     pos_x               = "0.063869563"
+     pos_y               = "0.041752572"
+     pos_z               = "-0.0845345"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "-1."
+     a22                 = "0."
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5.bush.i -->
+  <Reference_Marker
+     id                  = "30301150"
+     label               = "Joint 5 - REVOLUTE-Compliant-Joint-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 5 - REVOLUTE-Compliant-Joint-Marker I"
+     body_id             = "30301"
+     body_type           = "RigidBody"
+     pos_x               = "-0.03701643"
+     pos_y               = "0.021543919"
+     pos_z               = "-0.10488435"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "1."
+     a22                 = "-5.4408E-06"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1.lprf -->
+  <Reference_Marker
+     id                  = "30302001"
+     label               = "V2 10 TABLER  NEW 1-Marker LPRF"
+     full_label          = "Assembly1222-Assembly1222-V2 10 TABLER  NEW 1-Marker LPRF"
+     body_id             = "30302"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1.cm -->
+  <Reference_Marker
+     id                  = "30302040"
+     label               = "V2 10 TABLER  NEW 1-Marker CM"
+     full_label          = "Assembly1222-Assembly1222-V2 10 TABLER  NEW 1-Marker CM"
+     body_id             = "30302"
+     body_type           = "RigidBody"
+     pos_x               = "-0.02709365"
+     pos_y               = "0.005620573"
+     pos_z               = "-0.11688057"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4.bush.i -->
+  <Reference_Marker
+     id                  = "30302140"
+     label               = "Joint 4 - REVOLUTE-Compliant-Joint-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 4 - REVOLUTE-Compliant-Joint-Marker I"
+     body_id             = "30302"
+     body_type           = "RigidBody"
+     pos_x               = "0.039634561"
+     pos_y               = "0.048842572"
+     pos_z               = "-0.1048845"
+     a00                 = "0."
+     a10                 = "0."
+     a20                 = "-1."
+     a02                 = "1."
+     a12                 = "0."
+     a22                 = "0."
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5.bush.j -->
+  <Reference_Marker
+     id                  = "30302150"
+     label               = "Joint 5 - REVOLUTE-Compliant-Joint-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 5 - REVOLUTE-Compliant-Joint-Marker J"
+     body_id             = "30302"
+     body_type           = "RigidBody"
+     pos_x               = "-0.03701643"
+     pos_y               = "0.021543919"
+     pos_z               = "-0.10488435"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "1."
+     a22                 = "-5.4408E-06"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1.lprf -->
+  <Reference_Marker
+     id                  = "30303001"
+     label               = "Rigid Group 1-Marker LPRF"
+     full_label          = "Assembly1222-Assembly1222-Rigid Group 1-Marker LPRF"
+     body_id             = "30303"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1.cm -->
+  <Reference_Marker
+     id                  = "30303060"
+     label               = "Rigid Group 1-Marker CM"
+     full_label          = "Assembly1222-Assembly1222-Rigid Group 1-Marker CM"
+     body_id             = "30303"
+     body_type           = "RigidBody"
+     pos_x               = "-0.00515230"
+     pos_y               = "0.041475426"
+     pos_z               = "0.1291612"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2.bush.i -->
+  <Reference_Marker
+     id                  = "30303120"
+     label               = "Joint 2 - TRANSLATIONAL-Compliant-Joint-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 2 - TRANSLATIONAL-Compliant-Joint-Marker I"
+     body_id             = "30303"
+     body_type           = "RigidBody"
+     pos_x               = "-0.00164803"
+     pos_y               = "0.002431678"
+     pos_z               = "0.1132005"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "0."
+     a22                 = "-1."
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1.lprf -->
+  <Reference_Marker
+     id                  = "30304001"
+     label               = "V2 10  VERT 1-Marker LPRF"
+     full_label          = "Assembly1222-Assembly1222-V2 10  VERT 1-Marker LPRF"
+     body_id             = "30304"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1.cm -->
+  <Reference_Marker
+     id                  = "30304080"
+     label               = "V2 10  VERT 1-Marker CM"
+     full_label          = "Assembly1222-Assembly1222-V2 10  VERT 1-Marker CM"
+     body_id             = "30304"
+     body_type           = "RigidBody"
+     pos_x               = "0.052359531"
+     pos_y               = "0.045095481"
+     pos_z               = "-0.11379988"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3.bush.i -->
+  <Reference_Marker
+     id                  = "30304130"
+     label               = "Joint 3 - TRANSLATIONAL-Compliant-Joint-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 3 - TRANSLATIONAL-Compliant-Joint-Marker I"
+     body_id             = "30304"
+     body_type           = "RigidBody"
+     pos_x               = "0.063869563"
+     pos_y               = "0.041752572"
+     pos_z               = "-0.0845345"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "-1."
+     a22                 = "0."
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4.bush.j -->
+  <Reference_Marker
+     id                  = "30304140"
+     label               = "Joint 4 - REVOLUTE-Compliant-Joint-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 4 - REVOLUTE-Compliant-Joint-Marker J"
+     body_id             = "30304"
+     body_type           = "RigidBody"
+     pos_x               = "0.039634561"
+     pos_y               = "0.048842572"
+     pos_z               = "-0.1048845"
+     a00                 = "0."
+     a10                 = "0."
+     a20                 = "-1."
+     a02                 = "1."
+     a12                 = "0."
+     a22                 = "0."
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1.lprf -->
+  <Reference_Marker
+     id                  = "30305001"
+     label               = "V2 10 CARRAGE107X 1-Marker LPRF"
+     full_label          = "Assembly1222-Assembly1222-V2 10 CARRAGE107X 1-Marker LPRF"
+     body_id             = "30305"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1.cm -->
+  <Reference_Marker
+     id                  = "30305100"
+     label               = "V2 10 CARRAGE107X 1-Marker CM"
+     full_label          = "Assembly1222-Assembly1222-V2 10 CARRAGE107X 1-Marker CM"
+     body_id             = "30305"
+     body_type           = "RigidBody"
+     pos_x               = "0.028870391"
+     pos_y               = "0.005440390"
+     pos_z               = "0.072424359"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1.bush.i -->
+  <Reference_Marker
+     id                  = "30305110"
+     label               = "Joint 1 - TRANSLATIONAL-Compliant-Joint-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 1 - TRANSLATIONAL-Compliant-Joint-Marker I"
+     body_id             = "30305"
+     body_type           = "RigidBody"
+     pos_x               = "0.012507063"
+     pos_y               = "-0.01931209"
+     pos_z               = "0.07726505"
+     a00                 = "0."
+     a10                 = "0."
+     a20                 = "-1."
+     a02                 = "1."
+     a12                 = "0."
+     a22                 = "0."
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2.bush.j -->
+  <Reference_Marker
+     id                  = "30305120"
+     label               = "Joint 2 - TRANSLATIONAL-Compliant-Joint-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 2 - TRANSLATIONAL-Compliant-Joint-Marker J"
+     body_id             = "30305"
+     body_type           = "RigidBody"
+     pos_x               = "-0.00164803"
+     pos_y               = "0.002431678"
+     pos_z               = "0.1132005"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "0."
+     a22                 = "-1."
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.j_marker -->
+  <Reference_Marker
+     id                  = "30401020"
+     label               = "Marker J"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+     pos_x               = "0.033983563"
+     pos_y               = "0.048842569"
+     pos_z               = "-0.1048845"
+     a00                 = "0."
+     a10                 = "0."
+     a20                 = "1."
+     a02                 = "-1."
+     a12                 = "0."
+     a22                 = "0."
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.i_marker -->
+  <Reference_Marker
+     id                  = "30402010"
+     label               = "Marker I"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Marker I"
+     body_id             = "30302"
+     body_type           = "RigidBody"
+     pos_x               = "0.033983563"
+     pos_y               = "0.048842569"
+     pos_z               = "-0.1048845"
+     a00                 = "0."
+     a10                 = "0."
+     a20                 = "1."
+     a02                 = "-1."
+     a12                 = "0."
+     a22                 = "0."
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.i_marker -->
+  <Reference_Marker
+     id                  = "30501010"
+     label               = "Marker I"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Marker I"
+     body_id             = "30301"
+     body_type           = "RigidBody"
+     pos_x               = "-0.03701643"
+     pos_y               = "0.008696819"
+     pos_z               = "-0.10488428"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "1."
+     a22                 = "-5.4408E-06"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.centerline.joint_i -->
+  <Reference_Marker
+     id                  = "30501017"
+     label               = "Centerline-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Centerline-Marker I"
+     body_id             = "30301"
+     body_type           = "RigidBody"
+     pos_x               = "-0.03701643"
+     pos_y               = "0.008696819"
+     pos_z               = "-0.10488428"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "1."
+     a22                 = "-5.4408E-06"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.Motor_bposm_centerline_DISPLACEMENT.i -->
+  <Reference_Marker
+     id                  = "30501018"
+     label               = "Motor bposm - Centerline - DISPLACEMENT-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Centerline - DISPLACEMENT-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.Motor_bposm_centerline_DISPLACEMENT.j -->
+  <Reference_Marker
+     id                  = "30501019"
+     label               = "Motor bposm - Centerline - DISPLACEMENT-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Centerline - DISPLACEMENT-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.centerline.joint_j -->
+  <Reference_Marker
+     id                  = "30502010"
+     label               = "Centerline-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Centerline-Marker J"
+     body_id             = "30302"
+     body_type           = "RigidBody"
+     pos_x               = "-0.03701643"
+     pos_y               = "0.008696819"
+     pos_z               = "-0.10488428"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "1."
+     a22                 = "-5.4408E-06"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.j_marker -->
+  <Reference_Marker
+     id                  = "30502020"
+     label               = "Marker J"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Marker J"
+     body_id             = "30302"
+     body_type           = "RigidBody"
+     pos_x               = "-0.03701643"
+     pos_y               = "0.008696819"
+     pos_z               = "-0.10488428"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "1."
+     a22                 = "-5.4408E-06"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.j_marker -->
+  <Reference_Marker
+     id                  = "30601020"
+     label               = "Marker J"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+     pos_x               = "0.066737563"
+     pos_y               = "-0.01982542"
+     pos_z               = "-0.0156845"
+     a00                 = "0."
+     a10                 = "0."
+     a20                 = "1."
+     a02                 = "-1."
+     a12                 = "0."
+     a22                 = "0."
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.i_marker -->
+  <Reference_Marker
+     id                  = "30605010"
+     label               = "Marker I"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-Marker I"
+     body_id             = "30305"
+     body_type           = "RigidBody"
+     pos_x               = "0.066737563"
+     pos_y               = "-0.01982542"
+     pos_z               = "-0.0156845"
+     a00                 = "0."
+     a10                 = "0."
+     a20                 = "1."
+     a02                 = "-1."
+     a12                 = "0."
+     a22                 = "0."
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.j_marker -->
+  <Reference_Marker
+     id                  = "30701020"
+     label               = "Marker J"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+     pos_x               = "0.031237545"
+     pos_y               = "0.073867762"
+     pos_z               = "-0.1788845"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "-1."
+     a22                 = "0."
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.i_marker -->
+  <Reference_Marker
+     id                  = "30704010"
+     label               = "Marker I"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-Marker I"
+     body_id             = "30304"
+     body_type           = "RigidBody"
+     pos_x               = "0.031237545"
+     pos_y               = "0.073867762"
+     pos_z               = "-0.1788845"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "-1."
+     a22                 = "0."
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.j_marker -->
+  <Reference_Marker
+     id                  = "30801020"
+     label               = "Marker J"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+     pos_x               = "0.012837563"
+     pos_y               = "-0.00131742"
+     pos_z               = "0.0805805"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "0."
+     a22                 = "-1."
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.i_marker -->
+  <Reference_Marker
+     id                  = "30803010"
+     label               = "Marker I"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-Marker I"
+     body_id             = "30303"
+     body_type           = "RigidBody"
+     pos_x               = "0.012837563"
+     pos_y               = "-0.00131742"
+     pos_z               = "0.0805805"
+     a00                 = "-1."
+     a10                 = "0."
+     a20                 = "0."
+     a02                 = "0."
+     a12                 = "0."
+     a22                 = "-1."
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1_DISPLACEMENT.i -->
+  <Reference_Marker
+     id                  = "70000001"
+     label               = "V2 10 TABLER  NEW 1 - DISPLACEMENT-Marker I"
+     full_label          = "Assembly1222-Assembly1222-V2 10 TABLER  NEW 1 - DISPLACEMENT-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1_DISPLACEMENT.j -->
+  <Reference_Marker
+     id                  = "70000002"
+     label               = "V2 10 TABLER  NEW 1 - DISPLACEMENT-Marker J"
+     full_label          = "Assembly1222-Assembly1222-V2 10 TABLER  NEW 1 - DISPLACEMENT-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1_VELOCITY.i -->
+  <Reference_Marker
+     id                  = "70000003"
+     label               = "V2 10 TABLER  NEW 1 - VELOCITY-Marker I"
+     full_label          = "Assembly1222-Assembly1222-V2 10 TABLER  NEW 1 - VELOCITY-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1_VELOCITY.j -->
+  <Reference_Marker
+     id                  = "70000004"
+     label               = "V2 10 TABLER  NEW 1 - VELOCITY-Marker J"
+     full_label          = "Assembly1222-Assembly1222-V2 10 TABLER  NEW 1 - VELOCITY-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1_ACCELERATION.i -->
+  <Reference_Marker
+     id                  = "70000005"
+     label               = "V2 10 TABLER  NEW 1 - ACCELERATION-Marker I"
+     full_label          = "Assembly1222-Assembly1222-V2 10 TABLER  NEW 1 - ACCELERATION-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1_ACCELERATION.j -->
+  <Reference_Marker
+     id                  = "70000006"
+     label               = "V2 10 TABLER  NEW 1 - ACCELERATION-Marker J"
+     full_label          = "Assembly1222-Assembly1222-V2 10 TABLER  NEW 1 - ACCELERATION-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_DISPLACEMENT.i -->
+  <Reference_Marker
+     id                  = "70000009"
+     label               = "Rigid Group 1 - DISPLACEMENT-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Rigid Group 1 - DISPLACEMENT-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_DISPLACEMENT.j -->
+  <Reference_Marker
+     id                  = "70000010"
+     label               = "Rigid Group 1 - DISPLACEMENT-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Rigid Group 1 - DISPLACEMENT-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_VELOCITY.i -->
+  <Reference_Marker
+     id                  = "70000011"
+     label               = "Rigid Group 1 - VELOCITY-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Rigid Group 1 - VELOCITY-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_VELOCITY.j -->
+  <Reference_Marker
+     id                  = "70000012"
+     label               = "Rigid Group 1 - VELOCITY-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Rigid Group 1 - VELOCITY-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_ACCELERATION.i -->
+  <Reference_Marker
+     id                  = "70000013"
+     label               = "Rigid Group 1 - ACCELERATION-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Rigid Group 1 - ACCELERATION-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_ACCELERATION.j -->
+  <Reference_Marker
+     id                  = "70000014"
+     label               = "Rigid Group 1 - ACCELERATION-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Rigid Group 1 - ACCELERATION-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1_DISPLACEMENT.i -->
+  <Reference_Marker
+     id                  = "70000017"
+     label               = "V2 10  VERT 1 - DISPLACEMENT-Marker I"
+     full_label          = "Assembly1222-Assembly1222-V2 10  VERT 1 - DISPLACEMENT-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1_DISPLACEMENT.j -->
+  <Reference_Marker
+     id                  = "70000018"
+     label               = "V2 10  VERT 1 - DISPLACEMENT-Marker J"
+     full_label          = "Assembly1222-Assembly1222-V2 10  VERT 1 - DISPLACEMENT-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1_VELOCITY.i -->
+  <Reference_Marker
+     id                  = "70000019"
+     label               = "V2 10  VERT 1 - VELOCITY-Marker I"
+     full_label          = "Assembly1222-Assembly1222-V2 10  VERT 1 - VELOCITY-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1_VELOCITY.j -->
+  <Reference_Marker
+     id                  = "70000020"
+     label               = "V2 10  VERT 1 - VELOCITY-Marker J"
+     full_label          = "Assembly1222-Assembly1222-V2 10  VERT 1 - VELOCITY-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1_ACCELERATION.i -->
+  <Reference_Marker
+     id                  = "70000021"
+     label               = "V2 10  VERT 1 - ACCELERATION-Marker I"
+     full_label          = "Assembly1222-Assembly1222-V2 10  VERT 1 - ACCELERATION-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1_ACCELERATION.j -->
+  <Reference_Marker
+     id                  = "70000022"
+     label               = "V2 10  VERT 1 - ACCELERATION-Marker J"
+     full_label          = "Assembly1222-Assembly1222-V2 10  VERT 1 - ACCELERATION-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1_DISPLACEMENT.i -->
+  <Reference_Marker
+     id                  = "70000025"
+     label               = "V2 10 CARRAGE107X 1 - DISPLACEMENT-Marker I"
+     full_label          = "Assembly1222-Assembly1222-V2 10 CARRAGE107X 1 - DISPLACEMENT-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1_DISPLACEMENT.j -->
+  <Reference_Marker
+     id                  = "70000026"
+     label               = "V2 10 CARRAGE107X 1 - DISPLACEMENT-Marker J"
+     full_label          = "Assembly1222-Assembly1222-V2 10 CARRAGE107X 1 - DISPLACEMENT-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1_VELOCITY.i -->
+  <Reference_Marker
+     id                  = "70000027"
+     label               = "V2 10 CARRAGE107X 1 - VELOCITY-Marker I"
+     full_label          = "Assembly1222-Assembly1222-V2 10 CARRAGE107X 1 - VELOCITY-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1_VELOCITY.j -->
+  <Reference_Marker
+     id                  = "70000028"
+     label               = "V2 10 CARRAGE107X 1 - VELOCITY-Marker J"
+     full_label          = "Assembly1222-Assembly1222-V2 10 CARRAGE107X 1 - VELOCITY-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1_ACCELERATION.i -->
+  <Reference_Marker
+     id                  = "70000029"
+     label               = "V2 10 CARRAGE107X 1 - ACCELERATION-Marker I"
+     full_label          = "Assembly1222-Assembly1222-V2 10 CARRAGE107X 1 - ACCELERATION-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1_ACCELERATION.j -->
+  <Reference_Marker
+     id                  = "70000030"
+     label               = "V2 10 CARRAGE107X 1 - ACCELERATION-Marker J"
+     full_label          = "Assembly1222-Assembly1222-V2 10 CARRAGE107X 1 - ACCELERATION-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1_DISPLACEMENT.i -->
+  <Reference_Marker
+     id                  = "70000031"
+     label               = "Joint 1 - TRANSLATIONAL - DISPLACEMENT-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 1 - TRANSLATIONAL - DISPLACEMENT-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1_DISPLACEMENT.j -->
+  <Reference_Marker
+     id                  = "70000032"
+     label               = "Joint 1 - TRANSLATIONAL - DISPLACEMENT-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 1 - TRANSLATIONAL - DISPLACEMENT-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1_VELOCITY.i -->
+  <Reference_Marker
+     id                  = "70000033"
+     label               = "Joint 1 - TRANSLATIONAL - VELOCITY-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 1 - TRANSLATIONAL - VELOCITY-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1_VELOCITY.j -->
+  <Reference_Marker
+     id                  = "70000034"
+     label               = "Joint 1 - TRANSLATIONAL - VELOCITY-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 1 - TRANSLATIONAL - VELOCITY-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1_ACCELERATION.i -->
+  <Reference_Marker
+     id                  = "70000035"
+     label               = "Joint 1 - TRANSLATIONAL - ACCELERATION-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 1 - TRANSLATIONAL - ACCELERATION-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1_ACCELERATION.j -->
+  <Reference_Marker
+     id                  = "70000036"
+     label               = "Joint 1 - TRANSLATIONAL - ACCELERATION-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 1 - TRANSLATIONAL - ACCELERATION-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1_FORCE.i -->
+  <Reference_Marker
+     id                  = "70000037"
+     label               = "Joint 1 - TRANSLATIONAL - FORCE-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 1 - TRANSLATIONAL - FORCE-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1_FORCE.j -->
+  <Reference_Marker
+     id                  = "70000038"
+     label               = "Joint 1 - TRANSLATIONAL - FORCE-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 1 - TRANSLATIONAL - FORCE-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2_DISPLACEMENT.i -->
+  <Reference_Marker
+     id                  = "70000039"
+     label               = "Joint 2 - TRANSLATIONAL - DISPLACEMENT-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 2 - TRANSLATIONAL - DISPLACEMENT-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2_DISPLACEMENT.j -->
+  <Reference_Marker
+     id                  = "70000040"
+     label               = "Joint 2 - TRANSLATIONAL - DISPLACEMENT-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 2 - TRANSLATIONAL - DISPLACEMENT-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2_VELOCITY.i -->
+  <Reference_Marker
+     id                  = "70000041"
+     label               = "Joint 2 - TRANSLATIONAL - VELOCITY-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 2 - TRANSLATIONAL - VELOCITY-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2_VELOCITY.j -->
+  <Reference_Marker
+     id                  = "70000042"
+     label               = "Joint 2 - TRANSLATIONAL - VELOCITY-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 2 - TRANSLATIONAL - VELOCITY-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2_ACCELERATION.i -->
+  <Reference_Marker
+     id                  = "70000043"
+     label               = "Joint 2 - TRANSLATIONAL - ACCELERATION-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 2 - TRANSLATIONAL - ACCELERATION-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2_ACCELERATION.j -->
+  <Reference_Marker
+     id                  = "70000044"
+     label               = "Joint 2 - TRANSLATIONAL - ACCELERATION-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 2 - TRANSLATIONAL - ACCELERATION-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2_FORCE.i -->
+  <Reference_Marker
+     id                  = "70000045"
+     label               = "Joint 2 - TRANSLATIONAL - FORCE-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 2 - TRANSLATIONAL - FORCE-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2_FORCE.j -->
+  <Reference_Marker
+     id                  = "70000046"
+     label               = "Joint 2 - TRANSLATIONAL - FORCE-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 2 - TRANSLATIONAL - FORCE-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3_DISPLACEMENT.i -->
+  <Reference_Marker
+     id                  = "70000047"
+     label               = "Joint 3 - TRANSLATIONAL - DISPLACEMENT-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 3 - TRANSLATIONAL - DISPLACEMENT-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3_DISPLACEMENT.j -->
+  <Reference_Marker
+     id                  = "70000048"
+     label               = "Joint 3 - TRANSLATIONAL - DISPLACEMENT-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 3 - TRANSLATIONAL - DISPLACEMENT-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3_VELOCITY.i -->
+  <Reference_Marker
+     id                  = "70000049"
+     label               = "Joint 3 - TRANSLATIONAL - VELOCITY-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 3 - TRANSLATIONAL - VELOCITY-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3_VELOCITY.j -->
+  <Reference_Marker
+     id                  = "70000050"
+     label               = "Joint 3 - TRANSLATIONAL - VELOCITY-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 3 - TRANSLATIONAL - VELOCITY-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3_ACCELERATION.i -->
+  <Reference_Marker
+     id                  = "70000051"
+     label               = "Joint 3 - TRANSLATIONAL - ACCELERATION-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 3 - TRANSLATIONAL - ACCELERATION-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3_ACCELERATION.j -->
+  <Reference_Marker
+     id                  = "70000052"
+     label               = "Joint 3 - TRANSLATIONAL - ACCELERATION-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 3 - TRANSLATIONAL - ACCELERATION-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3_FORCE.i -->
+  <Reference_Marker
+     id                  = "70000053"
+     label               = "Joint 3 - TRANSLATIONAL - FORCE-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 3 - TRANSLATIONAL - FORCE-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3_FORCE.j -->
+  <Reference_Marker
+     id                  = "70000054"
+     label               = "Joint 3 - TRANSLATIONAL - FORCE-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 3 - TRANSLATIONAL - FORCE-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4_DISPLACEMENT.i -->
+  <Reference_Marker
+     id                  = "70000055"
+     label               = "Joint 4 - REVOLUTE - DISPLACEMENT-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 4 - REVOLUTE - DISPLACEMENT-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4_DISPLACEMENT.j -->
+  <Reference_Marker
+     id                  = "70000056"
+     label               = "Joint 4 - REVOLUTE - DISPLACEMENT-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 4 - REVOLUTE - DISPLACEMENT-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4_VELOCITY.i -->
+  <Reference_Marker
+     id                  = "70000057"
+     label               = "Joint 4 - REVOLUTE - VELOCITY-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 4 - REVOLUTE - VELOCITY-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4_VELOCITY.j -->
+  <Reference_Marker
+     id                  = "70000058"
+     label               = "Joint 4 - REVOLUTE - VELOCITY-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 4 - REVOLUTE - VELOCITY-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4_ACCELERATION.i -->
+  <Reference_Marker
+     id                  = "70000059"
+     label               = "Joint 4 - REVOLUTE - ACCELERATION-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 4 - REVOLUTE - ACCELERATION-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4_ACCELERATION.j -->
+  <Reference_Marker
+     id                  = "70000060"
+     label               = "Joint 4 - REVOLUTE - ACCELERATION-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 4 - REVOLUTE - ACCELERATION-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4_FORCE.i -->
+  <Reference_Marker
+     id                  = "70000061"
+     label               = "Joint 4 - REVOLUTE - FORCE-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 4 - REVOLUTE - FORCE-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4_FORCE.j -->
+  <Reference_Marker
+     id                  = "70000062"
+     label               = "Joint 4 - REVOLUTE - FORCE-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 4 - REVOLUTE - FORCE-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5_DISPLACEMENT.i -->
+  <Reference_Marker
+     id                  = "70000063"
+     label               = "Joint 5 - REVOLUTE - DISPLACEMENT-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 5 - REVOLUTE - DISPLACEMENT-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5_DISPLACEMENT.j -->
+  <Reference_Marker
+     id                  = "70000064"
+     label               = "Joint 5 - REVOLUTE - DISPLACEMENT-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 5 - REVOLUTE - DISPLACEMENT-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5_VELOCITY.i -->
+  <Reference_Marker
+     id                  = "70000065"
+     label               = "Joint 5 - REVOLUTE - VELOCITY-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 5 - REVOLUTE - VELOCITY-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5_VELOCITY.j -->
+  <Reference_Marker
+     id                  = "70000066"
+     label               = "Joint 5 - REVOLUTE - VELOCITY-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 5 - REVOLUTE - VELOCITY-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5_ACCELERATION.i -->
+  <Reference_Marker
+     id                  = "70000067"
+     label               = "Joint 5 - REVOLUTE - ACCELERATION-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 5 - REVOLUTE - ACCELERATION-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5_ACCELERATION.j -->
+  <Reference_Marker
+     id                  = "70000068"
+     label               = "Joint 5 - REVOLUTE - ACCELERATION-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 5 - REVOLUTE - ACCELERATION-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5_FORCE.i -->
+  <Reference_Marker
+     id                  = "70000069"
+     label               = "Joint 5 - REVOLUTE - FORCE-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Joint 5 - REVOLUTE - FORCE-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5_FORCE.j -->
+  <Reference_Marker
+     id                  = "70000070"
+     label               = "Joint 5 - REVOLUTE - FORCE-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Joint 5 - REVOLUTE - FORCE-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.Motor_bposm_centerline_VELOCITY.i -->
+  <Reference_Marker
+     id                  = "70000071"
+     label               = "Motor bposm - Centerline - VELOCITY-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Centerline - VELOCITY-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.Motor_bposm_centerline_VELOCITY.j -->
+  <Reference_Marker
+     id                  = "70000072"
+     label               = "Motor bposm - Centerline - VELOCITY-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Centerline - VELOCITY-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.Motor_bposm_centerline_ACCELERATION.i -->
+  <Reference_Marker
+     id                  = "70000073"
+     label               = "Motor bposm - Centerline - ACCELERATION-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Centerline - ACCELERATION-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.Motor_bposm_centerline_ACCELERATION.j -->
+  <Reference_Marker
+     id                  = "70000074"
+     label               = "Motor bposm - Centerline - ACCELERATION-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Centerline - ACCELERATION-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.Motor_bposm_centerline_FORCE.i -->
+  <Reference_Marker
+     id                  = "70000075"
+     label               = "Motor bposm - Centerline - FORCE-Marker I"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Centerline - FORCE-Marker I"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.Motor_bposm_centerline_FORCE.j -->
+  <Reference_Marker
+     id                  = "70000076"
+     label               = "Motor bposm - Centerline - FORCE-Marker J"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Centerline - FORCE-Marker J"
+     body_id             = "30101"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1_cadGraphic_Global_Frame_marker -->
+  <Reference_Marker
+     id                  = "90000000"
+     label               = "V2_10_DISC_1 - CADGraphic - Global Frame Marker"
+     full_label          = "Assembly1222-Assembly1222-V2_10_DISC_1 - CADGraphic - Global Frame Marker"
+     body_id             = "30301"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1_cadGraphic_Global_Frame_marker -->
+  <Reference_Marker
+     id                  = "90000001"
+     label               = "V2_10_TABLER__NEW_1 - CADGraphic - Global Frame Marker"
+     full_label          = "Assembly1222-Assembly1222-V2_10_TABLER__NEW_1 - CADGraphic - Global Frame Marker"
+     body_id             = "30302"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_GraphicSystem.Tool_1_cadGraphic_Global_Frame_marker -->
+  <Reference_Marker
+     id                  = "90000002"
+     label               = "Tool_1 - CADGraphic - Global Frame Marker"
+     full_label          = "Assembly1222-Assembly1222-Rigid_Group_1 - GraphicSystem-Tool_1 - CADGraphic - Global Frame Marker"
+     body_id             = "30303"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_GraphicSystem.V2_10_SPINDLE109_1_2_cadGraphic_Global_Frame_marker -->
+  <Reference_Marker
+     id                  = "90000003"
+     label               = "V2_10_SPINDLE109_1_2 - CADGraphic - Global Frame Marker"
+     full_label          = "Assembly1222-Assembly1222-Rigid_Group_1 - GraphicSystem-V2_10_SPINDLE109_1_2 - CADGraphic - Global Frame Marker"
+     body_id             = "30303"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_GraphicSystem.V2_10_SPINDLE109_1_1_cadGraphic_Global_Frame_marker -->
+  <Reference_Marker
+     id                  = "90000004"
+     label               = "V2_10_SPINDLE109_1_1 - CADGraphic - Global Frame Marker"
+     full_label          = "Assembly1222-Assembly1222-Rigid_Group_1 - GraphicSystem-V2_10_SPINDLE109_1_1 - CADGraphic - Global Frame Marker"
+     body_id             = "30303"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_GraphicSystem.V2_10_SPINDLE109_1_cadGraphic_Global_Frame_marker -->
+  <Reference_Marker
+     id                  = "90000005"
+     label               = "V2_10_SPINDLE109_1 - CADGraphic - Global Frame Marker"
+     full_label          = "Assembly1222-Assembly1222-Rigid_Group_1 - GraphicSystem-V2_10_SPINDLE109_1 - CADGraphic - Global Frame Marker"
+     body_id             = "30303"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1_cadGraphic_Global_Frame_marker -->
+  <Reference_Marker
+     id                  = "90000006"
+     label               = "V2_10__VERT_1 - CADGraphic - Global Frame Marker"
+     full_label          = "Assembly1222-Assembly1222-V2_10__VERT_1 - CADGraphic - Global Frame Marker"
+     body_id             = "30304"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1_cadGraphic_Global_Frame_marker -->
+  <Reference_Marker
+     id                  = "90000007"
+     label               = "V2_10_CARRAGE107X_1 - CADGraphic - Global Frame Marker"
+     full_label          = "Assembly1222-Assembly1222-V2_10_CARRAGE107X_1 - CADGraphic - Global Frame Marker"
+     body_id             = "30305"
+     body_type           = "RigidBody"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.spline -->
+  <Reference_Spline
+     id                  = "304001"
+     label               = "spline profile"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-spline profile"
+     num_x               = "24"
+     linear_extrap       = "TRUE">
+   0.0000000E+00   0.0000000E+00
+   1.0000000E+00  -1.7453293E-01
+   2.0000000E+00  -3.4906585E-01
+   3.0000000E+00  -5.2359878E-01
+   4.0000000E+00  -6.9813170E-01
+   5.0000000E+00  -5.2359878E-01
+   6.0000000E+00  -3.4906585E-01
+   7.0000000E+00  -1.7453293E-01
+   8.0000000E+00   0.0000000E+00
+   9.0000000E+00   1.7453293E-01
+   1.0000000E+01  -3.4906585E-01
+   1.1000000E+01  -5.2359878E-01
+   1.2000000E+01  -6.9813170E-01
+   1.3000000E+01  -5.2359878E-01
+   1.4000000E+01  -3.4906585E-01
+   1.5000000E+01   1.7453293E-01
+   1.6000000E+01   0.0000000E+00
+   1.7000000E+01   0.0000000E+00
+   1.8000000E+01   1.7453293E-01
+   1.9000000E+01  -3.4906585E-01
+   2.0000000E+01  -5.2359878E-01
+   2.1000000E+01  -6.9813170E-01
+   2.2000000E+01  -5.2359878E-01
+   3.0000000E+01  -3.4906585E-01
+  </Reference_Spline>
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.spline -->
+  <Reference_Spline
+     id                  = "305001"
+     label               = "spline profile"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-spline profile"
+     num_x               = "24"
+     linear_extrap       = "TRUE">
+   0.0000000E+00   0.0000000E+00
+   1.0000000E+00   6.9813170E-01
+   2.0000000E+00   5.2359878E-01
+   3.0000000E+00   3.4906585E-01
+   4.0000000E+00   1.7453293E-01
+   5.0000000E+00   0.0000000E+00
+   6.0000000E+00   0.0000000E+00
+   7.0000000E+00   6.9813170E-01
+   8.0000000E+00   5.2359878E-01
+   9.0000000E+00   3.4906585E-01
+   1.0000000E+01   1.7453293E-01
+   1.1000000E+01   0.0000000E+00
+   1.2000000E+01   0.0000000E+00
+   1.3000000E+01   6.9813170E-01
+   1.4000000E+01   5.2359878E-01
+   1.5000000E+01   3.4906585E-01
+   1.6000000E+01   1.7453293E-01
+   1.7000000E+01   0.0000000E+00
+   1.8000000E+01   0.0000000E+00
+   1.9000000E+01   6.9813170E-01
+   2.0000000E+01   5.2359878E-01
+   2.1000000E+01   3.4906585E-01
+   2.2000000E+01   1.7453293E-01
+   3.0000000E+01   0.0000000E+00
+  </Reference_Spline>
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.spline -->
+  <Reference_Spline
+     id                  = "306001"
+     label               = "spline profile"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-spline profile"
+     num_x               = "22"
+     linear_extrap       = "TRUE">
+   0.0000000E+00   0.0000000E+00
+   1.0000000E+00   7.0000000E-03
+   2.0000000E+00   6.0000000E-03
+   3.0000000E+00   5.0000000E-03
+   4.0000000E+00   0.0000000E+00
+   5.0000000E+00   7.0000000E-03
+   6.0000000E+00   6.0000000E-03
+   7.0000000E+00   5.0000000E-03
+   8.0000000E+00   0.0000000E+00
+   9.0000000E+00   7.0000000E-03
+   1.0000000E+01   6.0000000E-03
+   1.1000000E+01   5.0000000E-03
+   1.2000000E+01   0.0000000E+00
+   1.3000000E+01   7.0000000E-03
+   1.4000000E+01   6.0000000E-03
+   1.5000000E+01   5.0000000E-03
+   1.6000000E+01   0.0000000E+00
+   1.7000000E+01   7.0000000E-03
+   1.8000000E+01   6.0000000E-03
+   1.9000000E+01   5.0000000E-03
+   2.0000000E+01   9.0000000E-03
+   3.0000000E+01   1.0000000E-03
+  </Reference_Spline>
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.spline -->
+  <Reference_Spline
+     id                  = "307001"
+     label               = "spline profile"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-spline profile"
+     num_x               = "22"
+     linear_extrap       = "TRUE">
+   0.0000000E+00   0.0000000E+00
+   1.0000000E+00   6.0000000E-03
+   2.0000000E+00   6.0000000E-03
+   3.0000000E+00   0.0000000E+00
+   4.0000000E+00   8.0000000E-03
+   5.0000000E+00   6.0000000E-03
+   6.0000000E+00   6.0000000E-03
+   7.0000000E+00   0.0000000E+00
+   8.0000000E+00   0.0000000E+00
+   9.0000000E+00   6.0000000E-03
+   1.0000000E+01   6.0000000E-03
+   1.1000000E+01   8.0000000E-03
+   1.2000000E+01   8.0000000E-03
+   1.3000000E+01   6.0000000E-03
+   1.4000000E+01   6.0000000E-03
+   1.5000000E+01   0.0000000E+00
+   1.6000000E+01   0.0000000E+00
+   1.7000000E+01   6.0000000E-03
+   1.8000000E+01   6.0000000E-03
+   1.9000000E+01   8.0000000E-03
+   2.0000000E+01   8.0000000E-03
+   3.0000000E+01   6.0000000E-03
+  </Reference_Spline>
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.spline -->
+  <Reference_Spline
+     id                  = "308001"
+     label               = "spline profile"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-spline profile"
+     num_x               = "24"
+     linear_extrap       = "TRUE">
+   0.0000000E+00   0.0000000E+00
+   1.0000000E+00   8.0000000E-03
+   2.0000000E+00   6.0000000E-03
+   3.0000000E+00   5.0000000E-03
+   4.0000000E+00   2.0000000E-03
+   5.0000000E+00   3.0000000E-03
+   6.0000000E+00   4.0000000E-03
+   7.0000000E+00   7.0000000E-03
+   8.0000000E+00   0.0000000E+00
+   9.0000000E+00   8.0000000E-03
+   1.0000000E+01   6.0000000E-03
+   1.1000000E+01   5.0000000E-03
+   1.2000000E+01   2.0000000E-03
+   1.3000000E+01   3.0000000E-03
+   1.4000000E+01   4.0000000E-03
+   1.5000000E+01   7.0000000E-03
+   1.6000000E+01   0.0000000E+00
+   1.7000000E+01   8.0000000E-03
+   1.8000000E+01   6.0000000E-03
+   1.9000000E+01   5.0000000E-03
+   2.0000000E+01   2.0000000E-03
+   2.1000000E+01   3.0000000E-03
+   2.2000000E+01   4.0000000E-03
+   3.0000000E+01   7.0000000E-03
+  </Reference_Spline>
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.velocity -->
+  <Reference_Variable
+     id                  = "30400100"
+     label               = "Motor apsom - Angular Velocity"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Motor apsom - Angular Velocity"
+     type                = "EXPRESSION"
+     expr                = "WZ(30402010,30401020,30401020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.acceleration -->
+  <Reference_Variable
+     id                  = "30400200"
+     label               = "Motor apsom- Angular Acceleration"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Motor apsom- Angular Acceleration"
+     type                = "EXPRESSION"
+     expr                = "WDTZ(30402010,30401020,30401020,30401020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.force_signal -->
+  <Reference_Variable
+     id                  = "30400300"
+     label               = "Motor apsom - Torque"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Motor apsom - Torque"
+     type                = "EXPRESSION"
+     expr                = "MOTION(304001,0,8,30401020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.desired_signal -->
+  <Reference_Variable
+     id                  = "30400400"
+     label               = "Motor apsom - Reference Angle"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Motor apsom - Reference Angle"
+     type                = "EXPRESSION"
+     expr                = "STEP5(TIME,0,0,0.05,1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME,0,304001)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.output_displacement -->
+  <Reference_Variable
+     id                  = "30400500"
+     label               = "Motor apsom - Angular Displacement"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Motor apsom - Angular Displacement"
+     type                = "EXPRESSION"
+     expr                = "AZ(30402010,30401020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.command_signal -->
+  <Reference_Variable
+     id                  = "30400600"
+     label               = "Motor apsom - Command Signal"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Motor apsom - Command Signal"
+     type                = "EXPRESSION"
+     expr                = "0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.override_signal -->
+  <Reference_Variable
+     id                  = "30400700"
+     label               = "Motor apsom - Override Inspire Motion Controller"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Motor apsom - Override Inspire Motion Controller"
+     type                = "EXPRESSION"
+     expr                = "0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.velocity -->
+  <Reference_Variable
+     id                  = "30500100"
+     label               = "Motor bposm - Angular Velocity"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Angular Velocity"
+     type                = "EXPRESSION"
+     expr                = "WZ(30501010,30502020,30502020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.acceleration -->
+  <Reference_Variable
+     id                  = "30500200"
+     label               = "Motor bposm- Angular Acceleration"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm- Angular Acceleration"
+     type                = "EXPRESSION"
+     expr                = "WDTZ(30501010,30502020,30502020,30502020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.force_signal -->
+  <Reference_Variable
+     id                  = "30500300"
+     label               = "Motor bposm - Torque"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Torque"
+     type                = "EXPRESSION"
+     expr                = "MOTION(305001,0,8,30502020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.desired_signal -->
+  <Reference_Variable
+     id                  = "30500400"
+     label               = "Motor bposm - Reference Angle"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Reference Angle"
+     type                = "EXPRESSION"
+     expr                = "STEP5(TIME,0,0,0.05,1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME,0,305001)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.output_displacement -->
+  <Reference_Variable
+     id                  = "30500500"
+     label               = "Motor bposm - Angular Displacement"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Angular Displacement"
+     type                = "EXPRESSION"
+     expr                = "AZ(30501010,30502020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.command_signal -->
+  <Reference_Variable
+     id                  = "30500600"
+     label               = "Motor bposm - Command Signal"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Command Signal"
+     type                = "EXPRESSION"
+     expr                = "0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.override_signal -->
+  <Reference_Variable
+     id                  = "30500700"
+     label               = "Motor bposm - Override Inspire Motion Controller"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Override Inspire Motion Controller"
+     type                = "EXPRESSION"
+     expr                = "0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.velocity -->
+  <Reference_Variable
+     id                  = "30600100"
+     label               = "Actuator xpm - Velocity"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-Actuator xpm - Velocity"
+     type                = "EXPRESSION"
+     expr                = "VZ(30605010,30601020,30601020,30601020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.acceleration -->
+  <Reference_Variable
+     id                  = "30600200"
+     label               = "Actuator xpm- Acceleration"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-Actuator xpm- Acceleration"
+     type                = "EXPRESSION"
+     expr                = "ACCZ(30605010,30601020,30601020,30601020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.force_signal -->
+  <Reference_Variable
+     id                  = "30600300"
+     label               = "Actuator xpm - Force"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-Actuator xpm - Force"
+     type                = "EXPRESSION"
+     expr                = "MOTION(306001,0,4,30601020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.desired_signal -->
+  <Reference_Variable
+     id                  = "30600400"
+     label               = "Actuator xpm - Reference Displacement"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-Actuator xpm - Reference Displacement"
+     type                = "EXPRESSION"
+     expr                = "STEP5(TIME,0,0,0.05,1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME,0,306001)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.travel -->
+  <Reference_Variable
+     id                  = "30600500"
+     label               = "Actuator xpm - Travel"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-Actuator xpm - Travel"
+     type                = "EXPRESSION"
+     expr                = "DZ(30605010,30601020,30601020)-0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.command_signal -->
+  <Reference_Variable
+     id                  = "30600600"
+     label               = "Actuator xpm - Command Signal"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-Actuator xpm - Command Signal"
+     type                = "EXPRESSION"
+     expr                = "0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.override_signal -->
+  <Reference_Variable
+     id                  = "30600700"
+     label               = "Actuator xpm - Override Inspire Motion Controller"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-Actuator xpm - Override Inspire Motion Controller"
+     type                = "EXPRESSION"
+     expr                = "0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.velocity -->
+  <Reference_Variable
+     id                  = "30700100"
+     label               = "Actuator ypm - Velocity"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-Actuator ypm - Velocity"
+     type                = "EXPRESSION"
+     expr                = "VZ(30704010,30701020,30701020,30701020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.acceleration -->
+  <Reference_Variable
+     id                  = "30700200"
+     label               = "Actuator ypm- Acceleration"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-Actuator ypm- Acceleration"
+     type                = "EXPRESSION"
+     expr                = "ACCZ(30704010,30701020,30701020,30701020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.force_signal -->
+  <Reference_Variable
+     id                  = "30700300"
+     label               = "Actuator ypm - Force"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-Actuator ypm - Force"
+     type                = "EXPRESSION"
+     expr                = "MOTION(307001,0,4,30701020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.desired_signal -->
+  <Reference_Variable
+     id                  = "30700400"
+     label               = "Actuator ypm - Reference Displacement"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-Actuator ypm - Reference Displacement"
+     type                = "EXPRESSION"
+     expr                = "STEP5(TIME,0,0,0.05,1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME,0,307001)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.travel -->
+  <Reference_Variable
+     id                  = "30700500"
+     label               = "Actuator ypm - Travel"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-Actuator ypm - Travel"
+     type                = "EXPRESSION"
+     expr                = "DZ(30704010,30701020,30701020)-0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.command_signal -->
+  <Reference_Variable
+     id                  = "30700600"
+     label               = "Actuator ypm - Command Signal"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-Actuator ypm - Command Signal"
+     type                = "EXPRESSION"
+     expr                = "0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.override_signal -->
+  <Reference_Variable
+     id                  = "30700700"
+     label               = "Actuator ypm - Override Inspire Motion Controller"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-Actuator ypm - Override Inspire Motion Controller"
+     type                = "EXPRESSION"
+     expr                = "0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.velocity -->
+  <Reference_Variable
+     id                  = "30800100"
+     label               = "Actuator zpm - Velocity"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-Actuator zpm - Velocity"
+     type                = "EXPRESSION"
+     expr                = "VZ(30803010,30801020,30801020,30801020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.acceleration -->
+  <Reference_Variable
+     id                  = "30800200"
+     label               = "Actuator zpm- Acceleration"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-Actuator zpm- Acceleration"
+     type                = "EXPRESSION"
+     expr                = "ACCZ(30803010,30801020,30801020,30801020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.force_signal -->
+  <Reference_Variable
+     id                  = "30800300"
+     label               = "Actuator zpm - Force"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-Actuator zpm - Force"
+     type                = "EXPRESSION"
+     expr                = "MOTION(308001,0,4,30801020)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.desired_signal -->
+  <Reference_Variable
+     id                  = "30800400"
+     label               = "Actuator zpm - Reference Displacement"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-Actuator zpm - Reference Displacement"
+     type                = "EXPRESSION"
+     expr                = "STEP5(TIME,0,0,0.05,1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME,0,308001)"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.travel -->
+  <Reference_Variable
+     id                  = "30800500"
+     label               = "Actuator zpm - Travel"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-Actuator zpm - Travel"
+     type                = "EXPRESSION"
+     expr                = "DZ(30803010,30801020,30801020)-0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.command_signal -->
+  <Reference_Variable
+     id                  = "30800600"
+     label               = "Actuator zpm - Command Signal"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-Actuator zpm - Command Signal"
+     type                = "EXPRESSION"
+     expr                = "0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.override_signal -->
+  <Reference_Variable
+     id                  = "30800700"
+     label               = "Actuator zpm - Override Inspire Motion Controller"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-Actuator zpm - Override Inspire Motion Controller"
+     type                = "EXPRESSION"
+     expr                = "0"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.u_input -->
+  <Control_PlantInput
+     id                  = "30400200"
+     label               = "Motor apsom - Plant Inputs"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Motor apsom - Plant Inputs"
+     hold_order          = "0"
+     sampling_period     = "0."
+     offset_time         = "0."
+     num_element         = "3"
+     variable_id_list    = "30400600 30400700 30400300"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.u_input -->
+  <Control_PlantInput
+     id                  = "30500200"
+     label               = "Motor bposm - Plant Inputs"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Plant Inputs"
+     hold_order          = "0"
+     sampling_period     = "0."
+     offset_time         = "0."
+     num_element         = "3"
+     variable_id_list    = "30500600 30500700 30500300"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.u_input -->
+  <Control_PlantInput
+     id                  = "30600200"
+     label               = "Actuator xpm - Plant Inputs"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-Actuator xpm - Plant Inputs"
+     hold_order          = "0"
+     sampling_period     = "0."
+     offset_time         = "0."
+     num_element         = "3"
+     variable_id_list    = "30600600 30600700 30600300"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.u_input -->
+  <Control_PlantInput
+     id                  = "30700200"
+     label               = "Actuator ypm - Plant Inputs"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-Actuator ypm - Plant Inputs"
+     hold_order          = "0"
+     sampling_period     = "0."
+     offset_time         = "0."
+     num_element         = "3"
+     variable_id_list    = "30700600 30700700 30700300"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.u_input -->
+  <Control_PlantInput
+     id                  = "30800200"
+     label               = "Actuator zpm - Plant Inputs"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-Actuator zpm - Plant Inputs"
+     hold_order          = "0"
+     sampling_period     = "0."
+     offset_time         = "0."
+     num_element         = "3"
+     variable_id_list    = "30800600 30800700 30800300"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.y_output -->
+  <Control_PlantOutput
+     id                  = "30400100"
+     label               = "Motor apsom - Plant Outputs"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Motor apsom - Plant Outputs"
+     hold_order          = "0"
+     sampling_period     = "0."
+     offset_time         = "0."
+     num_element         = "5"
+     variable_id_list    = "30400500 30400100 30400200 30400300 30400400"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.y_output -->
+  <Control_PlantOutput
+     id                  = "30500100"
+     label               = "Motor bposm - Plant Outputs"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor bposm - Plant Outputs"
+     hold_order          = "0"
+     sampling_period     = "0."
+     offset_time         = "0."
+     num_element         = "5"
+     variable_id_list    = "30500500 30500100 30500200 30500300 30500400"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.y_output -->
+  <Control_PlantOutput
+     id                  = "30600100"
+     label               = "Actuator xpm - Plant Outputs"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-Actuator xpm - Plant Outputs"
+     hold_order          = "0"
+     sampling_period     = "0."
+     offset_time         = "0."
+     num_element         = "5"
+     variable_id_list    = "30600500 30600100 30600200 30600300 30600400"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.y_output -->
+  <Control_PlantOutput
+     id                  = "30700100"
+     label               = "Actuator ypm - Plant Outputs"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-Actuator ypm - Plant Outputs"
+     hold_order          = "0"
+     sampling_period     = "0."
+     offset_time         = "0."
+     num_element         = "5"
+     variable_id_list    = "30700500 30700100 30700200 30700300 30700400"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.y_output -->
+  <Control_PlantOutput
+     id                  = "30800100"
+     label               = "Actuator zpm - Plant Outputs"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-Actuator zpm - Plant Outputs"
+     hold_order          = "0"
+     sampling_period     = "0."
+     offset_time         = "0."
+     num_element         = "5"
+     variable_id_list    = "30800500 30800100 30800200 30800300 30800400"
+  />
+<!-- MODEL.B_Ground -->
+  <Body_Rigid
+     id                  = "30101"
+     label               = "Ground Body"
+     full_label          = "Assembly1222-Ground Body"
+     IsGround            = "TRUE"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1 -->
+  <Body_Rigid
+     id                  = "30301"
+     label               = "V2 10 DISC 1"
+     full_label          = "Assembly1222-Assembly1222-V2 10 DISC 1"
+     cg_id               = "30301020"
+     im_id               = "30301020"
+     lprf_id             = "30301001"
+     mass                = "0.58551164"
+     inertia_xx          = "0.000417471"
+     inertia_yy          = "0.000804789"
+     inertia_zz          = "0.000417471"
+     inertia_xy          = "-5.1836E-16"
+     inertia_yz          = "2.1073E-09"
+     inertia_xz          = "-1.6753E-15"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1 -->
+  <Body_Rigid
+     id                  = "30302"
+     label               = "V2 10 TABLER  NEW 1"
+     full_label          = "Assembly1222-Assembly1222-V2 10 TABLER  NEW 1"
+     cg_id               = "30302040"
+     im_id               = "30302040"
+     lprf_id             = "30302001"
+     mass                = "6.2856469"
+     inertia_xx          = "0.013408169"
+     inertia_yy          = "0.024914522"
+     inertia_zz          = "0.017073766"
+     inertia_xy          = "0.002440646"
+     inertia_yz          = "0.000320177"
+     inertia_xz          = "0.002669524"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1 -->
+  <Body_Rigid
+     id                  = "30303"
+     label               = "Rigid Group 1"
+     full_label          = "Assembly1222-Assembly1222-Rigid Group 1"
+     cg_id               = "30303060"
+     im_id               = "30303060"
+     lprf_id             = "30303001"
+     mass                = "3.5573622"
+     inertia_xx          = "0.007721311"
+     inertia_yy          = "0.007372684"
+     inertia_zz          = "0.002511847"
+     inertia_xy          = "-8.6785E-05"
+     inertia_yz          = "0.000486566"
+     inertia_xz          = "-7.1308E-05"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1 -->
+  <Body_Rigid
+     id                  = "30304"
+     label               = "V2 10  VERT 1"
+     full_label          = "Assembly1222-Assembly1222-V2 10  VERT 1"
+     cg_id               = "30304080"
+     im_id               = "30304080"
+     lprf_id             = "30304001"
+     mass                = "4.1330199"
+     inertia_xx          = "0.02144476"
+     inertia_yy          = "0.012331035"
+     inertia_zz          = "0.009697833"
+     inertia_xy          = "2.5072E-05"
+     inertia_yz          = "-0.00194910"
+     inertia_xz          = "-4.8866E-06"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1 -->
+  <Body_Rigid
+     id                  = "30305"
+     label               = "V2 10 CARRAGE107X 1"
+     full_label          = "Assembly1222-Assembly1222-V2 10 CARRAGE107X 1"
+     cg_id               = "30305100"
+     im_id               = "30305100"
+     lprf_id             = "30305001"
+     mass                = "4.0641606"
+     inertia_xx          = "0.012695276"
+     inertia_yy          = "0.014295207"
+     inertia_zz          = "0.005479930"
+     inertia_xy          = "0.001230598"
+     inertia_yz          = "0.001111377"
+     inertia_xz          = "0.000844635"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.centerline -->
+  <Constraint_Joint
+     id                  = "305001"
+     label               = "Centerline"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Centerline"
+     type                = "REVOLUTE"
+     i_marker_id         = "30501017"
+     j_marker_id         = "30502010"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.motor -->
+  <Motion_Marker
+     id                  = "304001"
+     label               = "Motor Constraint"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Motor Constraint"
+     type                = "EXPRESSION"
+     val_type            = "D"
+     expr                = "IF(VARVAL(30400700):0,STEP5(TIME,0,0,0.05,1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME,0,304001),VARVAL(30400600))"
+     i_marker_id         = "30402010"
+     j_marker_id         = "30401020"
+     direction           = "B3"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.motor -->
+  <Motion_Marker
+     id                  = "305001"
+     label               = "Motor Constraint"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor Constraint"
+     type                = "EXPRESSION"
+     val_type            = "D"
+     expr                = "IF(VARVAL(30500700):0,STEP5(TIME,0,0,0.05,1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME,0,305001),VARVAL(30500600))"
+     i_marker_id         = "30501010"
+     j_marker_id         = "30502020"
+     direction           = "B3"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_xpm.actuator -->
+  <Motion_Marker
+     id                  = "306001"
+     label               = "Actuator Constraint"
+     full_label          = "Assembly1222-Assembly1222-Actuator xpm-Actuator Constraint"
+     type                = "EXPRESSION"
+     val_type            = "D"
+     expr                = "IF(VARVAL(30600700):0,STEP5(TIME,0,0,0.05,1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME,0,306001),VARVAL(30600600))"
+     i_marker_id         = "30605010"
+     j_marker_id         = "30601020"
+     direction           = "Z"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_ypm.actuator -->
+  <Motion_Marker
+     id                  = "307001"
+     label               = "Actuator Constraint"
+     full_label          = "Assembly1222-Assembly1222-Actuator ypm-Actuator Constraint"
+     type                = "EXPRESSION"
+     val_type            = "D"
+     expr                = "IF(VARVAL(30700700):0,STEP5(TIME,0,0,0.05,1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME,0,307001),VARVAL(30700600))"
+     i_marker_id         = "30704010"
+     j_marker_id         = "30701020"
+     direction           = "Z"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Actuator_zpm.actuator -->
+  <Motion_Marker
+     id                  = "308001"
+     label               = "Actuator Constraint"
+     full_label          = "Assembly1222-Assembly1222-Actuator zpm-Actuator Constraint"
+     type                = "EXPRESSION"
+     val_type            = "D"
+     expr                = "IF(VARVAL(30800700):0,STEP5(TIME,0,0,0.05,1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME,0,308001),VARVAL(30800600))"
+     i_marker_id         = "30803010"
+     j_marker_id         = "30801020"
+     direction           = "Z"
+  />
+  <Force_Gravity
+     grav_x              = "0."
+     grav_y              = "-9.80665"
+     grav_z              = "0."
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1.bush -->
+  <Force_Bushing
+     id                  = "303001"
+     label               = "Joint 1 - TRANSLATIONAL-Compliant-Joint"
+     full_label          = "Assembly1222-Assembly1222-Joint 1 - TRANSLATIONAL-Compliant-Joint"
+     i_marker_id         = "30305110"
+     j_marker_id         = "30301110"
+     kx                  = "50000000."
+     cx                  = "2500000."
+     preload_x           = "0."
+     ky                  = "50000000."
+     cy                  = "2500000."
+     preload_y           = "0."
+     ktx                 = "1.0000E+08"
+     ctx                 = "5000000."
+     preload_tx          = "0."
+     kty                 = "1.0000E+08"
+     cty                 = "5000000."
+     preload_ty          = "0."
+     ktz                 = "1.0000E+08"
+     ctz                 = "5000000."
+     preload_tz          = "0."
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2.bush -->
+  <Force_Bushing
+     id                  = "303002"
+     label               = "Joint 2 - TRANSLATIONAL-Compliant-Joint"
+     full_label          = "Assembly1222-Assembly1222-Joint 2 - TRANSLATIONAL-Compliant-Joint"
+     i_marker_id         = "30303120"
+     j_marker_id         = "30305120"
+     kx                  = "50000000."
+     cx                  = "2500000."
+     preload_x           = "0."
+     ky                  = "50000000."
+     cy                  = "2500000."
+     preload_y           = "0."
+     ktx                 = "1.0000E+08"
+     ctx                 = "5000000."
+     preload_tx          = "0."
+     kty                 = "1.0000E+08"
+     cty                 = "5000000."
+     preload_ty          = "0."
+     ktz                 = "1.0000E+08"
+     ctz                 = "5000000."
+     preload_tz          = "0."
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3.bush -->
+  <Force_Bushing
+     id                  = "303003"
+     label               = "Joint 3 - TRANSLATIONAL-Compliant-Joint"
+     full_label          = "Assembly1222-Assembly1222-Joint 3 - TRANSLATIONAL-Compliant-Joint"
+     i_marker_id         = "30304130"
+     j_marker_id         = "30301130"
+     kx                  = "50000000."
+     cx                  = "2500000."
+     preload_x           = "0."
+     ky                  = "50000000."
+     cy                  = "2500000."
+     preload_y           = "0."
+     ktx                 = "1.0000E+08"
+     ctx                 = "5000000."
+     preload_tx          = "0."
+     kty                 = "1.0000E+08"
+     cty                 = "5000000."
+     preload_ty          = "0."
+     ktz                 = "1.0000E+08"
+     ctz                 = "5000000."
+     preload_tz          = "0."
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4.bush -->
+  <Force_Bushing
+     id                  = "303004"
+     label               = "Joint 4 - REVOLUTE-Compliant-Joint"
+     full_label          = "Assembly1222-Assembly1222-Joint 4 - REVOLUTE-Compliant-Joint"
+     i_marker_id         = "30302140"
+     j_marker_id         = "30304140"
+     kx                  = "50000000."
+     cx                  = "2500000."
+     preload_x           = "0."
+     ky                  = "50000000."
+     cy                  = "2500000."
+     preload_y           = "0."
+     kz                  = "50000000."
+     cz                  = "2500000."
+     preload_z           = "0."
+     ktx                 = "1.0000E+08"
+     ctx                 = "5000000."
+     preload_tx          = "0."
+     kty                 = "1.0000E+08"
+     cty                 = "5000000."
+     preload_ty          = "0."
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5.bush -->
+  <Force_Bushing
+     id                  = "303005"
+     label               = "Joint 5 - REVOLUTE-Compliant-Joint"
+     full_label          = "Assembly1222-Assembly1222-Joint 5 - REVOLUTE-Compliant-Joint"
+     i_marker_id         = "30301150"
+     j_marker_id         = "30302150"
+     kx                  = "50000000."
+     cx                  = "2500000."
+     preload_x           = "0."
+     ky                  = "50000000."
+     cy                  = "2500000."
+     preload_y           = "0."
+     kz                  = "50000000."
+     cz                  = "2500000."
+     preload_z           = "0."
+     ktx                 = "1.0000E+08"
+     ctx                 = "5000000."
+     preload_tx          = "0."
+     kty                 = "1.0000E+08"
+     cty                 = "5000000."
+     preload_ty          = "0."
+  />
+<!-- MODEL.sys_Assembly1222.sen_0 -->
+  <Sensor_Event
+     id                  = "303001"
+     verbose             = "TRUE"
+     label               = "Joint 1 - TRANSLATIONAL Sensor Translational MAG DXDY"
+     full_label          = "Assembly1222-Assembly1222-Joint 1 - TRANSLATIONAL Sensor Translational MAG DXDY"
+     type                = "EXPRESSION"
+     expr                = "SQRT(DX(30305110,30301110,30301110)**2+DY(30305110,30301110,30301110)**2)"
+     compare             = "GE"
+     value               = "0.001"
+     halt                = "TRUE"
+     stepsize            = "0."
+     error_tol           = "1.0000E-05"
+  />
+<!-- MODEL.sys_Assembly1222.sen_1 -->
+  <Sensor_Event
+     id                  = "303002"
+     verbose             = "TRUE"
+     label               = "Joint 2 - TRANSLATIONAL Sensor Translational MAG DXDY"
+     full_label          = "Assembly1222-Assembly1222-Joint 2 - TRANSLATIONAL Sensor Translational MAG DXDY"
+     type                = "EXPRESSION"
+     expr                = "SQRT(DX(30303120,30305120,30305120)**2+DY(30303120,30305120,30305120)**2)"
+     compare             = "GE"
+     value               = "0.001"
+     halt                = "TRUE"
+     stepsize            = "0."
+     error_tol           = "1.0000E-05"
+  />
+<!-- MODEL.sys_Assembly1222.sen_2 -->
+  <Sensor_Event
+     id                  = "303003"
+     verbose             = "TRUE"
+     label               = "Joint 3 - TRANSLATIONAL Sensor Translational MAG DXDY"
+     full_label          = "Assembly1222-Assembly1222-Joint 3 - TRANSLATIONAL Sensor Translational MAG DXDY"
+     type                = "EXPRESSION"
+     expr                = "SQRT(DX(30304130,30301130,30301130)**2+DY(30304130,30301130,30301130)**2)"
+     compare             = "GE"
+     value               = "0.001"
+     halt                = "TRUE"
+     stepsize            = "0."
+     error_tol           = "1.0000E-05"
+  />
+<!-- MODEL.sys_Assembly1222.sen_3 -->
+  <Sensor_Event
+     id                  = "303004"
+     verbose             = "TRUE"
+     label               = "Joint 4 - REVOLUTE Sensor Revolute DM"
+     full_label          = "Assembly1222-Assembly1222-Joint 4 - REVOLUTE Sensor Revolute DM"
+     type                = "EXPRESSION"
+     expr                = "DM(30302140,30304140)"
+     compare             = "GE"
+     value               = "0.001"
+     halt                = "TRUE"
+     stepsize            = "0."
+     error_tol           = "1.0000E-05"
+  />
+<!-- MODEL.sys_Assembly1222.sen_4 -->
+  <Sensor_Event
+     id                  = "303005"
+     verbose             = "TRUE"
+     label               = "Joint 5 - REVOLUTE Sensor Revolute DM"
+     full_label          = "Assembly1222-Assembly1222-Joint 5 - REVOLUTE Sensor Revolute DM"
+     type                = "EXPRESSION"
+     expr                = "DM(30301150,30302150)"
+     compare             = "GE"
+     value               = "0.001"
+     halt                = "TRUE"
+     stepsize            = "0."
+     error_tol           = "1.0000E-05"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_apsom.sen_0 -->
+  <Sensor_Event
+     id                  = "304001"
+     verbose             = "TRUE"
+     label               = "Motor_apsom Sensor Motor Orientation"
+     full_label          = "Assembly1222-Assembly1222-Motor apsom-Motor_apsom Sensor Motor Orientation"
+     type                = "EXPRESSION"
+     expr                = "SQRT(AX(30402010,30401020)**2+AY(30402010,30401020)**2)"
+     compare             = "GE"
+     value               = "0.26179939"
+     halt                = "TRUE"
+     stepsize            = "0."
+     error_tol           = "0.001"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.sen_0 -->
+  <Sensor_Event
+     id                  = "305001"
+     verbose             = "TRUE"
+     label               = "Motor_bposm Sensor Motor Orientation"
+     full_label          = "Assembly1222-Assembly1222-Motor bposm-Motor_bposm Sensor Motor Orientation"
+     type                = "EXPRESSION"
+     expr                = "SQRT(AX(30501010,30502020)**2+AY(30501010,30502020)**2)"
+     compare             = "GE"
+     value               = "0.26179939"
+     halt                = "TRUE"
+     stepsize            = "0."
+     error_tol           = "0.001"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1_DISPLACEMENT -->
+  <Post_Request
+     id                  = "70000078"
+     comment             = "V2 10 DISC 1(V2 10 DISC 1 - DISPLACEMENT)"
+     type                = "MARKER_DISPLACEMENT"
+     i_marker_id         = "30301020"
+     j_marker_id         = "30301014"
+     ref_marker_id       = "30101010"
+     cname1              = "MAG"
+     cname2              = "X"
+     cname3              = "Y"
+     cname4              = "Z"
+     cname6              = "PSI"
+     cname7              = "THETA"
+     cname8              = "PHI"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1_DISPLACEMENT -->
+  <Post_Request
+     id                  = "70000085"
+     comment             = "V2 10 TABLER  NEW 1(V2 10 TABLER  NEW 1 - DISPLACEMENT)"
+     type                = "MARKER_DISPLACEMENT"
+     i_marker_id         = "30302040"
+     j_marker_id         = "70000002"
+     ref_marker_id       = "30101010"
+     cname1              = "MAG"
+     cname2              = "X"
+     cname3              = "Y"
+     cname4              = "Z"
+     cname6              = "PSI"
+     cname7              = "THETA"
+     cname8              = "PHI"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_DISPLACEMENT -->
+  <Post_Request
+     id                  = "70000092"
+     comment             = "Rigid Group 1(Rigid Group 1 - DISPLACEMENT)"
+     type                = "MARKER_DISPLACEMENT"
+     i_marker_id         = "30303060"
+     j_marker_id         = "70000010"
+     ref_marker_id       = "30101010"
+     cname1              = "MAG"
+     cname2              = "X"
+     cname3              = "Y"
+     cname4              = "Z"
+     cname6              = "PSI"
+     cname7              = "THETA"
+     cname8              = "PHI"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1_DISPLACEMENT -->
+  <Post_Request
+     id                  = "70000099"
+     comment             = "V2 10  VERT 1(V2 10  VERT 1 - DISPLACEMENT)"
+     type                = "MARKER_DISPLACEMENT"
+     i_marker_id         = "30304080"
+     j_marker_id         = "70000018"
+     ref_marker_id       = "30101010"
+     cname1              = "MAG"
+     cname2              = "X"
+     cname3              = "Y"
+     cname4              = "Z"
+     cname6              = "PSI"
+     cname7              = "THETA"
+     cname8              = "PHI"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1_DISPLACEMENT -->
+  <Post_Request
+     id                  = "70000106"
+     comment             = "V2 10 CARRAGE107X 1(V2 10 CARRAGE107X 1 - DISPLACEMENT)"
+     type                = "MARKER_DISPLACEMENT"
+     i_marker_id         = "30305100"
+     j_marker_id         = "70000026"
+     ref_marker_id       = "30101010"
+     cname1              = "MAG"
+     cname2              = "X"
+     cname3              = "Y"
+     cname4              = "Z"
+     cname6              = "PSI"
+     cname7              = "THETA"
+     cname8              = "PHI"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1_DISPLACEMENT -->
+  <Post_Request
+     id                  = "70000112"
+     comment             = "Joint 1 - TRANSLATIONAL-Compliant-Joint on V2 10 CARRAGE107X 1(Joint 1 - TRANSLATIONAL - DISPLACEMENT)"
+     type                = "MARKER_DISPLACEMENT"
+     i_marker_id         = "30305110"
+     j_marker_id         = "30301110"
+     ref_marker_id       = "30101010"
+     cname1              = "MAG"
+     cname2              = "X"
+     cname3              = "Y"
+     cname4              = "Z"
+     cname6              = "PSI"
+     cname7              = "THETA"
+     cname8              = "PHI"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2_DISPLACEMENT -->
+  <Post_Request
+     id                  = "70000120"
+     comment             = "Joint 2 - TRANSLATIONAL-Compliant-Joint on Rigid Group 1(Joint 2 - TRANSLATIONAL - DISPLACEMENT)"
+     type                = "MARKER_DISPLACEMENT"
+     i_marker_id         = "30303120"
+     j_marker_id         = "30305120"
+     ref_marker_id       = "30101010"
+     cname1              = "MAG"
+     cname2              = "X"
+     cname3              = "Y"
+     cname4              = "Z"
+     cname6              = "PSI"
+     cname7              = "THETA"
+     cname8              = "PHI"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3_DISPLACEMENT -->
+  <Post_Request
+     id                  = "70000128"
+     comment             = "Joint 3 - TRANSLATIONAL-Compliant-Joint on V2 10  VERT 1(Joint 3 - TRANSLATIONAL - DISPLACEMENT)"
+     type                = "MARKER_DISPLACEMENT"
+     i_marker_id         = "30304130"
+     j_marker_id         = "30301130"
+     ref_marker_id       = "30101010"
+     cname1              = "MAG"
+     cname2              = "X"
+     cname3              = "Y"
+     cname4              = "Z"
+     cname6              = "PSI"
+     cname7              = "THETA"
+     cname8              = "PHI"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4_DISPLACEMENT -->
+  <Post_Request
+     id                  = "70000136"
+     comment             = "Joint 4 - REVOLUTE-Compliant-Joint on V2 10 TABLER  NEW 1(Joint 4 - REVOLUTE - DISPLACEMENT)"
+     type                = "MARKER_DISPLACEMENT"
+     i_marker_id         = "30302140"
+     j_marker_id         = "30304140"
+     ref_marker_id       = "30101010"
+     cname1              = "MAG"
+     cname2              = "X"
+     cname3              = "Y"
+     cname4              = "Z"
+     cname6              = "PSI"
+     cname7              = "THETA"
+     cname8              = "PHI"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5_DISPLACEMENT -->
+  <Post_Request
+     id                  = "70000144"
+     comment             = "Joint 5 - REVOLUTE-Compliant-Joint on V2 10 DISC 1(Joint 5 - REVOLUTE - DISPLACEMENT)"
+     type                = "MARKER_DISPLACEMENT"
+     i_marker_id         = "30301150"
+     j_marker_id         = "30302150"
+     ref_marker_id       = "30101010"
+     cname1              = "MAG"
+     cname2              = "X"
+     cname3              = "Y"
+     cname4              = "Z"
+     cname6              = "PSI"
+     cname7              = "THETA"
+     cname8              = "PHI"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.Motor_bposm_centerline_DISPLACEMENT -->
+  <Post_Request
+     id                  = "70000158"
+     comment             = "Centerline on V2 10 DISC 1(Motor bposm - Centerline - DISPLACEMENT)"
+     type                = "MARKER_DISPLACEMENT"
+     i_marker_id         = "30501017"
+     j_marker_id         = "30502010"
+     ref_marker_id       = "30101010"
+     cname1              = "MAG"
+     cname2              = "X"
+     cname3              = "Y"
+     cname4              = "Z"
+     cname6              = "PSI"
+     cname7              = "THETA"
+     cname8              = "PHI"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1_VELOCITY -->
+  <Post_Request
+     id                  = "70000080"
+     comment             = "V2 10 DISC 1(V2 10 DISC 1 - VELOCITY)"
+     type                = "MARKER_VELOCITY"
+     i_marker_id         = "30301020"
+     j_marker_id         = "30301016"
+     ref_marker_id       = "30101010"
+     cname1              = "VM"
+     cname2              = "VX"
+     cname3              = "VY"
+     cname4              = "VZ"
+     cname5              = "WM"
+     cname6              = "WX"
+     cname7              = "WY"
+     cname8              = "WZ"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1_VELOCITY -->
+  <Post_Request
+     id                  = "70000087"
+     comment             = "V2 10 TABLER  NEW 1(V2 10 TABLER  NEW 1 - VELOCITY)"
+     type                = "MARKER_VELOCITY"
+     i_marker_id         = "30302040"
+     j_marker_id         = "70000004"
+     ref_marker_id       = "30101010"
+     cname1              = "VM"
+     cname2              = "VX"
+     cname3              = "VY"
+     cname4              = "VZ"
+     cname5              = "WM"
+     cname6              = "WX"
+     cname7              = "WY"
+     cname8              = "WZ"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_VELOCITY -->
+  <Post_Request
+     id                  = "70000094"
+     comment             = "Rigid Group 1(Rigid Group 1 - VELOCITY)"
+     type                = "MARKER_VELOCITY"
+     i_marker_id         = "30303060"
+     j_marker_id         = "70000012"
+     ref_marker_id       = "30101010"
+     cname1              = "VM"
+     cname2              = "VX"
+     cname3              = "VY"
+     cname4              = "VZ"
+     cname5              = "WM"
+     cname6              = "WX"
+     cname7              = "WY"
+     cname8              = "WZ"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1_VELOCITY -->
+  <Post_Request
+     id                  = "70000101"
+     comment             = "V2 10  VERT 1(V2 10  VERT 1 - VELOCITY)"
+     type                = "MARKER_VELOCITY"
+     i_marker_id         = "30304080"
+     j_marker_id         = "70000020"
+     ref_marker_id       = "30101010"
+     cname1              = "VM"
+     cname2              = "VX"
+     cname3              = "VY"
+     cname4              = "VZ"
+     cname5              = "WM"
+     cname6              = "WX"
+     cname7              = "WY"
+     cname8              = "WZ"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1_VELOCITY -->
+  <Post_Request
+     id                  = "70000108"
+     comment             = "V2 10 CARRAGE107X 1(V2 10 CARRAGE107X 1 - VELOCITY)"
+     type                = "MARKER_VELOCITY"
+     i_marker_id         = "30305100"
+     j_marker_id         = "70000028"
+     ref_marker_id       = "30101010"
+     cname1              = "VM"
+     cname2              = "VX"
+     cname3              = "VY"
+     cname4              = "VZ"
+     cname5              = "WM"
+     cname6              = "WX"
+     cname7              = "WY"
+     cname8              = "WZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1_VELOCITY -->
+  <Post_Request
+     id                  = "70000114"
+     comment             = "Joint 1 - TRANSLATIONAL-Compliant-Joint on V2 10 CARRAGE107X 1(Joint 1 - TRANSLATIONAL - VELOCITY)"
+     type                = "MARKER_VELOCITY"
+     i_marker_id         = "30305110"
+     j_marker_id         = "30301110"
+     ref_marker_id       = "30101010"
+     cname1              = "VM"
+     cname2              = "VX"
+     cname3              = "VY"
+     cname4              = "VZ"
+     cname5              = "WM"
+     cname6              = "WX"
+     cname7              = "WY"
+     cname8              = "WZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2_VELOCITY -->
+  <Post_Request
+     id                  = "70000122"
+     comment             = "Joint 2 - TRANSLATIONAL-Compliant-Joint on Rigid Group 1(Joint 2 - TRANSLATIONAL - VELOCITY)"
+     type                = "MARKER_VELOCITY"
+     i_marker_id         = "30303120"
+     j_marker_id         = "30305120"
+     ref_marker_id       = "30101010"
+     cname1              = "VM"
+     cname2              = "VX"
+     cname3              = "VY"
+     cname4              = "VZ"
+     cname5              = "WM"
+     cname6              = "WX"
+     cname7              = "WY"
+     cname8              = "WZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3_VELOCITY -->
+  <Post_Request
+     id                  = "70000130"
+     comment             = "Joint 3 - TRANSLATIONAL-Compliant-Joint on V2 10  VERT 1(Joint 3 - TRANSLATIONAL - VELOCITY)"
+     type                = "MARKER_VELOCITY"
+     i_marker_id         = "30304130"
+     j_marker_id         = "30301130"
+     ref_marker_id       = "30101010"
+     cname1              = "VM"
+     cname2              = "VX"
+     cname3              = "VY"
+     cname4              = "VZ"
+     cname5              = "WM"
+     cname6              = "WX"
+     cname7              = "WY"
+     cname8              = "WZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4_VELOCITY -->
+  <Post_Request
+     id                  = "70000138"
+     comment             = "Joint 4 - REVOLUTE-Compliant-Joint on V2 10 TABLER  NEW 1(Joint 4 - REVOLUTE - VELOCITY)"
+     type                = "MARKER_VELOCITY"
+     i_marker_id         = "30302140"
+     j_marker_id         = "30304140"
+     ref_marker_id       = "30101010"
+     cname1              = "VM"
+     cname2              = "VX"
+     cname3              = "VY"
+     cname4              = "VZ"
+     cname5              = "WM"
+     cname6              = "WX"
+     cname7              = "WY"
+     cname8              = "WZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5_VELOCITY -->
+  <Post_Request
+     id                  = "70000146"
+     comment             = "Joint 5 - REVOLUTE-Compliant-Joint on V2 10 DISC 1(Joint 5 - REVOLUTE - VELOCITY)"
+     type                = "MARKER_VELOCITY"
+     i_marker_id         = "30301150"
+     j_marker_id         = "30302150"
+     ref_marker_id       = "30101010"
+     cname1              = "VM"
+     cname2              = "VX"
+     cname3              = "VY"
+     cname4              = "VZ"
+     cname5              = "WM"
+     cname6              = "WX"
+     cname7              = "WY"
+     cname8              = "WZ"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.Motor_bposm_centerline_VELOCITY -->
+  <Post_Request
+     id                  = "70000160"
+     comment             = "Centerline on V2 10 DISC 1(Motor bposm - Centerline - VELOCITY)"
+     type                = "MARKER_VELOCITY"
+     i_marker_id         = "30501017"
+     j_marker_id         = "30502010"
+     ref_marker_id       = "30101010"
+     cname1              = "VM"
+     cname2              = "VX"
+     cname3              = "VY"
+     cname4              = "VZ"
+     cname5              = "WM"
+     cname6              = "WX"
+     cname7              = "WY"
+     cname8              = "WZ"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1_ACCELERATION -->
+  <Post_Request
+     id                  = "70000082"
+     comment             = "V2 10 DISC 1(V2 10 DISC 1 - ACCELERATION)"
+     type                = "MARKER_ACCELERATION"
+     i_marker_id         = "30301020"
+     j_marker_id         = "30301018"
+     ref_marker_id       = "30101010"
+     cname1              = "ACCM"
+     cname2              = "ACCX"
+     cname3              = "ACCY"
+     cname4              = "ACCZ"
+     cname5              = "WDTM"
+     cname6              = "WDTX"
+     cname7              = "WDTY"
+     cname8              = "WDTZ"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1_ACCELERATION -->
+  <Post_Request
+     id                  = "70000089"
+     comment             = "V2 10 TABLER  NEW 1(V2 10 TABLER  NEW 1 - ACCELERATION)"
+     type                = "MARKER_ACCELERATION"
+     i_marker_id         = "30302040"
+     j_marker_id         = "70000006"
+     ref_marker_id       = "30101010"
+     cname1              = "ACCM"
+     cname2              = "ACCX"
+     cname3              = "ACCY"
+     cname4              = "ACCZ"
+     cname5              = "WDTM"
+     cname6              = "WDTX"
+     cname7              = "WDTY"
+     cname8              = "WDTZ"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_ACCELERATION -->
+  <Post_Request
+     id                  = "70000096"
+     comment             = "Rigid Group 1(Rigid Group 1 - ACCELERATION)"
+     type                = "MARKER_ACCELERATION"
+     i_marker_id         = "30303060"
+     j_marker_id         = "70000014"
+     ref_marker_id       = "30101010"
+     cname1              = "ACCM"
+     cname2              = "ACCX"
+     cname3              = "ACCY"
+     cname4              = "ACCZ"
+     cname5              = "WDTM"
+     cname6              = "WDTX"
+     cname7              = "WDTY"
+     cname8              = "WDTZ"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1_ACCELERATION -->
+  <Post_Request
+     id                  = "70000103"
+     comment             = "V2 10  VERT 1(V2 10  VERT 1 - ACCELERATION)"
+     type                = "MARKER_ACCELERATION"
+     i_marker_id         = "30304080"
+     j_marker_id         = "70000022"
+     ref_marker_id       = "30101010"
+     cname1              = "ACCM"
+     cname2              = "ACCX"
+     cname3              = "ACCY"
+     cname4              = "ACCZ"
+     cname5              = "WDTM"
+     cname6              = "WDTX"
+     cname7              = "WDTY"
+     cname8              = "WDTZ"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1_ACCELERATION -->
+  <Post_Request
+     id                  = "70000110"
+     comment             = "V2 10 CARRAGE107X 1(V2 10 CARRAGE107X 1 - ACCELERATION)"
+     type                = "MARKER_ACCELERATION"
+     i_marker_id         = "30305100"
+     j_marker_id         = "70000030"
+     ref_marker_id       = "30101010"
+     cname1              = "ACCM"
+     cname2              = "ACCX"
+     cname3              = "ACCY"
+     cname4              = "ACCZ"
+     cname5              = "WDTM"
+     cname6              = "WDTX"
+     cname7              = "WDTY"
+     cname8              = "WDTZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1_ACCELERATION -->
+  <Post_Request
+     id                  = "70000116"
+     comment             = "Joint 1 - TRANSLATIONAL-Compliant-Joint on V2 10 CARRAGE107X 1(Joint 1 - TRANSLATIONAL - ACCELERATION)"
+     type                = "MARKER_ACCELERATION"
+     i_marker_id         = "30305110"
+     j_marker_id         = "30301110"
+     ref_marker_id       = "30101010"
+     cname1              = "ACCM"
+     cname2              = "ACCX"
+     cname3              = "ACCY"
+     cname4              = "ACCZ"
+     cname5              = "WDTM"
+     cname6              = "WDTX"
+     cname7              = "WDTY"
+     cname8              = "WDTZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2_ACCELERATION -->
+  <Post_Request
+     id                  = "70000124"
+     comment             = "Joint 2 - TRANSLATIONAL-Compliant-Joint on Rigid Group 1(Joint 2 - TRANSLATIONAL - ACCELERATION)"
+     type                = "MARKER_ACCELERATION"
+     i_marker_id         = "30303120"
+     j_marker_id         = "30305120"
+     ref_marker_id       = "30101010"
+     cname1              = "ACCM"
+     cname2              = "ACCX"
+     cname3              = "ACCY"
+     cname4              = "ACCZ"
+     cname5              = "WDTM"
+     cname6              = "WDTX"
+     cname7              = "WDTY"
+     cname8              = "WDTZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3_ACCELERATION -->
+  <Post_Request
+     id                  = "70000132"
+     comment             = "Joint 3 - TRANSLATIONAL-Compliant-Joint on V2 10  VERT 1(Joint 3 - TRANSLATIONAL - ACCELERATION)"
+     type                = "MARKER_ACCELERATION"
+     i_marker_id         = "30304130"
+     j_marker_id         = "30301130"
+     ref_marker_id       = "30101010"
+     cname1              = "ACCM"
+     cname2              = "ACCX"
+     cname3              = "ACCY"
+     cname4              = "ACCZ"
+     cname5              = "WDTM"
+     cname6              = "WDTX"
+     cname7              = "WDTY"
+     cname8              = "WDTZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4_ACCELERATION -->
+  <Post_Request
+     id                  = "70000140"
+     comment             = "Joint 4 - REVOLUTE-Compliant-Joint on V2 10 TABLER  NEW 1(Joint 4 - REVOLUTE - ACCELERATION)"
+     type                = "MARKER_ACCELERATION"
+     i_marker_id         = "30302140"
+     j_marker_id         = "30304140"
+     ref_marker_id       = "30101010"
+     cname1              = "ACCM"
+     cname2              = "ACCX"
+     cname3              = "ACCY"
+     cname4              = "ACCZ"
+     cname5              = "WDTM"
+     cname6              = "WDTX"
+     cname7              = "WDTY"
+     cname8              = "WDTZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5_ACCELERATION -->
+  <Post_Request
+     id                  = "70000148"
+     comment             = "Joint 5 - REVOLUTE-Compliant-Joint on V2 10 DISC 1(Joint 5 - REVOLUTE - ACCELERATION)"
+     type                = "MARKER_ACCELERATION"
+     i_marker_id         = "30301150"
+     j_marker_id         = "30302150"
+     ref_marker_id       = "30101010"
+     cname1              = "ACCM"
+     cname2              = "ACCX"
+     cname3              = "ACCY"
+     cname4              = "ACCZ"
+     cname5              = "WDTM"
+     cname6              = "WDTX"
+     cname7              = "WDTY"
+     cname8              = "WDTZ"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.Motor_bposm_centerline_ACCELERATION -->
+  <Post_Request
+     id                  = "70000162"
+     comment             = "Centerline on V2 10 DISC 1(Motor bposm - Centerline - ACCELERATION)"
+     type                = "MARKER_ACCELERATION"
+     i_marker_id         = "30501017"
+     j_marker_id         = "30502010"
+     ref_marker_id       = "30101010"
+     cname1              = "ACCM"
+     cname2              = "ACCX"
+     cname3              = "ACCY"
+     cname4              = "ACCZ"
+     cname5              = "WDTM"
+     cname6              = "WDTX"
+     cname7              = "WDTY"
+     cname8              = "WDTZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_1_FORCE -->
+  <Post_Request
+     id                  = "70000118"
+     comment             = "Joint 1 - TRANSLATIONAL-Compliant-Joint on V2 10 CARRAGE107X 1(Joint 1 - TRANSLATIONAL - FORCE)"
+     type                = "MARKER_FORCE"
+     i_marker_id         = "30305110"
+     j_marker_id         = "30301110"
+     ref_marker_id       = "30101010"
+     cname1              = "FM"
+     cname2              = "FX"
+     cname3              = "FY"
+     cname4              = "FZ"
+     cname5              = "TM"
+     cname6              = "TX"
+     cname7              = "TY"
+     cname8              = "TZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_2_FORCE -->
+  <Post_Request
+     id                  = "70000126"
+     comment             = "Joint 2 - TRANSLATIONAL-Compliant-Joint on Rigid Group 1(Joint 2 - TRANSLATIONAL - FORCE)"
+     type                = "MARKER_FORCE"
+     i_marker_id         = "30303120"
+     j_marker_id         = "30305120"
+     ref_marker_id       = "30101010"
+     cname1              = "FM"
+     cname2              = "FX"
+     cname3              = "FY"
+     cname4              = "FZ"
+     cname5              = "TM"
+     cname6              = "TX"
+     cname7              = "TY"
+     cname8              = "TZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_3_FORCE -->
+  <Post_Request
+     id                  = "70000134"
+     comment             = "Joint 3 - TRANSLATIONAL-Compliant-Joint on V2 10  VERT 1(Joint 3 - TRANSLATIONAL - FORCE)"
+     type                = "MARKER_FORCE"
+     i_marker_id         = "30304130"
+     j_marker_id         = "30301130"
+     ref_marker_id       = "30101010"
+     cname1              = "FM"
+     cname2              = "FX"
+     cname3              = "FY"
+     cname4              = "FZ"
+     cname5              = "TM"
+     cname6              = "TX"
+     cname7              = "TY"
+     cname8              = "TZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_4_FORCE -->
+  <Post_Request
+     id                  = "70000142"
+     comment             = "Joint 4 - REVOLUTE-Compliant-Joint on V2 10 TABLER  NEW 1(Joint 4 - REVOLUTE - FORCE)"
+     type                = "MARKER_FORCE"
+     i_marker_id         = "30302140"
+     j_marker_id         = "30304140"
+     ref_marker_id       = "30101010"
+     cname1              = "FM"
+     cname2              = "FX"
+     cname3              = "FY"
+     cname4              = "FZ"
+     cname5              = "TM"
+     cname6              = "TX"
+     cname7              = "TY"
+     cname8              = "TZ"
+  />
+<!-- MODEL.sys_Assembly1222.Joint_5_FORCE -->
+  <Post_Request
+     id                  = "70000150"
+     comment             = "Joint 5 - REVOLUTE-Compliant-Joint on V2 10 DISC 1(Joint 5 - REVOLUTE - FORCE)"
+     type                = "MARKER_FORCE"
+     i_marker_id         = "30301150"
+     j_marker_id         = "30302150"
+     ref_marker_id       = "30101010"
+     cname1              = "FM"
+     cname2              = "FX"
+     cname3              = "FY"
+     cname4              = "FZ"
+     cname5              = "TM"
+     cname6              = "TX"
+     cname7              = "TY"
+     cname8              = "TZ"
+  />
+<!-- MODEL.sys_Assembly1222.sys_Motor_bposm.Motor_bposm_centerline_FORCE -->
+  <Post_Request
+     id                  = "70000164"
+     comment             = "Centerline on V2 10 DISC 1(Motor bposm - Centerline - FORCE)"
+     type                = "MARKER_FORCE"
+     i_marker_id         = "30501017"
+     j_marker_id         = "30502010"
+     ref_marker_id       = "30101010"
+     cname1              = "FM"
+     cname2              = "FX"
+     cname3              = "FY"
+     cname4              = "FZ"
+     cname5              = "TM"
+     cname6              = "TX"
+     cname7              = "TY"
+     cname8              = "TZ"
+  />
+  <Post_Request
+     id                  = "70000077"
+     comment             = "V2 10 DISC 1 - Kinetic Energy"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "KE(30301)"
+     expr3               = "NULL"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "NULL"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "KE"
+  />
+  <Post_Request
+     id                  = "70000084"
+     comment             = "V2 10 TABLER  NEW 1 - Kinetic Energy"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "KE(30302)"
+     expr3               = "NULL"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "NULL"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "KE"
+  />
+  <Post_Request
+     id                  = "70000091"
+     comment             = "Rigid Group 1 - Kinetic Energy"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "KE(30303)"
+     expr3               = "NULL"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "NULL"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "KE"
+  />
+  <Post_Request
+     id                  = "70000098"
+     comment             = "V2 10  VERT 1 - Kinetic Energy"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "KE(30304)"
+     expr3               = "NULL"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "NULL"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "KE"
+  />
+  <Post_Request
+     id                  = "70000105"
+     comment             = "V2 10 CARRAGE107X 1 - Kinetic Energy"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "KE(30305)"
+     expr3               = "NULL"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "NULL"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "KE"
+  />
+  <Post_Request
+     id                  = "70000152"
+     comment             = "Motor apsom - Kinematic Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "AZ(30402010,30401020)"
+     expr3               = "WZ(30402010,30401020,30401020)"
+     expr4               = "WDTZ(30402010,30401020,30401020,30401020)"
+     expr5               = "NULL"
+     expr6               = "(VARVAL(30400200)-DELAY(VARVAL(30400200),0.001,0))/0.001"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "Angular_Displacement"
+     cname3              = "Angular_Velocity"
+     cname4              = "Angular_Acceleration"
+     cname6              = "Angular_Jerk"
+  />
+  <Post_Request
+     id                  = "70000153"
+     comment             = "Motor apsom - Power Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "VARVAL(30400100)*VARVAL(30400300)"
+     expr3               = "NULL"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "NULL"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "Power"
+  />
+  <Post_Request
+     id                  = "70000154"
+     comment             = "Motor apsom - Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "MOTION(304001,0,8,30401020)"
+     expr3               = "MOTION(304001,0,5,0)"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "MOTION(304001,0,6,0)"
+     expr7               = "MOTION(304001,0,7,0)"
+     expr8               = "MOTION(304001,0,8,0)"
+     cname2              = "Torque"
+     cname3              = "TM"
+     cname6              = "TX"
+     cname7              = "TY"
+     cname8              = "TZ"
+  />
+  <Post_Request
+     id                  = "70000155"
+     comment             = "Motor bposm - Kinematic Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "AZ(30501010,30502020)"
+     expr3               = "WZ(30501010,30502020,30502020)"
+     expr4               = "WDTZ(30501010,30502020,30502020,30502020)"
+     expr5               = "NULL"
+     expr6               = "(VARVAL(30500200)-DELAY(VARVAL(30500200),0.001,0))/0.001"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "Angular_Displacement"
+     cname3              = "Angular_Velocity"
+     cname4              = "Angular_Acceleration"
+     cname6              = "Angular_Jerk"
+  />
+  <Post_Request
+     id                  = "70000156"
+     comment             = "Motor bposm - Power Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "VARVAL(30500100)*VARVAL(30500300)"
+     expr3               = "NULL"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "NULL"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "Power"
+  />
+  <Post_Request
+     id                  = "70000157"
+     comment             = "Motor bposm - Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "MOTION(305001,0,8,30502020)"
+     expr3               = "MOTION(305001,0,5,0)"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "MOTION(305001,0,6,0)"
+     expr7               = "MOTION(305001,0,7,0)"
+     expr8               = "MOTION(305001,0,8,0)"
+     cname2              = "Torque"
+     cname3              = "TM"
+     cname6              = "TX"
+     cname7              = "TY"
+     cname8              = "TZ"
+  />
+  <Post_Request
+     id                  = "70000166"
+     comment             = "Actuator xpm - Kinematic Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "DZ(30605010,30601020,30601020)-0"
+     expr3               = "VZ(30605010,30601020,30601020,30601020)"
+     expr4               = "ACCZ(30605010,30601020,30601020,30601020)"
+     expr5               = "NULL"
+     expr6               = "(VARVAL(30600200)-DELAY(VARVAL(30600200),0.001,0))/0.001"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "Displacement"
+     cname3              = "Velocity"
+     cname4              = "Acceleration"
+     cname6              = "Jerk"
+  />
+  <Post_Request
+     id                  = "70000167"
+     comment             = "Actuator xpm - Power Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "VARVAL(30600100)*VARVAL(30600300)"
+     expr3               = "NULL"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "NULL"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "Power"
+  />
+  <Post_Request
+     id                  = "70000168"
+     comment             = "Actuator xpm - Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "MOTION(306001,0,4,30601020)"
+     expr3               = "MOTION(306001,0,1,0)"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "MOTION(306001,0,2,0)"
+     expr7               = "MOTION(306001,0,3,0)"
+     expr8               = "MOTION(306001,0,4,0)"
+     cname2              = "Force"
+     cname3              = "FM"
+     cname6              = "FX"
+     cname7              = "FY"
+     cname8              = "FZ"
+  />
+  <Post_Request
+     id                  = "70000169"
+     comment             = "Actuator ypm - Kinematic Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "DZ(30704010,30701020,30701020)-0"
+     expr3               = "VZ(30704010,30701020,30701020,30701020)"
+     expr4               = "ACCZ(30704010,30701020,30701020,30701020)"
+     expr5               = "NULL"
+     expr6               = "(VARVAL(30700200)-DELAY(VARVAL(30700200),0.001,0))/0.001"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "Displacement"
+     cname3              = "Velocity"
+     cname4              = "Acceleration"
+     cname6              = "Jerk"
+  />
+  <Post_Request
+     id                  = "70000170"
+     comment             = "Actuator ypm - Power Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "VARVAL(30700100)*VARVAL(30700300)"
+     expr3               = "NULL"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "NULL"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "Power"
+  />
+  <Post_Request
+     id                  = "70000171"
+     comment             = "Actuator ypm - Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "MOTION(307001,0,4,30701020)"
+     expr3               = "MOTION(307001,0,1,0)"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "MOTION(307001,0,2,0)"
+     expr7               = "MOTION(307001,0,3,0)"
+     expr8               = "MOTION(307001,0,4,0)"
+     cname2              = "Force"
+     cname3              = "FM"
+     cname6              = "FX"
+     cname7              = "FY"
+     cname8              = "FZ"
+  />
+  <Post_Request
+     id                  = "70000172"
+     comment             = "Actuator zpm - Kinematic Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "DZ(30803010,30801020,30801020)-0"
+     expr3               = "VZ(30803010,30801020,30801020,30801020)"
+     expr4               = "ACCZ(30803010,30801020,30801020,30801020)"
+     expr5               = "NULL"
+     expr6               = "(VARVAL(30800200)-DELAY(VARVAL(30800200),0.001,0))/0.001"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "Displacement"
+     cname3              = "Velocity"
+     cname4              = "Acceleration"
+     cname6              = "Jerk"
+  />
+  <Post_Request
+     id                  = "70000173"
+     comment             = "Actuator zpm - Power Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "VARVAL(30800100)*VARVAL(30800300)"
+     expr3               = "NULL"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "NULL"
+     expr7               = "NULL"
+     expr8               = "NULL"
+     cname2              = "Power"
+  />
+  <Post_Request
+     id                  = "70000174"
+     comment             = "Actuator zpm - Output"
+     type                = "EXPRESSION"
+     expr1               = "NULL"
+     expr2               = "MOTION(308001,0,4,30801020)"
+     expr3               = "MOTION(308001,0,1,0)"
+     expr4               = "NULL"
+     expr5               = "NULL"
+     expr6               = "MOTION(308001,0,2,0)"
+     expr7               = "MOTION(308001,0,3,0)"
+     expr8               = "MOTION(308001,0,4,0)"
+     cname2              = "Force"
+     cname3              = "FM"
+     cname6              = "FX"
+     cname7              = "FY"
+     cname8              = "FZ"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_BASER_108_1_cadGraphic -->
+  <Post_Graphic
+     id                  = "90000"
+     label               = "V2_10_BASER_108_1 - CADGraphic"
+     full_label          = "Assembly1222-Assembly1222-V2_10_BASER_108_1 - CADGraphic"
+     color               = "38:38:38"
+     type                = "ParaSolid"
+     ref_marker_id       = "30101010"
+     graphic_file      = "Assembly1222_MKS_MS_input_gra.x_t"
+     graphic_component = "V2_10_BASER_108_1_MODEL_sys_Assembly1222_V2_10_BASER_108_1_cadGraphic"
+     refinement_level    = "60"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_DISC_1_cadGraphic -->
+  <Post_Graphic
+     id                  = "90001"
+     label               = "V2_10_DISC_1 - CADGraphic"
+     full_label          = "Assembly1222-Assembly1222-V2_10_DISC_1 - CADGraphic"
+     color               = "89:89:89"
+     type                = "ParaSolid"
+     ref_marker_id       = "90000000"
+     graphic_file      = "Assembly1222_MKS_MS_input_gra.x_t"
+     graphic_component = "V2_10_DISC_1_MODEL_sys_Assembly1222_V2_10_DISC_1_cadGraphic"
+     refinement_level    = "60"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_TABLER__NEW_1_cadGraphic -->
+  <Post_Graphic
+     id                  = "90002"
+     label               = "V2_10_TABLER__NEW_1 - CADGraphic"
+     full_label          = "Assembly1222-Assembly1222-V2_10_TABLER__NEW_1 - CADGraphic"
+     color               = "38:38:38"
+     type                = "ParaSolid"
+     ref_marker_id       = "90000001"
+     graphic_file      = "Assembly1222_MKS_MS_input_gra.x_t"
+     graphic_component = "V2_10_TABLER__NEW_1_MODEL_sys_Assembly1222_V2_10_TABLER__NEW_1_cadGraphic"
+     refinement_level    = "60"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_GraphicSystem.Tool_1_cadGraphic -->
+  <Post_Graphic
+     id                  = "90003"
+     label               = "Tool_1 - CADGraphic"
+     full_label          = "Assembly1222-Assembly1222-Rigid_Group_1 - GraphicSystem-Tool_1 - CADGraphic"
+     color               = "153:153:153"
+     type                = "ParaSolid"
+     ref_marker_id       = "90000002"
+     graphic_file      = "Assembly1222_MKS_MS_input_gra.x_t"
+     graphic_component = "Tool_1_MODEL_sys_Assembly1222_Rigid_Group_1_GraphicSystem_Tool_1_cadGraphic"
+     refinement_level    = "60"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_GraphicSystem.V2_10_SPINDLE109_1_2_cadGraphic -->
+  <Post_Graphic
+     id                  = "90004"
+     label               = "V2_10_SPINDLE109_1_2 - CADGraphic"
+     full_label          = "Assembly1222-Assembly1222-Rigid_Group_1 - GraphicSystem-V2_10_SPINDLE109_1_2 - CADGraphic"
+     color               = "255:255:255"
+     type                = "ParaSolid"
+     ref_marker_id       = "90000003"
+     graphic_file      = "Assembly1222_MKS_MS_input_gra.x_t"
+     graphic_component = "V2_10_SPINDLE109_1_2_MODEL_sys_Assembly1222_Rigid_Group_1_GraphicSystem_V2_10_SPINDLE109_1_2_cadGraphic"
+     refinement_level    = "60"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_GraphicSystem.V2_10_SPINDLE109_1_1_cadGraphic -->
+  <Post_Graphic
+     id                  = "90005"
+     label               = "V2_10_SPINDLE109_1_1 - CADGraphic"
+     full_label          = "Assembly1222-Assembly1222-Rigid_Group_1 - GraphicSystem-V2_10_SPINDLE109_1_1 - CADGraphic"
+     color               = "255:255:255"
+     type                = "ParaSolid"
+     ref_marker_id       = "90000004"
+     graphic_file      = "Assembly1222_MKS_MS_input_gra.x_t"
+     graphic_component = "V2_10_SPINDLE109_1_1_MODEL_sys_Assembly1222_Rigid_Group_1_GraphicSystem_V2_10_SPINDLE109_1_1_cadGraphic"
+     refinement_level    = "60"
+  />
+<!-- MODEL.sys_Assembly1222.Rigid_Group_1_GraphicSystem.V2_10_SPINDLE109_1_cadGraphic -->
+  <Post_Graphic
+     id                  = "90006"
+     label               = "V2_10_SPINDLE109_1 - CADGraphic"
+     full_label          = "Assembly1222-Assembly1222-Rigid_Group_1 - GraphicSystem-V2_10_SPINDLE109_1 - CADGraphic"
+     color               = "38:38:38"
+     type                = "ParaSolid"
+     ref_marker_id       = "90000005"
+     graphic_file      = "Assembly1222_MKS_MS_input_gra.x_t"
+     graphic_component = "V2_10_SPINDLE109_1_MODEL_sys_Assembly1222_Rigid_Group_1_GraphicSystem_V2_10_SPINDLE109_1_cadGraphic"
+     refinement_level    = "60"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10__VERT_1_cadGraphic -->
+  <Post_Graphic
+     id                  = "90007"
+     label               = "V2_10__VERT_1 - CADGraphic"
+     full_label          = "Assembly1222-Assembly1222-V2_10__VERT_1 - CADGraphic"
+     color               = "89:89:89"
+     type                = "ParaSolid"
+     ref_marker_id       = "90000006"
+     graphic_file      = "Assembly1222_MKS_MS_input_gra.x_t"
+     graphic_component = "V2_10__VERT_1_MODEL_sys_Assembly1222_V2_10__VERT_1_cadGraphic"
+     refinement_level    = "60"
+  />
+<!-- MODEL.sys_Assembly1222.V2_10_CARRAGE107X_1_cadGraphic -->
+  <Post_Graphic
+     id                  = "90008"
+     label               = "V2_10_CARRAGE107X_1 - CADGraphic"
+     full_label          = "Assembly1222-Assembly1222-V2_10_CARRAGE107X_1 - CADGraphic"
+     color               = "89:89:89"
+     type                = "ParaSolid"
+     ref_marker_id       = "90000007"
+     graphic_file      = "Assembly1222_MKS_MS_input_gra.x_t"
+     graphic_component = "V2_10_CARRAGE107X_1_MODEL_sys_Assembly1222_V2_10_CARRAGE107X_1_cadGraphic"
+     refinement_level    = "60"
+  />
+ </Model>
+ <Command>
+  <ResOutput
+     mrf_file            = "TRUE"
+     abf_file            = "TRUE"
+     plt_file            = "TRUE"
+     angle_type          = "YPR"
+     flex_vel_acc_output = "FALSE"
+     contact_gra_output  = "TRUE"
+     abf_unique_time     = "LAST"
+     plt_unique_time     = "LAST"
+     azero               = "1.0000E-10"
+     dzero               = "1.0000E-10"
+     fzero               = "1.0000E-10"
+     vzero               = "1.0000E-10"
+     req_comment_only    = "TRUE"
+     capture_max_pd      = "TRUE"
+  />
+  <H3DOutput
+     switch_on           = "TRUE"
+     increment           = "1"
+     format_option       = "AUTO"
+     stress_option       = "TENSOR"
+     strain_option       = "TENSOR"
+  />
+  <Simulate
+     analysis_type       = "Static"
+     end_time            = "0."
+  />
+  <Simulate
+     analysis_type       = "Transient"
+     end_time            = "30."
+     print_interval      = "0.033333333"
+  />
+ </Command>
+</MultiBodySystem>

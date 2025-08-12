@@ -1,0 +1,210 @@
+************************************************************************
+**                                                                    **
+**                                                                    **
+**                    Altair MotionSolve(TM) 2023                     **
+**                                                                    **
+**                Multi-body Dynamics Analysis Software               **
+**                   from Altair Engineering, Inc.                    **
+**                                                                    **
+**                                                                    **
+**                   Windows 10 - Build: 19045 STARK                  **
+**            24 CPU: 13th Gen Intel(R) Core(TM) i7-13700K            **
+**                         CPU speed 3400 MHz                         **
+**                     18390 MB RAM, 37320 MB swap                    **
+**                    Machine Epsilon : 2.2204E-16                    **
+**                                                                    **
+************************************************************************
+**  COPYRIGHT (C) 2002-2023                 Altair Engineering, Inc.  **
+** All Rights Reserved.  Copyright notice does not imply publication. **
+** Contains trade secrets of Altair Engineering, Inc.                 **
+** Decompilation or disassembly of this software strictly prohibited. **
+************************************************************************
+ 
+ Directory   : C:\Program Files\Altair\2023\hwsolvers\motionsolve\bin\win64
+ nuadr       : HWVERSION_2023_Sep  6 2023_00:14:44 (H3D 14.000000)
+ nuwriter    : HWVERSION_2023_Sep  6 2023_00:12:17 (H3D 14.000000)
+ nusolver    : HWVERSION_2023_Sep  6 2023_00:20:15
+ msautoutils : HWVERSION_2023_Sep  6 2023_00:10:21
+ mbdtire     : HWVERSION_2023_Sep  6 2023_00:10:39
+ cdtire      : HWVERSION_2023_Sep  6 2023_00:08:43
+ nuanima     : HWVERSION_2023_Sep  6 2023_00:14:31 (H3D 14.000000)
+
+--- 14-FEB-2024 20:42:03 ---
+
+INFO: Parsing XML file [C:\Kibira\VC2-50\.\Assembly1222_MKS.xml]...
+
+ 
+Checking out license...
+License OK.
+Time spent in checking out license: 1.338 sec.
+ 
+ 
+INFO: Model units are METER SECOND NEWTON KILOGRAM.
+ Reading 120 markers...
+ Reading   6 rigid bodies...
+ Reading  35 variables...
+ Reading   5 xy-curves (splines)...
+ Reading   5 plant inputs...
+ Reading   5 plant outputs...
+ Reading   1 revolute joints...
+ Reading   5 marker motion constraints...
+ Reading gravity vector...
+ Reading   5 linear bushings...
+ Reading   7 event sensors...
+ Reading  11 marker displacement requests...
+ Reading  11 marker velocity requests...
+ Reading  11 marker acceleration requests...
+ Reading   6 marker force/torque requests...
+ Reading  20 user-expressions requests...
+ Reading   9 graphics...
+INFO: Usersub library [C:\Program Files\Altair\2023\hwsolvers\motionsolve\bin\win64\nuserver.dll] loaded
+ 
+USRMES:USER1
+INFO: Skipping cosim during static analysis
+ 
+USRMES:USER1
+INFO: Skipping cosim during static analysis
+ 
+USRMES:USER1
+INFO: Skipping cosim during static analysis
+INFO: Analysis model processed.
+ 
+ 
+INFO: Total Number of Independent Coordinates = 20 (Kinematic DoF: 20, Other States: 0)
+
+ 
+INFO: Number of Total Entries in Residual Vector: 553
+INFO: Number of Non-zero Entries in Jacobian Mtx: 4747 (1.55228% Filled)
+ 
+ Starting static analysis...
+ 
+ STATIC SIMULATION PARAMETERS
+ -----------------------------------------------
+ Convergence Tolerance        : 0.0001
+ Maximum Iterations           : 750
+ Maximum Force Imbalance      : 0.0001
+ Stability                    : 1e-10
+ 
+ 
+    Time        Initial           Final         No. of     Cumulative
+                 error            error       iterations   iterations
+ --------------------------------------------------------------------
+   0.00000     9.16077E+00     6.33982E-15        2            2
+ 
+ <Rigid Body CG location at Time=0.000E+00>
+ 
+   ID           X             Y             Z           Psi           Theta         Phi      
+ --------------------------------------------------------------------------------------------
+ 30301    -3.701643E-02  1.858249E-02 -1.048843E-01  4.403030E-06  0.000000E+00  0.000000E+00
+ 30302    -2.709365E-02  5.619215E-03 -1.168806E-01 -7.488249E+01  2.615268E+01  8.634828E+01
+ 30303    -5.152300E-03  4.147323E-02  1.291612E-01 -1.713028E+02  5.739862E+00 -1.747825E+02
+ 30304     5.235953E-02  4.509548E-02 -1.137999E-01 -1.536076E-01  2.798104E+01 -5.123593E-03
+ 30305     2.887039E-02  5.438895E-03  7.242436E-02  1.359880E+02  1.107103E+01 -1.094043E+02
+ 
+ AGGREGATE MASS/C.G. PROPERTIES
+ -----------------------------------------------------
+ Total Mass       : 1.863E+01 KILOGRAM
+ CG Before Static : (6.627E-03, 2.160E-02, -2.752E-02) 
+ CG After Static  : (6.627E-03, 2.159E-02, -2.752E-02) 
+ 
+ 
+ CUMULATIVE COMPUTE TIME INFORMATION
+ ----------------------------------------
+ Preprocessing Model      : 3.270E-01 sec
+ Core Analysis            : 3.190E-01 sec
+ Postprocessing/Messaging : 2.200E-02 sec
+ Total Elapsed Time       : 6.680E-01 sec
+
+ 
+INPUT:
+ [C:\Kibira\VC2-50\.\Assembly1222_MKS.xml]
+ 
+OUTPUT:
+ [C:\Kibira\VC2-50\Assembly1222_MKS.mrf]
+ [C:\Kibira\VC2-50\Assembly1222_MKS.log]
+ 
+STATICS SIMULATION COMPLETED
+ 
+INFO: Analysis model processed.
+ 
+ 
+INFO: Total Number of Independent Coordinates = 20 (Kinematic DoF: 20, Other States: 0)
+
+ 
+INFO: Number of Total Entries in Residual Vector: 855
+INFO: Number of Non-zero Entries in Jacobian Mtx: 5200 (0.71133% Filled)
+ 
+ 
+ Starting dynamic analysis...
+ 
+   
+ DYNAMIC SIMULATION PARAMETERS
+ ----------------------------------------
+ Start Time                   : 0.000E+00
+ End   Time                   : 3.000E+01
+ Print Interval               : 3.333E-02
+ 
+ Integrator                   : DSTIFF
+ Error Tolerance              : 1.000E-03
+ Maximum Step Size            : 1.000E-03
+ Minimum Step Size            : 1.000E-06
+ DAE Index                    : 3
+ DAE Constraint Tolerance     : 1.000E-07
+ 
+
+ Time=1.000E-04; Order=1; H=1.000E-04 [Max Phi=1.910E-16]
+ Time=3.037E+00; Order=3; H=1.000E-03 [Max Phi=2.173E-14]
+ Time=6.037E+00; Order=2; H=1.000E-03 [Max Phi=1.041E-10]
+ Time=9.037E+00; Order=2; H=1.000E-03 [Max Phi=4.204E-10]
+ Time=1.204E+01; Order=2; H=1.000E-03 [Max Phi=1.010E-09]
+ Time=1.504E+01; Order=3; H=1.000E-03 [Max Phi=2.089E-14]
+ Time=1.804E+01; Order=4; H=1.000E-03 [Max Phi=7.323E-16]
+ Time=2.104E+01; Order=3; H=1.000E-03 [Max Phi=2.105E-14]
+ Time=2.404E+01; Order=2; H=1.000E-03 [Max Phi=8.029E-13]
+ Time=2.704E+01; Order=2; H=1.000E-03 [Max Phi=5.622E-12]
+ Time=3.000E+01; Order=2; H=1.340E-03 [Max Phi=6.459E-14]
+ 
+ DAE SOLVER STATISTICS (DASPK-Index3)
+ ------------------------------------------------
+ Number of solution steps                 = 30127
+ Number of residue evaluations            = 36669
+ Number of jacobian computations          = 30406
+ Number of error test failures            = 42
+ Number of nonlinear convergence failures = 48
+ 
+ 
+ CUMULATIVE COMPUTE TIME INFORMATION
+ ----------------------------------------
+ Preprocessing Model      : 3.520E-01 sec
+ Core Analysis            : 1.716E+01 sec
+ Postprocessing/Messaging : 1.730E+01 sec
+ Total Elapsed Time       : 3.481E+01 sec
+
+ 
+ DISTRIBUTION OF CUMULATIVE COMPUTE TIME
+ ----------------------------------------------------
+ Residual Evaluation      : 1.456E+01 sec (36671 times)
+ Jacobian Evaluation      : 3.140E-01 sec (30408 times)
+ Jacobian Factorization   : 1.128E+00 sec
+ RHS Solution             : 3.210E-01 sec
+ 
+ Core Evaluation Percentage   : 87.23 %
+ Linear Solution Percentage   :  8.50 %
+ Core Stepping Fcn Percentage :  4.27 %
+ 
+
+ 
+INPUT:
+ [C:\Kibira\VC2-50\.\Assembly1222_MKS.xml]
+ 
+OUTPUT:
+ [C:\Kibira\VC2-50\Assembly1222_MKS.mrf]
+ [C:\Kibira\VC2-50\Assembly1222_MKS.log]
+ 
+TRANSIENT SIMULATION COMPLETED
+ 
+
+--- 14-FEB-2024 20:42:39 ---
+
+
+

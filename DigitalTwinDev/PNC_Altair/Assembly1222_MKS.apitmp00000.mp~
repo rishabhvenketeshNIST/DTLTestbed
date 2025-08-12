@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<MotionSolvePost>
+ <PostCommand
+     xml_file = "C:\Kibira\VC2-50\.\Assembly1222_MKS.xml"
+ >
+  <TimeVariant
+      mrf_file = "C:\Kibira\VC2-50\Assembly1222_MKS.mrf"
+  />
+ </PostCommand>
+</MotionSolvePost>

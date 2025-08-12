@@ -1,0 +1,809 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//  Exported from Altair Inspire
+//  Version : 2022.3 Build 13868
+//  Date : 22/12/23 14:48:07
+//
+////////////////////////////////////////////////////////////////////////////////
+
+*BeginMDL (Assembly1222, "Assembly1222")
+  
+  // Settings
+  *SetCurrentSolverMode (MotionSolve)
+  *SetOption (DS_Gravity.op_gravity, "On")
+  *SetReal (DS_Gravity.jgrav, -9.80665)
+  *SetReal (DS_Gravity.kgrav, 0.0)
+  *SetOption (DS_Units.op_force, "NEWTON")
+  *SetOption (DS_Units.op_length, "METER")
+  *SetOption (DS_Units.op_mass, "KILOGRAM")
+  *SetOption (DS_Units.op_time, "SECOND")
+  *SetOption (DS_MotionSolve_Simopts.analysis_type, "Static+Transient")
+  *SetReal (DS_MotionSolve_Simopts.end_time, 30.0)
+  *SetReal (DS_MotionSolve_Simopts.print_interval, 0.03333333333333333)
+  *SetBoolean (DS_MotionSolve_Simopts.contact_iteration, True)
+  *SetReal (DS_MotionSolve_Transient_Simopts.h_max, 0.001)
+  *SetReal (DS_MotionSolve_Transient_Simopts.dae_constr_tol, 1e-07)
+  *SetInteger (DS_MotionSolve_Transient_Simopts.dae_jacob_init, 1)
+  *SetInteger (DS_MotionSolve_Transient_Simopts.dae_jacob_eval, 0)
+  *SetInteger (DS_MotionSolve_Transient_Simopts.dae_index, 3)
+  *SetOption (DS_MotionSolve_Static_Simopts.static_method, "Force Imbalance - Type D")
+  *SetBoolean (DS_MotionSolve_Simopts.no_req_id, True)
+  
+  *System (sys_Assembly1222, "Assembly1222", def_sys_Assembly1222)
+  
+  *DataSet (DS_SystemBushingRates, "System Bushing Rates", def_DS_SystemBushingRates)
+  
+  
+  
+  // Ids/Nums/Notes
+
+*DefineSystem (def_sys_Assembly1222)
+  *Body (V2_10_DISC_1, "V2 10 DISC 1", V2_10_DISC_1_cg, , , , )
+  *SetBody (V2_10_DISC_1, 0.5855116363141984, 0.00041747144100921237, 0.0008047890951626463, 0.0004174714410206924, -5.183582849605778e-16, -1.6753245259504628e-15, 2.10731441076249e-09)
+  *SetBodyIC (V2_10_DISC_1, OFF, OFF, OFF, OFF, OFF, OFF)
+  *SetOrientation (V2_10_DISC_1.lprf, ANGLES, , -179.9996882688664, 90.00031035362329, 90.25374487643772)
+  
+  *Point (V2_10_DISC_1_cg, "V2 10 DISC 1_cg")
+  *SetPoint (V2_10_DISC_1_cg, -0.03701643738186661, 0.01858384911186947, -0.10488433309921541)
+  
+  *Output (V2_10_DISC_1_ke_output, "V2 10 DISC 1 - Kinetic Energy", EXPR, `KE({V2_10_DISC_1.idstring})`, , , , , )
+  *Set (V2_10_DISC_1_ke_output.cnames, {"","KE","","","","","",""})
+  *Set (V2_10_DISC_1_ke_output.use_units, true)
+  
+  *Output (V2_10_DISC_1_DISPLACEMENT, "V2 10 DISC 1 - DISPLACEMENT", DISP, V2_10_DISC_1, Global_Frame, I_MARKER)
+  *Set (V2_10_DISC_1_DISPLACEMENT.cnames, {"MAG","X","Y","Z","","PSI","THETA","PHI"})
+  *Set (V2_10_DISC_1_DISPLACEMENT.use_units, true)
+  
+  *Output (V2_10_DISC_1_VELOCITY, "V2 10 DISC 1 - VELOCITY", VEL, V2_10_DISC_1, Global_Frame, I_MARKER)
+  *Set (V2_10_DISC_1_VELOCITY.cnames, {"VM","VX","VY","VZ","WM","WX","WY","WZ"})
+  *Set (V2_10_DISC_1_VELOCITY.use_units, true)
+  
+  *Output (V2_10_DISC_1_ACCELERATION, "V2 10 DISC 1 - ACCELERATION", ACCL, V2_10_DISC_1, Global_Frame, I_MARKER)
+  *Set (V2_10_DISC_1_ACCELERATION.cnames, {"ACCM","ACCX","ACCY","ACCZ","WDTM","WDTX","WDTY","WDTZ"})
+  *Set (V2_10_DISC_1_ACCELERATION.use_units, true)
+  
+  *Graphic (V2_10_DISC_1_cadGraphic, "V2_10_DISC_1 - CADGraphic", CADGraphic, V2_10_DISC_1, False, 60, "Assembly1222_MKS.x_t", {"V2_10_DISC_1"}, MARKER, Global_Frame, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 1, 1)
+  *SetColorMaterialReference (V2_10_DISC_1_cadGraphic, mat_595959)
+  
+  *Body (V2_10_TABLER__NEW_1, "V2 10 TABLER  NEW 1", V2_10_TABLER__NEW_1_cg, , , , )
+  *SetBody (V2_10_TABLER__NEW_1, 6.285646877146157, 0.013408169480210539, 0.02491452240441208, 0.017073766271337616, 0.002440646397215405, 0.0026695247970476964, 0.0003201779572115059)
+  *SetBodyIC (V2_10_TABLER__NEW_1, OFF, OFF, OFF, OFF, OFF, OFF)
+  
+  *Point (V2_10_TABLER__NEW_1_cg, "V2 10 TABLER  NEW 1_cg")
+  *SetPoint (V2_10_TABLER__NEW_1_cg, -0.02709365949251054, 0.005620573787378118, -0.11688057321356754)
+  
+  *Output (V2_10_TABLER__NEW_1_ke_output, "V2 10 TABLER  NEW 1 - Kinetic Energy", EXPR, `KE({V2_10_TABLER__NEW_1.idstring})`, , , , , )
+  *Set (V2_10_TABLER__NEW_1_ke_output.cnames, {"","KE","","","","","",""})
+  *Set (V2_10_TABLER__NEW_1_ke_output.use_units, true)
+  
+  *Output (V2_10_TABLER__NEW_1_DISPLACEMENT, "V2 10 TABLER  NEW 1 - DISPLACEMENT", DISP, V2_10_TABLER__NEW_1, Global_Frame, I_MARKER)
+  *Set (V2_10_TABLER__NEW_1_DISPLACEMENT.cnames, {"MAG","X","Y","Z","","PSI","THETA","PHI"})
+  *Set (V2_10_TABLER__NEW_1_DISPLACEMENT.use_units, true)
+  
+  *Output (V2_10_TABLER__NEW_1_VELOCITY, "V2 10 TABLER  NEW 1 - VELOCITY", VEL, V2_10_TABLER__NEW_1, Global_Frame, I_MARKER)
+  *Set (V2_10_TABLER__NEW_1_VELOCITY.cnames, {"VM","VX","VY","VZ","WM","WX","WY","WZ"})
+  *Set (V2_10_TABLER__NEW_1_VELOCITY.use_units, true)
+  
+  *Output (V2_10_TABLER__NEW_1_ACCELERATION, "V2 10 TABLER  NEW 1 - ACCELERATION", ACCL, V2_10_TABLER__NEW_1, Global_Frame, I_MARKER)
+  *Set (V2_10_TABLER__NEW_1_ACCELERATION.cnames, {"ACCM","ACCX","ACCY","ACCZ","WDTM","WDTX","WDTY","WDTZ"})
+  *Set (V2_10_TABLER__NEW_1_ACCELERATION.use_units, true)
+  
+  *Graphic (V2_10_TABLER__NEW_1_cadGraphic, "V2_10_TABLER__NEW_1 - CADGraphic", CADGraphic, V2_10_TABLER__NEW_1, False, 60, "Assembly1222_MKS.x_t", {"V2_10_TABLER__NEW_1"}, MARKER, Global_Frame, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 1, 1)
+  *SetColorMaterialReference (V2_10_TABLER__NEW_1_cadGraphic, mat_262626)
+  
+  *Body (Rigid_Group_1, "Rigid Group 1", Rigid_Group_1_cg, , , , )
+  *SetBody (Rigid_Group_1, 3.5573622421551607, 0.007721311815202153, 0.007372684605901906, 0.002511847768321762, -8.67851726586906e-05, -7.130844869278982e-05, 0.00048656681932830975)
+  *SetBodyIC (Rigid_Group_1, OFF, OFF, OFF, OFF, OFF, OFF)
+  
+  *Point (Rigid_Group_1_cg, "Rigid Group 1_cg")
+  *SetPoint (Rigid_Group_1_cg, -0.005152305792945482, 0.04147542635658193, 0.1291612015911282)
+  
+  *Output (Rigid_Group_1_ke_output, "Rigid Group 1 - Kinetic Energy", EXPR, `KE({Rigid_Group_1.idstring})`, , , , , )
+  *Set (Rigid_Group_1_ke_output.cnames, {"","KE","","","","","",""})
+  *Set (Rigid_Group_1_ke_output.use_units, true)
+  
+  *Output (Rigid_Group_1_DISPLACEMENT, "Rigid Group 1 - DISPLACEMENT", DISP, Rigid_Group_1, Global_Frame, I_MARKER)
+  *Set (Rigid_Group_1_DISPLACEMENT.cnames, {"MAG","X","Y","Z","","PSI","THETA","PHI"})
+  *Set (Rigid_Group_1_DISPLACEMENT.use_units, true)
+  
+  *Output (Rigid_Group_1_VELOCITY, "Rigid Group 1 - VELOCITY", VEL, Rigid_Group_1, Global_Frame, I_MARKER)
+  *Set (Rigid_Group_1_VELOCITY.cnames, {"VM","VX","VY","VZ","WM","WX","WY","WZ"})
+  *Set (Rigid_Group_1_VELOCITY.use_units, true)
+  
+  *Output (Rigid_Group_1_ACCELERATION, "Rigid Group 1 - ACCELERATION", ACCL, Rigid_Group_1, Global_Frame, I_MARKER)
+  *Set (Rigid_Group_1_ACCELERATION.cnames, {"ACCM","ACCX","ACCY","ACCZ","WDTM","WDTX","WDTY","WDTZ"})
+  *Set (Rigid_Group_1_ACCELERATION.use_units, true)
+  
+  *Graphic (Rigid_Group_1_GraphicSystem, "Rigid_Group_1 - GraphicSystem", def_Rigid_Group_1_GraphicSystem)
+  
+  *Body (V2_10__VERT_1, "V2 10  VERT 1", V2_10__VERT_1_cg, , , , )
+  *SetBody (V2_10__VERT_1, 4.133019904925918, 0.02144475976142374, 0.012331034976848157, 0.00969783325503604, 2.5072040577083594e-05, -4.886580818873651e-06, -0.0019491080087550112)
+  *SetBodyIC (V2_10__VERT_1, OFF, OFF, OFF, OFF, OFF, OFF)
+  *SetOrientation (V2_10__VERT_1.lprf, ANGLES, , -89.9999999999998, 89.99999999999973, 89.99999999999918)
+  
+  *Point (V2_10__VERT_1_cg, "V2 10  VERT 1_cg")
+  *SetPoint (V2_10__VERT_1_cg, 0.05235953108375582, 0.04509548085431683, -0.11379988420314008)
+  
+  *Output (V2_10__VERT_1_ke_output, "V2 10  VERT 1 - Kinetic Energy", EXPR, `KE({V2_10__VERT_1.idstring})`, , , , , )
+  *Set (V2_10__VERT_1_ke_output.cnames, {"","KE","","","","","",""})
+  *Set (V2_10__VERT_1_ke_output.use_units, true)
+  
+  *Output (V2_10__VERT_1_DISPLACEMENT, "V2 10  VERT 1 - DISPLACEMENT", DISP, V2_10__VERT_1, Global_Frame, I_MARKER)
+  *Set (V2_10__VERT_1_DISPLACEMENT.cnames, {"MAG","X","Y","Z","","PSI","THETA","PHI"})
+  *Set (V2_10__VERT_1_DISPLACEMENT.use_units, true)
+  
+  *Output (V2_10__VERT_1_VELOCITY, "V2 10  VERT 1 - VELOCITY", VEL, V2_10__VERT_1, Global_Frame, I_MARKER)
+  *Set (V2_10__VERT_1_VELOCITY.cnames, {"VM","VX","VY","VZ","WM","WX","WY","WZ"})
+  *Set (V2_10__VERT_1_VELOCITY.use_units, true)
+  
+  *Output (V2_10__VERT_1_ACCELERATION, "V2 10  VERT 1 - ACCELERATION", ACCL, V2_10__VERT_1, Global_Frame, I_MARKER)
+  *Set (V2_10__VERT_1_ACCELERATION.cnames, {"ACCM","ACCX","ACCY","ACCZ","WDTM","WDTX","WDTY","WDTZ"})
+  *Set (V2_10__VERT_1_ACCELERATION.use_units, true)
+  
+  *Graphic (V2_10__VERT_1_cadGraphic, "V2_10__VERT_1 - CADGraphic", CADGraphic, V2_10__VERT_1, False, 60, "Assembly1222_MKS.x_t", {"V2_10__VERT_1"}, MARKER, Global_Frame, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 1, 1)
+  *SetColorMaterialReference (V2_10__VERT_1_cadGraphic, mat_595959)
+  
+  *Body (V2_10_CARRAGE107X_1, "V2 10 CARRAGE107X 1", V2_10_CARRAGE107X_1_cg, , , , )
+  *SetBody (V2_10_CARRAGE107X_1, 4.064160611191363, 0.012695275770271144, 0.014295207357375347, 0.005479930924487784, 0.001230598759761303, 0.0008446350775820144, 0.0011113774736367348)
+  *SetBodyIC (V2_10_CARRAGE107X_1, OFF, OFF, OFF, OFF, OFF, OFF)
+  *SetOrientation (V2_10_CARRAGE107X_1.lprf, ANGLES, , 180.0, 90.00000000000001, 180.0)
+  
+  *Point (V2_10_CARRAGE107X_1_cg, "V2 10 CARRAGE107X 1_cg")
+  *SetPoint (V2_10_CARRAGE107X_1_cg, 0.028870390919811948, 0.0054403907423976605, 0.07242435939508315)
+  
+  *Output (V2_10_CARRAGE107X_1_ke_output, "V2 10 CARRAGE107X 1 - Kinetic Energy", EXPR, `KE({V2_10_CARRAGE107X_1.idstring})`, , , , , )
+  *Set (V2_10_CARRAGE107X_1_ke_output.cnames, {"","KE","","","","","",""})
+  *Set (V2_10_CARRAGE107X_1_ke_output.use_units, true)
+  
+  *Output (V2_10_CARRAGE107X_1_DISPLACEMENT, "V2 10 CARRAGE107X 1 - DISPLACEMENT", DISP, V2_10_CARRAGE107X_1, Global_Frame, I_MARKER)
+  *Set (V2_10_CARRAGE107X_1_DISPLACEMENT.cnames, {"MAG","X","Y","Z","","PSI","THETA","PHI"})
+  *Set (V2_10_CARRAGE107X_1_DISPLACEMENT.use_units, true)
+  
+  *Output (V2_10_CARRAGE107X_1_VELOCITY, "V2 10 CARRAGE107X 1 - VELOCITY", VEL, V2_10_CARRAGE107X_1, Global_Frame, I_MARKER)
+  *Set (V2_10_CARRAGE107X_1_VELOCITY.cnames, {"VM","VX","VY","VZ","WM","WX","WY","WZ"})
+  *Set (V2_10_CARRAGE107X_1_VELOCITY.use_units, true)
+  
+  *Output (V2_10_CARRAGE107X_1_ACCELERATION, "V2 10 CARRAGE107X 1 - ACCELERATION", ACCL, V2_10_CARRAGE107X_1, Global_Frame, I_MARKER)
+  *Set (V2_10_CARRAGE107X_1_ACCELERATION.cnames, {"ACCM","ACCX","ACCY","ACCZ","WDTM","WDTX","WDTY","WDTZ"})
+  *Set (V2_10_CARRAGE107X_1_ACCELERATION.use_units, true)
+  
+  *Graphic (V2_10_CARRAGE107X_1_cadGraphic, "V2_10_CARRAGE107X_1 - CADGraphic", CADGraphic, V2_10_CARRAGE107X_1, False, 60, "Assembly1222_MKS.x_t", {"V2_10_CARRAGE107X_1"}, MARKER, Global_Frame, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 1, 1)
+  *SetColorMaterialReference (V2_10_CARRAGE107X_1_cadGraphic, mat_595959)
+  
+  *Graphic (V2_10_BASER_108_1_cadGraphic, "V2_10_BASER_108_1 - CADGraphic", CADGraphic, B_Ground, False, 60, "Assembly1222_MKS.x_t", {"V2_10_BASER_108_1"}, MARKER, Global_Frame, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 1, 1)
+  *SetColorMaterialReference (V2_10_BASER_108_1_cadGraphic, mat_262626)
+  
+  *Point (Joint_1_origin, "Joint 1 - TRANSLATIONAL_origin")
+  *SetPoint (Joint_1_origin, 0.012507062617988465, -0.019312094760220208, 0.07726504993969048)
+  
+  *Vector (Joint_1_axis, `Joint 1 - TRANSLATIONAL`)
+  *SetVector (Joint_1_axis, 0.04745168750021121, -6.938893903907228e-18, 0.0)
+  *TransJoint (Joint_1, "Joint 1 - TRANSLATIONAL", V2_10_CARRAGE107X_1, B_Ground, Joint_1_origin, VECTOR, Joint_1_axis, ALLOW_COMPLIANCE)
+  *SetJointIC (Joint_1, ROT, 0.0, 0.0)
+  *SetJointICFlag (Joint_1, ROT, False)
+  *Set (Joint_1.isbush, True)
+  *SetBush (Joint_1.bush, LIN, DS_SystemBushingRates.k.value, LIN, DS_SystemBushingRates.k.value, LIN, 0.0, LIN, DS_SystemBushingRates.c.value, LIN, DS_SystemBushingRates.c.value, LIN, 0.0, LIN, DS_SystemBushingRates.kt.value, LIN, DS_SystemBushingRates.kt.value, LIN, DS_SystemBushingRates.kt.value, LIN, DS_SystemBushingRates.ct.value, LIN, DS_SystemBushingRates.ct.value, LIN, DS_SystemBushingRates.ct.value, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+  *SetOrientation (Joint_1.bush, ANGLES, , 90.0, 90.0, -90.0)
+  
+  *Output (Joint_1_DISPLACEMENT, "Joint 1 - TRANSLATIONAL - DISPLACEMENT", DISP, Joint_1, Global_Frame, I_MARKER)
+  *Set (Joint_1_DISPLACEMENT.cnames, {"MAG","X","Y","Z","","PSI","THETA","PHI"})
+  *Set (Joint_1_DISPLACEMENT.use_units, true)
+  
+  *Output (Joint_1_VELOCITY, "Joint 1 - TRANSLATIONAL - VELOCITY", VEL, Joint_1, Global_Frame, I_MARKER)
+  *Set (Joint_1_VELOCITY.cnames, {"VM","VX","VY","VZ","WM","WX","WY","WZ"})
+  *Set (Joint_1_VELOCITY.use_units, true)
+  
+  *Output (Joint_1_ACCELERATION, "Joint 1 - TRANSLATIONAL - ACCELERATION", ACCL, Joint_1, Global_Frame, I_MARKER)
+  *Set (Joint_1_ACCELERATION.cnames, {"ACCM","ACCX","ACCY","ACCZ","WDTM","WDTX","WDTY","WDTZ"})
+  *Set (Joint_1_ACCELERATION.use_units, true)
+  
+  *Output (Joint_1_FORCE, "Joint 1 - TRANSLATIONAL - FORCE", FORCE, Joint_1, Global_Frame, I_MARKER)
+  *Set (Joint_1_FORCE.cnames, {"FM","FX","FY","FZ","TM","TX","TY","TZ"})
+  *Set (Joint_1_FORCE.use_units, true)
+  
+  *Sensor (sen_0, "Joint 1 - TRANSLATIONAL Sensor Translational MAG DXDY")
+  *SetSensor (sen_0, EXPR, `SQRT(DX({Joint_1.i.idstring}, {Joint_1.j.idstring}, {Joint_1.j.idstring})**2 + DY({Joint_1.i.idstring}, {Joint_1.j.idstring}, {Joint_1.j.idstring})**2)`, 0.001, GE, 1e-05, NO_CODGEN, OFF, HALT, NO_PRINT, NO_RESTART, NO_RETURN, 0.0)
+  
+  *Point (Joint_2_origin, "Joint 2 - TRANSLATIONAL_origin")
+  *SetPoint (Joint_2_origin, -0.0016480330180258028, 0.0024316788355077997, 0.11320049999873392)
+  
+  *Vector (Joint_2_axis, `Joint 2 - TRANSLATIONAL`)
+  *SetVector (Joint_2_axis, 6.935858137824269e-14, -6.071532165918825e-18, -0.027750000000000233)
+  *TransJoint (Joint_2, "Joint 2 - TRANSLATIONAL", Rigid_Group_1, V2_10_CARRAGE107X_1, Joint_2_origin, VECTOR, Joint_2_axis, ALLOW_COMPLIANCE)
+  *SetJointIC (Joint_2, ROT, 0.0, 0.0)
+  *SetJointICFlag (Joint_2, ROT, False)
+  *Set (Joint_2.isbush, True)
+  *SetBush (Joint_2.bush, LIN, DS_SystemBushingRates.k.value, LIN, DS_SystemBushingRates.k.value, LIN, 0.0, LIN, DS_SystemBushingRates.c.value, LIN, DS_SystemBushingRates.c.value, LIN, 0.0, LIN, DS_SystemBushingRates.kt.value, LIN, DS_SystemBushingRates.kt.value, LIN, DS_SystemBushingRates.kt.value, LIN, DS_SystemBushingRates.ct.value, LIN, DS_SystemBushingRates.ct.value, LIN, DS_SystemBushingRates.ct.value, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+  *SetOrientation (Joint_2.bush, ANGLES, , 0.0, 180.0, 180.0)
+  
+  *Output (Joint_2_DISPLACEMENT, "Joint 2 - TRANSLATIONAL - DISPLACEMENT", DISP, Joint_2, Global_Frame, I_MARKER)
+  *Set (Joint_2_DISPLACEMENT.cnames, {"MAG","X","Y","Z","","PSI","THETA","PHI"})
+  *Set (Joint_2_DISPLACEMENT.use_units, true)
+  
+  *Output (Joint_2_VELOCITY, "Joint 2 - TRANSLATIONAL - VELOCITY", VEL, Joint_2, Global_Frame, I_MARKER)
+  *Set (Joint_2_VELOCITY.cnames, {"VM","VX","VY","VZ","WM","WX","WY","WZ"})
+  *Set (Joint_2_VELOCITY.use_units, true)
+  
+  *Output (Joint_2_ACCELERATION, "Joint 2 - TRANSLATIONAL - ACCELERATION", ACCL, Joint_2, Global_Frame, I_MARKER)
+  *Set (Joint_2_ACCELERATION.cnames, {"ACCM","ACCX","ACCY","ACCZ","WDTM","WDTX","WDTY","WDTZ"})
+  *Set (Joint_2_ACCELERATION.use_units, true)
+  
+  *Output (Joint_2_FORCE, "Joint 2 - TRANSLATIONAL - FORCE", FORCE, Joint_2, Global_Frame, I_MARKER)
+  *Set (Joint_2_FORCE.cnames, {"FM","FX","FY","FZ","TM","TX","TY","TZ"})
+  *Set (Joint_2_FORCE.use_units, true)
+  
+  *Sensor (sen_1, "Joint 2 - TRANSLATIONAL Sensor Translational MAG DXDY")
+  *SetSensor (sen_1, EXPR, `SQRT(DX({Joint_2.i.idstring}, {Joint_2.j.idstring}, {Joint_2.j.idstring})**2 + DY({Joint_2.i.idstring}, {Joint_2.j.idstring}, {Joint_2.j.idstring})**2)`, 0.001, GE, 1e-05, NO_CODGEN, OFF, HALT, NO_PRINT, NO_RESTART, NO_RETURN, 0.0)
+  
+  *Point (Joint_3_origin, "Joint 3 - TRANSLATIONAL_origin")
+  *SetPoint (Joint_3_origin, 0.06386956261824168, 0.041752571911941636, -0.08453450000019899)
+  
+  *Vector (Joint_3_axis, `Joint 3 - TRANSLATIONAL`)
+  *SetVector (Joint_3_axis, 5.551115123125783e-16, -0.15018000000017995, -2.1371793224034263e-15)
+  *TransJoint (Joint_3, "Joint 3 - TRANSLATIONAL", V2_10__VERT_1, B_Ground, Joint_3_origin, VECTOR, Joint_3_axis, ALLOW_COMPLIANCE)
+  *SetJointIC (Joint_3, ROT, 0.0, 0.0)
+  *SetJointICFlag (Joint_3, ROT, False)
+  *Set (Joint_3.isbush, True)
+  *SetBush (Joint_3.bush, LIN, DS_SystemBushingRates.k.value, LIN, DS_SystemBushingRates.k.value, LIN, 0.0, LIN, DS_SystemBushingRates.c.value, LIN, DS_SystemBushingRates.c.value, LIN, 0.0, LIN, DS_SystemBushingRates.kt.value, LIN, DS_SystemBushingRates.kt.value, LIN, DS_SystemBushingRates.kt.value, LIN, DS_SystemBushingRates.ct.value, LIN, DS_SystemBushingRates.ct.value, LIN, DS_SystemBushingRates.ct.value, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+  *SetOrientation (Joint_3.bush, ANGLES, , 2.117828393567523e-13, 90.00000000000081, -180.0)
+  
+  *Output (Joint_3_DISPLACEMENT, "Joint 3 - TRANSLATIONAL - DISPLACEMENT", DISP, Joint_3, Global_Frame, I_MARKER)
+  *Set (Joint_3_DISPLACEMENT.cnames, {"MAG","X","Y","Z","","PSI","THETA","PHI"})
+  *Set (Joint_3_DISPLACEMENT.use_units, true)
+  
+  *Output (Joint_3_VELOCITY, "Joint 3 - TRANSLATIONAL - VELOCITY", VEL, Joint_3, Global_Frame, I_MARKER)
+  *Set (Joint_3_VELOCITY.cnames, {"VM","VX","VY","VZ","WM","WX","WY","WZ"})
+  *Set (Joint_3_VELOCITY.use_units, true)
+  
+  *Output (Joint_3_ACCELERATION, "Joint 3 - TRANSLATIONAL - ACCELERATION", ACCL, Joint_3, Global_Frame, I_MARKER)
+  *Set (Joint_3_ACCELERATION.cnames, {"ACCM","ACCX","ACCY","ACCZ","WDTM","WDTX","WDTY","WDTZ"})
+  *Set (Joint_3_ACCELERATION.use_units, true)
+  
+  *Output (Joint_3_FORCE, "Joint 3 - TRANSLATIONAL - FORCE", FORCE, Joint_3, Global_Frame, I_MARKER)
+  *Set (Joint_3_FORCE.cnames, {"FM","FX","FY","FZ","TM","TX","TY","TZ"})
+  *Set (Joint_3_FORCE.use_units, true)
+  
+  *Sensor (sen_2, "Joint 3 - TRANSLATIONAL Sensor Translational MAG DXDY")
+  *SetSensor (sen_2, EXPR, `SQRT(DX({Joint_3.i.idstring}, {Joint_3.j.idstring}, {Joint_3.j.idstring})**2 + DY({Joint_3.i.idstring}, {Joint_3.j.idstring}, {Joint_3.j.idstring})**2)`, 0.001, GE, 1e-05, NO_CODGEN, OFF, HALT, NO_PRINT, NO_RESTART, NO_RETURN, 0.0)
+  
+  *Point (Joint_4_origin, "Joint 4 - REVOLUTE_origin")
+  *SetPoint (Joint_4_origin, 0.03963456147148776, 0.0488425719120322, -0.10488450000053134)
+  
+  *Vector (Joint_4_axis, `Joint 4 - REVOLUTE`)
+  *SetVector (Joint_4_axis, 0.0033019999999999994, 0.0, -1.3877787807814457e-17)
+  *RevJoint (Joint_4, "Joint 4 - REVOLUTE", V2_10_TABLER__NEW_1, V2_10__VERT_1, Joint_4_origin, VECTOR, Joint_4_axis, ALLOW_COMPLIANCE)
+  *SetJointIC (Joint_4, ROT, 0.0, 0.0)
+  *SetJointICFlag (Joint_4, ROT, False)
+  *Set (Joint_4.isbush, True)
+  *SetBush (Joint_4.bush, LIN, DS_SystemBushingRates.k.value, LIN, DS_SystemBushingRates.k.value, LIN, DS_SystemBushingRates.k.value, LIN, DS_SystemBushingRates.c.value, LIN, DS_SystemBushingRates.c.value, LIN, DS_SystemBushingRates.c.value, LIN, DS_SystemBushingRates.kt.value, LIN, DS_SystemBushingRates.kt.value, LIN, 0.0, LIN, DS_SystemBushingRates.ct.value, LIN, DS_SystemBushingRates.ct.value, LIN, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+  *SetOrientation (Joint_4.bush, ANGLES, , 90.0, 90.00000000000024, -90.0)
+  
+  *Output (Joint_4_DISPLACEMENT, "Joint 4 - REVOLUTE - DISPLACEMENT", DISP, Joint_4, Global_Frame, I_MARKER)
+  *Set (Joint_4_DISPLACEMENT.cnames, {"MAG","X","Y","Z","","PSI","THETA","PHI"})
+  *Set (Joint_4_DISPLACEMENT.use_units, true)
+  
+  *Output (Joint_4_VELOCITY, "Joint 4 - REVOLUTE - VELOCITY", VEL, Joint_4, Global_Frame, I_MARKER)
+  *Set (Joint_4_VELOCITY.cnames, {"VM","VX","VY","VZ","WM","WX","WY","WZ"})
+  *Set (Joint_4_VELOCITY.use_units, true)
+  
+  *Output (Joint_4_ACCELERATION, "Joint 4 - REVOLUTE - ACCELERATION", ACCL, Joint_4, Global_Frame, I_MARKER)
+  *Set (Joint_4_ACCELERATION.cnames, {"ACCM","ACCX","ACCY","ACCZ","WDTM","WDTX","WDTY","WDTZ"})
+  *Set (Joint_4_ACCELERATION.use_units, true)
+  
+  *Output (Joint_4_FORCE, "Joint 4 - REVOLUTE - FORCE", FORCE, Joint_4, Global_Frame, I_MARKER)
+  *Set (Joint_4_FORCE.cnames, {"FM","FX","FY","FZ","TM","TX","TY","TZ"})
+  *Set (Joint_4_FORCE.use_units, true)
+  
+  *Sensor (sen_3, "Joint 4 - REVOLUTE Sensor Revolute DM")
+  *SetSensor (sen_3, EXPR, `DM({Joint_4.i.idstring}, {Joint_4.j.idstring})`, 0.001, GE, 1e-05, NO_CODGEN, OFF, HALT, NO_PRINT, NO_RESTART, NO_RETURN, 0.0)
+  
+  *Point (Joint_5_origin, "Joint 5 - REVOLUTE_origin")
+  *SetPoint (Joint_5_origin, -0.0370164373820103, 0.021543919059041017, -0.10488434920401893)
+  
+  *Vector (Joint_5_axis, `Joint 5 - REVOLUTE`)
+  *SetVector (Joint_5_axis, 0.0, 0.010147299998999992, -5.520930823621484e-08)
+  *RevJoint (Joint_5, "Joint 5 - REVOLUTE", V2_10_DISC_1, V2_10_TABLER__NEW_1, Joint_5_origin, VECTOR, Joint_5_axis, ALLOW_COMPLIANCE)
+  *SetJointIC (Joint_5, ROT, 0.0, 0.0)
+  *SetJointICFlag (Joint_5, ROT, False)
+  *Set (Joint_5.isbush, True)
+  *SetBush (Joint_5.bush, LIN, DS_SystemBushingRates.k.value, LIN, DS_SystemBushingRates.k.value, LIN, DS_SystemBushingRates.k.value, LIN, DS_SystemBushingRates.c.value, LIN, DS_SystemBushingRates.c.value, LIN, DS_SystemBushingRates.c.value, LIN, DS_SystemBushingRates.kt.value, LIN, DS_SystemBushingRates.kt.value, LIN, 0.0, LIN, DS_SystemBushingRates.ct.value, LIN, DS_SystemBushingRates.ct.value, LIN, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+  *SetOrientation (Joint_5.bush, ANGLES, , 180.0, 90.00031173419059, 0.0)
+  
+  *Output (Joint_5_DISPLACEMENT, "Joint 5 - REVOLUTE - DISPLACEMENT", DISP, Joint_5, Global_Frame, I_MARKER)
+  *Set (Joint_5_DISPLACEMENT.cnames, {"MAG","X","Y","Z","","PSI","THETA","PHI"})
+  *Set (Joint_5_DISPLACEMENT.use_units, true)
+  
+  *Output (Joint_5_VELOCITY, "Joint 5 - REVOLUTE - VELOCITY", VEL, Joint_5, Global_Frame, I_MARKER)
+  *Set (Joint_5_VELOCITY.cnames, {"VM","VX","VY","VZ","WM","WX","WY","WZ"})
+  *Set (Joint_5_VELOCITY.use_units, true)
+  
+  *Output (Joint_5_ACCELERATION, "Joint 5 - REVOLUTE - ACCELERATION", ACCL, Joint_5, Global_Frame, I_MARKER)
+  *Set (Joint_5_ACCELERATION.cnames, {"ACCM","ACCX","ACCY","ACCZ","WDTM","WDTX","WDTY","WDTZ"})
+  *Set (Joint_5_ACCELERATION.use_units, true)
+  
+  *Output (Joint_5_FORCE, "Joint 5 - REVOLUTE - FORCE", FORCE, Joint_5, Global_Frame, I_MARKER)
+  *Set (Joint_5_FORCE.cnames, {"FM","FX","FY","FZ","TM","TX","TY","TZ"})
+  *Set (Joint_5_FORCE.use_units, true)
+  
+  *Sensor (sen_4, "Joint 5 - REVOLUTE Sensor Revolute DM")
+  *SetSensor (sen_4, EXPR, `DM({Joint_5.i.idstring}, {Joint_5.j.idstring})`, 0.001, GE, 1e-05, NO_CODGEN, OFF, HALT, NO_PRINT, NO_RESTART, NO_RETURN, 0.0)
+  
+  *System (sys_Motor_apsom, "Motor apsom", def_sys_Motor_apsom)
+  
+  *System (sys_Motor_bposm, "Motor bposm", def_sys_Motor_bposm)
+  
+  *System (sys_Actuator_xpm, "Actuator xpm", def_sys_Actuator_xpm)
+  
+  *System (sys_Actuator_ypm, "Actuator ypm", def_sys_Actuator_ypm)
+  
+  *System (sys_Actuator_zpm, "Actuator zpm", def_sys_Actuator_zpm)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*DefineDataSet (def_DS_SystemBushingRates)
+  *Real (k, "K", EDIT)
+  *SetReal (k, 50000000.0)
+  
+  *Real (c, "C", EDIT)
+  *SetReal (c, 2500000.0)
+  
+  *Real (kt, "KT", EDIT)
+  *SetReal (kt, 100000000.0)
+  
+  *Real (ct, "CT", EDIT)
+  *SetReal (ct, 5000000.0)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*DefineGraphic (def_Rigid_Group_1_GraphicSystem)
+  *Graphic (Tool_1_cadGraphic, "Tool_1 - CADGraphic", CADGraphic, sys_Assembly1222.Rigid_Group_1, False, 60, "Assembly1222_MKS.x_t", {"Tool_1"}, MARKER, Global_Frame, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 1, 1)
+  *SetColorMaterialReference (Tool_1_cadGraphic, mat_999999)
+  
+  *Graphic (V2_10_SPINDLE109_1_2_cadGraphic, "V2_10_SPINDLE109_1_2 - CADGraphic", CADGraphic, sys_Assembly1222.Rigid_Group_1, False, 60, "Assembly1222_MKS.x_t", {"V2_10_SPINDLE109_1_2"}, MARKER, Global_Frame, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 1, 1)
+  *SetColorMaterialReference (V2_10_SPINDLE109_1_2_cadGraphic, mat_ffffff)
+  
+  *Graphic (V2_10_SPINDLE109_1_1_cadGraphic, "V2_10_SPINDLE109_1_1 - CADGraphic", CADGraphic, sys_Assembly1222.Rigid_Group_1, False, 60, "Assembly1222_MKS.x_t", {"V2_10_SPINDLE109_1_1"}, MARKER, Global_Frame, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 1, 1)
+  *SetColorMaterialReference (V2_10_SPINDLE109_1_1_cadGraphic, mat_ffffff)
+  
+  *Graphic (V2_10_SPINDLE109_1_cadGraphic, "V2_10_SPINDLE109_1 - CADGraphic", CADGraphic, sys_Assembly1222.Rigid_Group_1, False, 60, "Assembly1222_MKS.x_t", {"V2_10_SPINDLE109_1"}, MARKER, Global_Frame, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 1, 1)
+  *SetColorMaterialReference (V2_10_SPINDLE109_1_cadGraphic, mat_262626)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*DefineSystem (def_sys_Motor_apsom)
+  *Point (i_pt, "I Point")
+  *SetPoint (i_pt, 0.03398356261846213, 0.048842569058280105, -0.1048844977299284)
+  
+  *Point (j_pt, "J Point")
+  *SetPoint (j_pt, 0.03398356261846213, 0.048842569058280105, -0.1048844977299284)
+  
+  *Marker (i_marker, "Marker I", sys_Assembly1222.V2_10_TABLER__NEW_1, i_pt, )
+  *SetOrientation (i_marker, ANGLES, , -89.9999999999999, 89.99999999999973, 90.0)
+  
+  *Marker (j_marker, "Marker J", B_Ground, j_pt, )
+  *SetOrientation (j_marker, ANGLES, , -89.9999999999999, 89.99999999999973, 90.0)
+  
+  *DataSet (Motor_apsom_Parameters, "Parameters", def_Motor_apsom_Parameters)
+  
+  *Curve (spline, "spline profile", 2D, CARTESIAN, WRITE, CONTROL_POINTS, OPEN)
+  *SetCurve (spline, VALUE, 24, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 30.0, VALUE, 24, 0.0, -0.17453292519968372, -0.34906585039936744, -0.5235987755990512, -0.6981317007987349, -0.5235987755990512, -0.34906585039936744, -0.17453292519968372, 0.0, 0.17453292519968372, -0.34906585039936744, -0.5235987755990512, -0.6981317007987349, -0.5235987755990512, -0.34906585039936744, 0.17453292519968372, 0.0, 0.0, 0.17453292519968372, -0.34906585039936744, -0.5235987755990512, -0.6981317007987349, -0.5235987755990512, -0.34906585039936744, LIN_EXTRAP)
+  *SetCurveAttributes (spline, 1.0, 0, 1.0, 0)
+  
+  *SolverVariable (velocity, "Motor apsom - Angular Velocity")
+  *SetSolverVariable (velocity, EXPR, `WZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, 0.0)
+  
+  *SolverVariable (acceleration, "Motor apsom- Angular Acceleration")
+  *SetSolverVariable (acceleration, EXPR, `WDTZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, 0.0)
+  
+  *SolverVariable (force_signal, "Motor apsom - Torque")
+  *SetSolverVariable (force_signal, EXPR, `MOTION({motor.idstring}, 0, 8, {motor.j.idstring})`, OFF)
+  
+  *SolverVariable (desired_signal, "Motor apsom - Reference Angle")
+  *SetSolverVariable (desired_signal, EXPR, `STEP5(TIME,0,0,{Motor_apsom_Parameters.dtValue.value},1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME, 0, {spline.idstring})`, 0.0)
+  
+  *SolverVariable (output_displacement, "Motor apsom - Angular Displacement")
+  *SetSolverVariable (output_displacement, EXPR, `AZ ({i_marker.idstring}, {j_marker.idstring})`, 0.0)
+  
+  *SolverArray (y_output, "Motor apsom - Plant Outputs", PLANT_OUTPUT, , output_displacement, velocity, acceleration, force_signal, desired_signal)
+  *SetSolverArray (y_output, 0, FALSE, 0, FALSE, 0)
+  
+  *SolverVariable (command_signal, "Motor apsom - Command Signal")
+  *SetSolverVariable (command_signal, EXPR, `0`, 0.0)
+  
+  *SolverVariable (override_signal, "Motor apsom - Override Inspire Motion Controller")
+  *SetSolverVariable (override_signal, EXPR, `0`, 0.0)
+  
+  *SolverArray (u_input, "Motor apsom - Plant Inputs", PLANT_INPUT, , command_signal, override_signal, force_signal)
+  *SetSolverArray (u_input, 0, FALSE, 0, FALSE, 0)
+  
+  *Output (Motor_apsom_kinematic_output, "Motor apsom - Kinematic Output", EXPR, `AZ ({i_marker.idstring}, {j_marker.idstring})`, `WZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, `WDTZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, `(VARVAL({acceleration.idstring})-DELAY(VARVAL({acceleration.idstring}),0.001,0))/0.001`, , )
+  *Set (Motor_apsom_kinematic_output.cnames, {"","Angular_Displacement","Angular_Velocity","Angular_Acceleration","","Angular_Jerk","",""})
+  *Set (Motor_apsom_kinematic_output.use_units, true)
+  
+  *Output (Motor_apsom_power_output, "Motor apsom - Power Output", EXPR, `VARVAL({velocity.idstring})*VARVAL({force_signal.idstring})`, , , , , )
+  *Set (Motor_apsom_power_output.cnames, {"","Power","","","","","",""})
+  *Set (Motor_apsom_power_output.use_units, true)
+  
+  *Motion (motor, "Motor Constraint", MARKERS, i_marker, j_marker, B3)
+  *SetMotion (motor, DISP, EXPR, `IF(VARVAL({override_signal.idstring}):0,STEP5(TIME,0,0,{Motor_apsom_Parameters.dtValue.value},1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME, 0, {spline.idstring}),VARVAL({command_signal.idstring}))`)
+  *SetMotionIc (motor, 0.0, 0.0)
+  
+  *Output (Motor_apsom_output, "Motor apsom - Output", EXPR, `MOTION({motor.idstring}, 0, 8, {motor.j.idstring})`, `MOTION({motor.idstring}, 0, 5, 0)`, , `MOTION({motor.idstring}, 0, 6, 0)`, `MOTION({motor.idstring}, 0, 7, 0)`, `MOTION({motor.idstring}, 0, 8, 0)`)
+  *Set (Motor_apsom_output.cnames, {"","Torque","TM","","","TX","TY","TZ"})
+  *Set (Motor_apsom_output.use_units, true)
+  
+  *Sensor (sen_0, "Motor_apsom Sensor Motor Orientation")
+  *SetSensor (sen_0, EXPR, `SQRT(AX({i_marker.idstring}, {j_marker.idstring})**2+AY({i_marker.idstring}, {j_marker.idstring})**2)`, 0.2617993877991494, GE, 0.001, NO_CODGEN, OFF, HALT, NO_PRINT, NO_RESTART, NO_RETURN, 0.0)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*DefineSystem (def_sys_Motor_bposm)
+  *Point (i_pt, "I Point")
+  *SetPoint (i_pt, -0.0370164373820108, 0.008696819059186865, -0.1048842793056711)
+  
+  *Point (j_pt, "J Point")
+  *SetPoint (j_pt, -0.0370164373820108, 0.008696819059186865, -0.1048842793056711)
+  
+  *Marker (i_marker, "Marker I", sys_Assembly1222.V2_10_DISC_1, i_pt, )
+  *SetOrientation (i_marker, ANGLES, , -179.99999999993403, 90.00031173417692, 3.5900198602684175e-16)
+  
+  *Marker (j_marker, "Marker J", sys_Assembly1222.V2_10_TABLER__NEW_1, j_pt, )
+  *SetOrientation (j_marker, ANGLES, , -179.99999999993403, 90.00031173417692, 3.5900198602684175e-16)
+  
+  *DataSet (Motor_bposm_Parameters, "Parameters", def_Motor_bposm_Parameters)
+  
+  *Curve (spline, "spline profile", 2D, CARTESIAN, WRITE, CONTROL_POINTS, OPEN)
+  *SetCurve (spline, VALUE, 24, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 30.0, VALUE, 24, 0.0, 0.6981317007987349, 0.5235987755990512, 0.34906585039936744, 0.17453292519968372, 0.0, 0.0, 0.6981317007987349, 0.5235987755990512, 0.34906585039936744, 0.17453292519968372, 0.0, 0.0, 0.6981317007987349, 0.5235987755990512, 0.34906585039936744, 0.17453292519968372, 0.0, 0.0, 0.6981317007987349, 0.5235987755990512, 0.34906585039936744, 0.17453292519968372, 0.0, LIN_EXTRAP)
+  *SetCurveAttributes (spline, 1.0, 0, 1.0, 0)
+  
+  *SolverVariable (velocity, "Motor bposm - Angular Velocity")
+  *SetSolverVariable (velocity, EXPR, `WZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, 0.0)
+  
+  *SolverVariable (acceleration, "Motor bposm- Angular Acceleration")
+  *SetSolverVariable (acceleration, EXPR, `WDTZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, 0.0)
+  
+  *SolverVariable (force_signal, "Motor bposm - Torque")
+  *SetSolverVariable (force_signal, EXPR, `MOTION({motor.idstring}, 0, 8, {motor.j.idstring})`, OFF)
+  
+  *SolverVariable (desired_signal, "Motor bposm - Reference Angle")
+  *SetSolverVariable (desired_signal, EXPR, `STEP5(TIME,0,0,{Motor_bposm_Parameters.dtValue.value},1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME, 0, {spline.idstring})`, 0.0)
+  
+  *SolverVariable (output_displacement, "Motor bposm - Angular Displacement")
+  *SetSolverVariable (output_displacement, EXPR, `AZ ({i_marker.idstring}, {j_marker.idstring})`, 0.0)
+  
+  *SolverArray (y_output, "Motor bposm - Plant Outputs", PLANT_OUTPUT, , output_displacement, velocity, acceleration, force_signal, desired_signal)
+  *SetSolverArray (y_output, 0, FALSE, 0, FALSE, 0)
+  
+  *SolverVariable (command_signal, "Motor bposm - Command Signal")
+  *SetSolverVariable (command_signal, EXPR, `0`, 0.0)
+  
+  *SolverVariable (override_signal, "Motor bposm - Override Inspire Motion Controller")
+  *SetSolverVariable (override_signal, EXPR, `0`, 0.0)
+  
+  *SolverArray (u_input, "Motor bposm - Plant Inputs", PLANT_INPUT, , command_signal, override_signal, force_signal)
+  *SetSolverArray (u_input, 0, FALSE, 0, FALSE, 0)
+  
+  *Output (Motor_bposm_kinematic_output, "Motor bposm - Kinematic Output", EXPR, `AZ ({i_marker.idstring}, {j_marker.idstring})`, `WZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, `WDTZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, `(VARVAL({acceleration.idstring})-DELAY(VARVAL({acceleration.idstring}),0.001,0))/0.001`, , )
+  *Set (Motor_bposm_kinematic_output.cnames, {"","Angular_Displacement","Angular_Velocity","Angular_Acceleration","","Angular_Jerk","",""})
+  *Set (Motor_bposm_kinematic_output.use_units, true)
+  
+  *Output (Motor_bposm_power_output, "Motor bposm - Power Output", EXPR, `VARVAL({velocity.idstring})*VARVAL({force_signal.idstring})`, , , , , )
+  *Set (Motor_bposm_power_output.cnames, {"","Power","","","","","",""})
+  *Set (Motor_bposm_power_output.use_units, true)
+  
+  *Motion (motor, "Motor Constraint", MARKERS, i_marker, j_marker, B3)
+  *SetMotion (motor, DISP, EXPR, `IF(VARVAL({override_signal.idstring}):0,STEP5(TIME,0,0,{Motor_bposm_Parameters.dtValue.value},1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME, 0, {spline.idstring}),VARVAL({command_signal.idstring}))`)
+  *SetMotionIc (motor, 0.0, 0.0)
+  
+  *Output (Motor_bposm_output, "Motor bposm - Output", EXPR, `MOTION({motor.idstring}, 0, 8, {motor.j.idstring})`, `MOTION({motor.idstring}, 0, 5, 0)`, , `MOTION({motor.idstring}, 0, 6, 0)`, `MOTION({motor.idstring}, 0, 7, 0)`, `MOTION({motor.idstring}, 0, 8, 0)`)
+  *Set (Motor_bposm_output.cnames, {"","Torque","TM","","","TX","TY","TZ"})
+  *Set (Motor_bposm_output.use_units, true)
+  
+  *Vector (centerline_axis, `Centerline`)
+  *SetVector (centerline_axis, -1.151201696594238e-12, 0.999999999985199, -5.440787778222177e-06)
+  *RevJoint (centerline, "Centerline", sys_Assembly1222.V2_10_DISC_1, sys_Assembly1222.V2_10_TABLER__NEW_1, i_pt, VECTOR, centerline_axis, ALLOW_COMPLIANCE)
+  *SetJointIC (centerline, ROT, 0.0, 0.0)
+  *SetJointICFlag (centerline, ROT, False)
+  *Set (centerline.isbush, False)
+  *SetBush (centerline.bush, LIN, DS_SystemBushingRates.k.value, LIN, DS_SystemBushingRates.k.value, LIN, DS_SystemBushingRates.k.value, LIN, DS_SystemBushingRates.c.value, LIN, DS_SystemBushingRates.c.value, LIN, DS_SystemBushingRates.c.value, LIN, DS_SystemBushingRates.kt.value, LIN, DS_SystemBushingRates.kt.value, LIN, 0.0, LIN, DS_SystemBushingRates.ct.value, LIN, DS_SystemBushingRates.ct.value, LIN, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0)
+  *SetOrientation (centerline.bush, ANGLES, , -179.99999999993403, 90.00031173417692, 3.5900198602684175e-16)
+  
+  *Output (Motor_bposm_centerline_DISPLACEMENT, "Motor bposm - Centerline - DISPLACEMENT", DISP, centerline, Global_Frame, I_MARKER)
+  *Set (Motor_bposm_centerline_DISPLACEMENT.cnames, {"MAG","X","Y","Z","","PSI","THETA","PHI"})
+  *Set (Motor_bposm_centerline_DISPLACEMENT.use_units, true)
+  
+  *Output (Motor_bposm_centerline_VELOCITY, "Motor bposm - Centerline - VELOCITY", VEL, centerline, Global_Frame, I_MARKER)
+  *Set (Motor_bposm_centerline_VELOCITY.cnames, {"VM","VX","VY","VZ","WM","WX","WY","WZ"})
+  *Set (Motor_bposm_centerline_VELOCITY.use_units, true)
+  
+  *Output (Motor_bposm_centerline_ACCELERATION, "Motor bposm - Centerline - ACCELERATION", ACCL, centerline, Global_Frame, I_MARKER)
+  *Set (Motor_bposm_centerline_ACCELERATION.cnames, {"ACCM","ACCX","ACCY","ACCZ","WDTM","WDTX","WDTY","WDTZ"})
+  *Set (Motor_bposm_centerline_ACCELERATION.use_units, true)
+  
+  *Output (Motor_bposm_centerline_FORCE, "Motor bposm - Centerline - FORCE", FORCE, centerline, Global_Frame, I_MARKER)
+  *Set (Motor_bposm_centerline_FORCE.cnames, {"FM","FX","FY","FZ","TM","TX","TY","TZ"})
+  *Set (Motor_bposm_centerline_FORCE.use_units, true)
+  
+  *Sensor (sen_0, "Motor_bposm Sensor Motor Orientation")
+  *SetSensor (sen_0, EXPR, `SQRT(AX({i_marker.idstring}, {j_marker.idstring})**2+AY({i_marker.idstring}, {j_marker.idstring})**2)`, 0.2617993877991494, GE, 0.001, NO_CODGEN, OFF, HALT, NO_PRINT, NO_RESTART, NO_RETURN, 0.0)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*DefineSystem (def_sys_Actuator_xpm)
+  *Point (i_pt, "I Point")
+  *SetPoint (i_pt, 0.06673756261824344, -0.01982542810608806, -0.01568450000150845)
+  
+  *Point (j_pt, "J Point")
+  *SetPoint (j_pt, 0.06673756261824344, -0.01982542810608806, -0.01568450000150845)
+  
+  *Marker (i_marker, "Marker I", sys_Assembly1222.V2_10_CARRAGE107X_1, i_pt, )
+  *SetOrientation (i_marker, ANGLES, , -89.99999999999997, 89.99999999999997, 90.0)
+  
+  *Marker (j_marker, "Marker J", B_Ground, j_pt, )
+  *SetOrientation (j_marker, ANGLES, , -89.99999999999997, 89.99999999999997, 90.0)
+  
+  *DataSet (Actuator_xpm_Parameters, "Parameters", def_Actuator_xpm_Parameters)
+  
+  *Curve (spline, "spline profile", 2D, CARTESIAN, WRITE, CONTROL_POINTS, OPEN)
+  *SetCurve (spline, VALUE, 22, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 30.0, VALUE, 22, 0.0, 0.007, 0.006, 0.005, 0.0, 0.007, 0.006, 0.005, 0.0, 0.007, 0.006, 0.005, 0.0, 0.007, 0.006, 0.005, 0.0, 0.007, 0.006, 0.005, 0.009, 0.001, LIN_EXTRAP)
+  *SetCurveAttributes (spline, 1.0, 0, 1.0, 0)
+  
+  *SolverVariable (velocity, "Actuator xpm - Velocity")
+  *SetSolverVariable (velocity, EXPR, `VZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, 0.0)
+  
+  *SolverVariable (acceleration, "Actuator xpm- Acceleration")
+  *SetSolverVariable (acceleration, EXPR, `ACCZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, 0.0)
+  
+  *SolverVariable (force_signal, "Actuator xpm - Force")
+  *SetSolverVariable (force_signal, EXPR, `MOTION({actuator.idstring}, 0, 4, {actuator.j.idstring})`, OFF)
+  
+  *SolverVariable (desired_signal, "Actuator xpm - Reference Displacement")
+  *SetSolverVariable (desired_signal, EXPR, `STEP5(TIME,0,0,{Actuator_xpm_Parameters.dtValue.value},1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME, 0, {spline.idstring})`, 0.0)
+  
+  *SolverVariable (travel, "Actuator xpm - Travel")
+  *SetSolverVariable (travel, EXPR, `DZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})-0`, 0.0)
+  
+  *SolverArray (y_output, "Actuator xpm - Plant Outputs", PLANT_OUTPUT, , travel, velocity, acceleration, force_signal, desired_signal)
+  *SetSolverArray (y_output, 0, FALSE, 0, FALSE, 0)
+  
+  *SolverVariable (command_signal, "Actuator xpm - Command Signal")
+  *SetSolverVariable (command_signal, EXPR, `0`, 0.0)
+  
+  *SolverVariable (override_signal, "Actuator xpm - Override Inspire Motion Controller")
+  *SetSolverVariable (override_signal, EXPR, `0`, 0.0)
+  
+  *SolverArray (u_input, "Actuator xpm - Plant Inputs", PLANT_INPUT, , command_signal, override_signal, force_signal)
+  *SetSolverArray (u_input, 0, FALSE, 0, FALSE, 0)
+  
+  *Output (Actuator_xpm_kinematic_output, "Actuator xpm - Kinematic Output", EXPR, `DZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})-0`, `VZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, `ACCZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, `(VARVAL({acceleration.idstring})-DELAY(VARVAL({acceleration.idstring}),0.001,0))/0.001`, , )
+  *Set (Actuator_xpm_kinematic_output.cnames, {"","Displacement","Velocity","Acceleration","","Jerk","",""})
+  *Set (Actuator_xpm_kinematic_output.use_units, true)
+  
+  *Output (Actuator_xpm_power_output, "Actuator xpm - Power Output", EXPR, `VARVAL({velocity.idstring})*VARVAL({force_signal.idstring})`, , , , , )
+  *Set (Actuator_xpm_power_output.cnames, {"","Power","","","","","",""})
+  *Set (Actuator_xpm_power_output.use_units, true)
+  
+  *Motion (actuator, "Actuator Constraint", MARKERS, i_marker, j_marker, Z)
+  *SetMotion (actuator, DISP, EXPR, `IF(VARVAL({override_signal.idstring}):0,STEP5(TIME,0,0,{Actuator_xpm_Parameters.dtValue.value},1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME, 0, {spline.idstring}),VARVAL({command_signal.idstring}))`)
+  *SetMotionIc (actuator, 0.0, 0.0)
+  
+  *Output (Actuator_xpm_output, "Actuator xpm - Output", EXPR, `MOTION({actuator.idstring}, 0, 4, {actuator.j.idstring})`, `MOTION({actuator.idstring}, 0, 1, 0)`, , `MOTION({actuator.idstring}, 0, 2, 0)`, `MOTION({actuator.idstring}, 0, 3, 0)`, `MOTION({actuator.idstring}, 0, 4, 0)`)
+  *Set (Actuator_xpm_output.cnames, {"","Force","FM","","","FX","FY","FZ"})
+  *Set (Actuator_xpm_output.use_units, true)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*DefineSystem (def_sys_Actuator_ypm)
+  *Point (i_pt, "I Point")
+  *SetPoint (i_pt, 0.031237544648201276, 0.07386776191103286, -0.17888450000053094)
+  
+  *Point (j_pt, "J Point")
+  *SetPoint (j_pt, 0.031237544648201276, 0.07386776191103286, -0.17888450000053094)
+  
+  *Marker (i_marker, "Marker I", sys_Assembly1222.V2_10__VERT_1, i_pt, )
+  *SetOrientation (i_marker, ANGLES, , 2.1407579586773653e-13, 90.00000000000074, -180.0)
+  
+  *Marker (j_marker, "Marker J", B_Ground, j_pt, )
+  *SetOrientation (j_marker, ANGLES, , 2.1407579586773653e-13, 90.00000000000074, -180.0)
+  
+  *DataSet (Actuator_ypm_Parameters, "Parameters", def_Actuator_ypm_Parameters)
+  
+  *Curve (spline, "spline profile", 2D, CARTESIAN, WRITE, CONTROL_POINTS, OPEN)
+  *SetCurve (spline, VALUE, 22, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 30.0, VALUE, 22, 0.0, 0.006, 0.006, 0.0, 0.008, 0.006, 0.006, 0.0, 0.0, 0.006, 0.006, 0.008, 0.008, 0.006, 0.006, 0.0, 0.0, 0.006, 0.006, 0.008, 0.008, 0.006, LIN_EXTRAP)
+  *SetCurveAttributes (spline, 1.0, 0, 1.0, 0)
+  
+  *SolverVariable (velocity, "Actuator ypm - Velocity")
+  *SetSolverVariable (velocity, EXPR, `VZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, 0.0)
+  
+  *SolverVariable (acceleration, "Actuator ypm- Acceleration")
+  *SetSolverVariable (acceleration, EXPR, `ACCZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, 0.0)
+  
+  *SolverVariable (force_signal, "Actuator ypm - Force")
+  *SetSolverVariable (force_signal, EXPR, `MOTION({actuator.idstring}, 0, 4, {actuator.j.idstring})`, OFF)
+  
+  *SolverVariable (desired_signal, "Actuator ypm - Reference Displacement")
+  *SetSolverVariable (desired_signal, EXPR, `STEP5(TIME,0,0,{Actuator_ypm_Parameters.dtValue.value},1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME, 0, {spline.idstring})`, 0.0)
+  
+  *SolverVariable (travel, "Actuator ypm - Travel")
+  *SetSolverVariable (travel, EXPR, `DZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})-0`, 0.0)
+  
+  *SolverArray (y_output, "Actuator ypm - Plant Outputs", PLANT_OUTPUT, , travel, velocity, acceleration, force_signal, desired_signal)
+  *SetSolverArray (y_output, 0, FALSE, 0, FALSE, 0)
+  
+  *SolverVariable (command_signal, "Actuator ypm - Command Signal")
+  *SetSolverVariable (command_signal, EXPR, `0`, 0.0)
+  
+  *SolverVariable (override_signal, "Actuator ypm - Override Inspire Motion Controller")
+  *SetSolverVariable (override_signal, EXPR, `0`, 0.0)
+  
+  *SolverArray (u_input, "Actuator ypm - Plant Inputs", PLANT_INPUT, , command_signal, override_signal, force_signal)
+  *SetSolverArray (u_input, 0, FALSE, 0, FALSE, 0)
+  
+  *Output (Actuator_ypm_kinematic_output, "Actuator ypm - Kinematic Output", EXPR, `DZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})-0`, `VZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, `ACCZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, `(VARVAL({acceleration.idstring})-DELAY(VARVAL({acceleration.idstring}),0.001,0))/0.001`, , )
+  *Set (Actuator_ypm_kinematic_output.cnames, {"","Displacement","Velocity","Acceleration","","Jerk","",""})
+  *Set (Actuator_ypm_kinematic_output.use_units, true)
+  
+  *Output (Actuator_ypm_power_output, "Actuator ypm - Power Output", EXPR, `VARVAL({velocity.idstring})*VARVAL({force_signal.idstring})`, , , , , )
+  *Set (Actuator_ypm_power_output.cnames, {"","Power","","","","","",""})
+  *Set (Actuator_ypm_power_output.use_units, true)
+  
+  *Motion (actuator, "Actuator Constraint", MARKERS, i_marker, j_marker, Z)
+  *SetMotion (actuator, DISP, EXPR, `IF(VARVAL({override_signal.idstring}):0,STEP5(TIME,0,0,{Actuator_ypm_Parameters.dtValue.value},1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME, 0, {spline.idstring}),VARVAL({command_signal.idstring}))`)
+  *SetMotionIc (actuator, 0.0, 0.0)
+  
+  *Output (Actuator_ypm_output, "Actuator ypm - Output", EXPR, `MOTION({actuator.idstring}, 0, 4, {actuator.j.idstring})`, `MOTION({actuator.idstring}, 0, 1, 0)`, , `MOTION({actuator.idstring}, 0, 2, 0)`, `MOTION({actuator.idstring}, 0, 3, 0)`, `MOTION({actuator.idstring}, 0, 4, 0)`)
+  *Set (Actuator_ypm_output.cnames, {"","Force","FM","","","FX","FY","FZ"})
+  *Set (Actuator_ypm_output.use_units, true)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*DefineSystem (def_sys_Actuator_zpm)
+  *Point (i_pt, "I Point")
+  *SetPoint (i_pt, 0.012837562618317012, -0.001317428086899712, 0.08058049999876529)
+  
+  *Point (j_pt, "J Point")
+  *SetPoint (j_pt, 0.012837562618317012, -0.001317428086899712, 0.08058049999876529)
+  
+  *Marker (i_marker, "Marker I", sys_Assembly1222.Rigid_Group_1, i_pt, )
+  *SetOrientation (i_marker, ANGLES, , 0.0, 180.0, 180.0)
+  
+  *Marker (j_marker, "Marker J", B_Ground, j_pt, )
+  *SetOrientation (j_marker, ANGLES, , 0.0, 180.0, 180.0)
+  
+  *DataSet (Actuator_zpm_Parameters, "Parameters", def_Actuator_zpm_Parameters)
+  
+  *Curve (spline, "spline profile", 2D, CARTESIAN, WRITE, CONTROL_POINTS, OPEN)
+  *SetCurve (spline, VALUE, 24, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0, 19.0, 20.0, 21.0, 22.0, 30.0, VALUE, 24, 0.0, 0.008, 0.006, 0.005, 0.002, 0.003, 0.004, 0.007, 0.0, 0.008, 0.006, 0.005, 0.002, 0.003, 0.004, 0.007, 0.0, 0.008, 0.006, 0.005, 0.002, 0.003, 0.004, 0.007, LIN_EXTRAP)
+  *SetCurveAttributes (spline, 1.0, 0, 1.0, 0)
+  
+  *SolverVariable (velocity, "Actuator zpm - Velocity")
+  *SetSolverVariable (velocity, EXPR, `VZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, 0.0)
+  
+  *SolverVariable (acceleration, "Actuator zpm- Acceleration")
+  *SetSolverVariable (acceleration, EXPR, `ACCZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, 0.0)
+  
+  *SolverVariable (force_signal, "Actuator zpm - Force")
+  *SetSolverVariable (force_signal, EXPR, `MOTION({actuator.idstring}, 0, 4, {actuator.j.idstring})`, OFF)
+  
+  *SolverVariable (desired_signal, "Actuator zpm - Reference Displacement")
+  *SetSolverVariable (desired_signal, EXPR, `STEP5(TIME,0,0,{Actuator_zpm_Parameters.dtValue.value},1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME, 0, {spline.idstring})`, 0.0)
+  
+  *SolverVariable (travel, "Actuator zpm - Travel")
+  *SetSolverVariable (travel, EXPR, `DZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})-0`, 0.0)
+  
+  *SolverArray (y_output, "Actuator zpm - Plant Outputs", PLANT_OUTPUT, , travel, velocity, acceleration, force_signal, desired_signal)
+  *SetSolverArray (y_output, 0, FALSE, 0, FALSE, 0)
+  
+  *SolverVariable (command_signal, "Actuator zpm - Command Signal")
+  *SetSolverVariable (command_signal, EXPR, `0`, 0.0)
+  
+  *SolverVariable (override_signal, "Actuator zpm - Override Inspire Motion Controller")
+  *SetSolverVariable (override_signal, EXPR, `0`, 0.0)
+  
+  *SolverArray (u_input, "Actuator zpm - Plant Inputs", PLANT_INPUT, , command_signal, override_signal, force_signal)
+  *SetSolverArray (u_input, 0, FALSE, 0, FALSE, 0)
+  
+  *Output (Actuator_zpm_kinematic_output, "Actuator zpm - Kinematic Output", EXPR, `DZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})-0`, `VZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, `ACCZ({i_marker.idstring}, {j_marker.idstring}, {j_marker.idstring}, {j_marker.idstring})`, `(VARVAL({acceleration.idstring})-DELAY(VARVAL({acceleration.idstring}),0.001,0))/0.001`, , )
+  *Set (Actuator_zpm_kinematic_output.cnames, {"","Displacement","Velocity","Acceleration","","Jerk","",""})
+  *Set (Actuator_zpm_kinematic_output.use_units, true)
+  
+  *Output (Actuator_zpm_power_output, "Actuator zpm - Power Output", EXPR, `VARVAL({velocity.idstring})*VARVAL({force_signal.idstring})`, , , , , )
+  *Set (Actuator_zpm_power_output.cnames, {"","Power","","","","","",""})
+  *Set (Actuator_zpm_power_output.use_units, true)
+  
+  *Motion (actuator, "Actuator Constraint", MARKERS, i_marker, j_marker, Z)
+  *SetMotion (actuator, DISP, EXPR, `IF(VARVAL({override_signal.idstring}):0,STEP5(TIME,0,0,{Actuator_zpm_Parameters.dtValue.value},1)*0.0*STEP5(TIME,0.0,1,0.05,0)+STEP5(TIME,0.0,0,0.05,1)*LINSPL(TIME, 0, {spline.idstring}),VARVAL({command_signal.idstring}))`)
+  *SetMotionIc (actuator, 0.0, 0.0)
+  
+  *Output (Actuator_zpm_output, "Actuator zpm - Output", EXPR, `MOTION({actuator.idstring}, 0, 4, {actuator.j.idstring})`, `MOTION({actuator.idstring}, 0, 1, 0)`, , `MOTION({actuator.idstring}, 0, 2, 0)`, `MOTION({actuator.idstring}, 0, 3, 0)`, `MOTION({actuator.idstring}, 0, 4, 0)`)
+  *Set (Actuator_zpm_output.cnames, {"","Force","FM","","","FX","FY","FZ"})
+  *Set (Actuator_zpm_output.use_units, true)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*DefineDataSet (def_Motor_apsom_Parameters)
+  *Real (value, "Angle", EDIT)
+  *SetReal (value, 0.4363323129992093)
+  
+  *Real (dtValue, "Delta Time", EDIT)
+  *SetReal (dtValue, 0.05)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*DefineDataSet (def_Motor_bposm_Parameters)
+  *Real (value, "Angle", EDIT)
+  *SetReal (value, 0.5235987755990512)
+  
+  *Real (dtValue, "Delta Time", EDIT)
+  *SetReal (dtValue, 0.05)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*DefineDataSet (def_Actuator_xpm_Parameters)
+  *Real (value, "Displacement", EDIT)
+  *SetReal (value, 0.02472)
+  
+  *Real (dtValue, "Delta Time", EDIT)
+  *SetReal (dtValue, 0.05)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*DefineDataSet (def_Actuator_ypm_Parameters)
+  *Real (value, "Displacement", EDIT)
+  *SetReal (value, 0.02472)
+  
+  *Real (dtValue, "Delta Time", EDIT)
+  *SetReal (dtValue, 0.05)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*DefineDataSet (def_Actuator_zpm_Parameters)
+  *Real (value, "Displacement", EDIT)
+  *SetReal (value, 0.02)
+  
+  *Real (dtValue, "Delta Time", EDIT)
+  *SetReal (dtValue, 0.05)
+  
+  
+  // Ids/Nums/Notes
+*EndDefine ()
+
+*ColorMaterial (mat_595959, "#595959")
+*SetColorMaterialSimple (mat_595959, 0.34901960784313724, 0.34901960784313724, 0.34901960784313724)
+
+*ColorMaterial (mat_262626, "#262626")
+*SetColorMaterialSimple (mat_262626, 0.14901960784313725, 0.14901960784313725, 0.14901960784313725)
+
+*ColorMaterial (mat_999999, "#999999")
+*SetColorMaterialSimple (mat_999999, 0.6000000238418579, 0.6000000238418579, 0.6000000238418579)
+
+*ColorMaterial (mat_ffffff, "#ffffff")
+*SetColorMaterialSimple (mat_ffffff, 1.0, 1.0, 1.0)
+
+
+*EndMDL ()
+
