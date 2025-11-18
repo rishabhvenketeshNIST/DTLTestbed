@@ -1,0 +1,181 @@
+$--------------------------------------------------------------------------UNITS
+[UNITS]
+LENGTH=MILLIMETER
+FORCE=NEWTON
+MASS=KILOGRAM
+TIME=SECOND
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'V2 10 DISC 1 - Kinetic Energy'
+ID= 70000077
+X= 'KE'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'V2 10 TABLER  NEW 1 - Kinetic Energy'
+ID= 70000084
+X= 'KE'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Rigid Group 1 - Kinetic Energy'
+ID= 70000091
+X= 'KE'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'V2 10  VERT 1 - Kinetic Energy'
+ID= 70000098
+X= 'KE'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'V2 10 CARRAGE107X 1 - Kinetic Energy'
+ID= 70000105
+X= 'KE'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Motor apsom - Kinematic Output'
+ID= 70000152
+X= 'Angular_Displacement'
+Y= 'Angular_Velocity'
+Z= 'Angular_Acceleration'
+R1= 'Angular_Jerk'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Motor apsom - Power Output'
+ID= 70000153
+X= 'Power'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Motor apsom - Output'
+ID= 70000154
+X= 'Torque'
+Y= 'TM'
+R1= 'TX'
+R2= 'TY'
+R3= 'TZ'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Motor bposm - Kinematic Output'
+ID= 70000155
+X= 'Angular_Displacement'
+Y= 'Angular_Velocity'
+Z= 'Angular_Acceleration'
+R1= 'Angular_Jerk'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Motor bposm - Power Output'
+ID= 70000156
+X= 'Power'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Motor bposm - Output'
+ID= 70000157
+X= 'Torque'
+Y= 'TM'
+R1= 'TX'
+R2= 'TY'
+R3= 'TZ'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Actuator xpm - Kinematic Output'
+ID= 70000166
+X= 'Displacement'
+Y= 'Velocity'
+Z= 'Acceleration'
+R1= 'Jerk'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Actuator xpm - Power Output'
+ID= 70000167
+X= 'Power'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Actuator xpm - Output'
+ID= 70000168
+X= 'Force'
+Y= 'FM'
+R1= 'FX'
+R2= 'FY'
+R3= 'FZ'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Actuator ypm - Kinematic Output'
+ID= 70000169
+X= 'Displacement'
+Y= 'Velocity'
+Z= 'Acceleration'
+R1= 'Jerk'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Actuator ypm - Power Output'
+ID= 70000170
+X= 'Power'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Actuator ypm - Output'
+ID= 70000171
+X= 'Force'
+Y= 'FM'
+R1= 'FX'
+R2= 'FY'
+R3= 'FZ'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Actuator zpm - Kinematic Output'
+ID= 70000172
+X= 'Displacement'
+Y= 'Velocity'
+Z= 'Acceleration'
+R1= 'Jerk'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Actuator zpm - Power Output'
+ID= 70000173
+X= 'Power'
+MAG= 'MAG'
+RMAG= 'RMAG'
+$------------------------------------------------------------------------REQUEST
+[REQUEST]
+NAME= 'Actuator zpm - Output'
+ID= 70000174
+X= 'Force'
+Y= 'FM'
+R1= 'FX'
+R2= 'FY'
+R3= 'FZ'
+MAG= 'MAG'
+RMAG= 'RMAG'
